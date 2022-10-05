@@ -13,7 +13,11 @@ namespace QuanLyKhuVuiChoi.Database
 
         public DataConnection()
         {
-            conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";
+            // connection: Đức Anh
+            // conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";
+
+            // connection: Dương
+            //conStr = "data...."
         }
 
         public SqlConnection getConnect()
