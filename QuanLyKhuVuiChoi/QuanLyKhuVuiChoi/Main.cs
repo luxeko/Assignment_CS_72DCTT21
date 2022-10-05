@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using Microsoft.VisualBasic.ApplicationServices;
 using QuanLyKhuVuiChoi.View;
 using System;
 using System.Collections.Generic;
@@ -94,6 +95,8 @@ namespace QuanLyKhuVuiChoi
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
+            NhanVien nhanVien = new NhanVien();
+            navbar(nhanVien, content);
         }
 
         private void btnKhuVuiChoi_Click(object sender, EventArgs e)
