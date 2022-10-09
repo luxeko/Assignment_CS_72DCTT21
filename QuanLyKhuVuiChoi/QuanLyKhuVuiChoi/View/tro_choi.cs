@@ -163,5 +163,21 @@ namespace QuanLyKhuVuiChoi.View
             txtTimKiem.Clear();
             Show_TC();
         }
+
+        private void txtTimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "<Nhập tên trò chơi>")
+            {
+                txtTimKiem.Text = "";
+            }
+        }
+
+        private void txtTimKiem_Leave(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+            {
+                txtTimKiem.Text = "<Nhập tên trò chơi>";
+            }
+        }
     }
 }

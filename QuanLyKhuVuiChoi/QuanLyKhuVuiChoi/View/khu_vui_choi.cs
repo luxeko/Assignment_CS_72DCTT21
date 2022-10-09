@@ -190,5 +190,21 @@ namespace QuanLyKhuVuiChoi.View
             txtTimKiem.Clear();
             Show_KVC();
         }
+
+        private void txtTimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "<Nhập tên khu>")
+            {
+                txtTimKiem.Text = "";
+            }
+        }
+
+        private void txtTimKiem_Leave(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+            {
+                txtTimKiem.Text = "<Nhập tên khu>";
+            }
+        }
     }
 }

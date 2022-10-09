@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbMaKhu = new System.Windows.Forms.ComboBox();
             this.txtViTri = new System.Windows.Forms.TextBox();
             this.txtTenTroChoi = new System.Windows.Forms.TextBox();
             this.txtMaTroChoi = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.btXoa = new FontAwesome.Sharp.IconButton();
             this.btCapNhat = new FontAwesome.Sharp.IconButton();
             this.btTaoMoi = new FontAwesome.Sharp.IconButton();
-            this.cbMaKhu = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTroChoi)).BeginInit();
@@ -71,6 +71,15 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "QUẢN LÝ TRÒ CHƠI";
+            // 
+            // cbMaKhu
+            // 
+            this.cbMaKhu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbMaKhu.FormattingEnabled = true;
+            this.cbMaKhu.Location = new System.Drawing.Point(860, 516);
+            this.cbMaKhu.Name = "cbMaKhu";
+            this.cbMaKhu.Size = new System.Drawing.Size(296, 36);
+            this.cbMaKhu.TabIndex = 8;
             // 
             // txtViTri
             // 
@@ -217,6 +226,9 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(296, 34);
             this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "<Nhập tên trò chơi>";
+            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
+            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
             // 
             // btHuy
             // 
@@ -301,15 +313,6 @@
             this.btTaoMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btTaoMoi.UseVisualStyleBackColor = true;
             this.btTaoMoi.Click += new System.EventHandler(this.btTaoMoi_Click);
-            // 
-            // cbMaKhu
-            // 
-            this.cbMaKhu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbMaKhu.FormattingEnabled = true;
-            this.cbMaKhu.Location = new System.Drawing.Point(860, 516);
-            this.cbMaKhu.Name = "cbMaKhu";
-            this.cbMaKhu.Size = new System.Drawing.Size(296, 36);
-            this.cbMaKhu.TabIndex = 8;
             // 
             // Tro_Choi
             // 

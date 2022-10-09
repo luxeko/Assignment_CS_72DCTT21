@@ -322,6 +322,9 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(296, 34);
             this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "<Nhập tên khu>";
+            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
+            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
             // 
             // btTaoMoi
             // 
