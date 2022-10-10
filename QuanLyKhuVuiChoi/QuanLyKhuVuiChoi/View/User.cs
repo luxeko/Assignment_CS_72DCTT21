@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKhuVuiChoi.Controller.User;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace QuanLyKhuVuiChoi
 {
     public partial class User : Form
     {
+        UserController userController;
         public User()
         {
             InitializeComponent();
@@ -22,6 +24,9 @@ namespace QuanLyKhuVuiChoi
 
         }
 
-       
+       private void getUser()
+       {
+
+       }    
     }
 }

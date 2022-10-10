@@ -33,10 +33,6 @@ namespace QuanLyKhuVuiChoi.Controller.Tickets
         {
             return Tickets_Method.InsertTicKet(tk);
         }
-        public bool UpdateTickets(tbTickets tk)
-        {
-            return Tickets_Method.UpdateTickets(tk);
-        }
         public bool DeleteTickets(tbTickets tk)
         {
             return Tickets_Method.DeleteTickets(tk);
@@ -44,6 +40,10 @@ namespace QuanLyKhuVuiChoi.Controller.Tickets
         public DataTable FindTickets(string tk)
         {
             return Tickets_Method.FindTickets(tk);
+        }
+        public bool checkMave(string mv)
+        {
+            return Tickets_Method.checkMave(mv);
         }
         }
 }
