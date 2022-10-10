@@ -48,14 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgvKhuVuiChoi = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btRefesh = new FontAwesome.Sharp.IconButton();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.btTaoMoi = new FontAwesome.Sharp.IconButton();
-            this.btCapNhat = new FontAwesome.Sharp.IconButton();
-            this.btXoa = new FontAwesome.Sharp.IconButton();
-            this.btLuu = new FontAwesome.Sharp.IconButton();
-            this.btHuy = new FontAwesome.Sharp.IconButton();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +57,15 @@
             this.gioDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btRefesh = new FontAwesome.Sharp.IconButton();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btTaoMoi = new FontAwesome.Sharp.IconButton();
+            this.btCapNhat = new FontAwesome.Sharp.IconButton();
+            this.btXoa = new FontAwesome.Sharp.IconButton();
+            this.btLuu = new FontAwesome.Sharp.IconButton();
+            this.btHuy = new FontAwesome.Sharp.IconButton();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhuVuiChoi)).BeginInit();
@@ -89,6 +90,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.txtGioDongCua);
             this.groupBox1.Controls.Add(this.txtGioMoCua);
             this.groupBox1.Controls.Add(this.txtGiaTE);
@@ -306,6 +308,78 @@
             this.dtgvKhuVuiChoi.TabIndex = 2;
             this.dtgvKhuVuiChoi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvKhuVuiChoi_CellContentClick);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.MinimumWidth = 8;
+            this.id.Name = "id";
+            this.id.Width = 150;
+            // 
+            // maKhu
+            // 
+            this.maKhu.DataPropertyName = "maKhu";
+            this.maKhu.HeaderText = "Mã Khu";
+            this.maKhu.MinimumWidth = 8;
+            this.maKhu.Name = "maKhu";
+            this.maKhu.Width = 150;
+            // 
+            // tenKhu
+            // 
+            this.tenKhu.DataPropertyName = "tenKhu";
+            this.tenKhu.HeaderText = "Tên Khu";
+            this.tenKhu.MinimumWidth = 8;
+            this.tenKhu.Name = "tenKhu";
+            this.tenKhu.Width = 150;
+            // 
+            // viTri
+            // 
+            this.viTri.DataPropertyName = "viTri";
+            this.viTri.HeaderText = "Vị Trí";
+            this.viTri.MinimumWidth = 8;
+            this.viTri.Name = "viTri";
+            this.viTri.Width = 150;
+            // 
+            // dienTich
+            // 
+            this.dienTich.DataPropertyName = "dienTich";
+            this.dienTich.HeaderText = "Diện Tích";
+            this.dienTich.MinimumWidth = 8;
+            this.dienTich.Name = "dienTich";
+            this.dienTich.Width = 150;
+            // 
+            // gioMo
+            // 
+            this.gioMo.DataPropertyName = "gioMo";
+            this.gioMo.HeaderText = "Giờ Mở Cửa";
+            this.gioMo.MinimumWidth = 8;
+            this.gioMo.Name = "gioMo";
+            this.gioMo.Width = 150;
+            // 
+            // gioDong
+            // 
+            this.gioDong.DataPropertyName = "gioDong";
+            this.gioDong.HeaderText = "Giờ Đóng Cửa";
+            this.gioDong.MinimumWidth = 8;
+            this.gioDong.Name = "gioDong";
+            this.gioDong.Width = 150;
+            // 
+            // giaNL
+            // 
+            this.giaNL.DataPropertyName = "giaNL";
+            this.giaNL.HeaderText = "Giá Người Lớn";
+            this.giaNL.MinimumWidth = 8;
+            this.giaNL.Name = "giaNL";
+            this.giaNL.Width = 150;
+            // 
+            // giaTE
+            // 
+            this.giaTE.DataPropertyName = "giaTE";
+            this.giaTE.HeaderText = "Giá Trẻ Em";
+            this.giaTE.MinimumWidth = 8;
+            this.giaTE.Name = "giaTE";
+            this.giaTE.Width = 150;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -430,77 +504,14 @@
             this.btHuy.UseVisualStyleBackColor = true;
             this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
             // 
-            // id
+            // maskedTextBox1
             // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "ID";
-            this.id.MinimumWidth = 8;
-            this.id.Name = "id";
-            this.id.Width = 150;
-            // 
-            // maKhu
-            // 
-            this.maKhu.DataPropertyName = "maKhu";
-            this.maKhu.HeaderText = "Mã Khu";
-            this.maKhu.MinimumWidth = 8;
-            this.maKhu.Name = "maKhu";
-            this.maKhu.Width = 150;
-            // 
-            // tenKhu
-            // 
-            this.tenKhu.DataPropertyName = "tenKhu";
-            this.tenKhu.HeaderText = "Tên Khu";
-            this.tenKhu.MinimumWidth = 8;
-            this.tenKhu.Name = "tenKhu";
-            this.tenKhu.Width = 150;
-            // 
-            // viTri
-            // 
-            this.viTri.DataPropertyName = "viTri";
-            this.viTri.HeaderText = "Vị Trí";
-            this.viTri.MinimumWidth = 8;
-            this.viTri.Name = "viTri";
-            this.viTri.Width = 150;
-            // 
-            // dienTich
-            // 
-            this.dienTich.DataPropertyName = "dienTich";
-            this.dienTich.HeaderText = "Diện Tích";
-            this.dienTich.MinimumWidth = 8;
-            this.dienTich.Name = "dienTich";
-            this.dienTich.Width = 150;
-            // 
-            // gioMo
-            // 
-            this.gioMo.DataPropertyName = "gioMo";
-            this.gioMo.HeaderText = "Giờ Mở Cửa";
-            this.gioMo.MinimumWidth = 8;
-            this.gioMo.Name = "gioMo";
-            this.gioMo.Width = 150;
-            // 
-            // gioDong
-            // 
-            this.gioDong.DataPropertyName = "gioDong";
-            this.gioDong.HeaderText = "Giờ Đóng Cửa";
-            this.gioDong.MinimumWidth = 8;
-            this.gioDong.Name = "gioDong";
-            this.gioDong.Width = 150;
-            // 
-            // giaNL
-            // 
-            this.giaNL.DataPropertyName = "giaNL";
-            this.giaNL.HeaderText = "Giá Người Lớn";
-            this.giaNL.MinimumWidth = 8;
-            this.giaNL.Name = "giaNL";
-            this.giaNL.Width = 150;
-            // 
-            // giaTE
-            // 
-            this.giaTE.DataPropertyName = "giaTE";
-            this.giaTE.HeaderText = "Giá Trẻ Em";
-            this.giaTE.MinimumWidth = 8;
-            this.giaTE.Name = "giaTE";
-            this.giaTE.Width = 150;
+            this.maskedTextBox1.Location = new System.Drawing.Point(514, 658);
+            this.maskedTextBox1.Mask = "00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(188, 37);
+            this.maskedTextBox1.TabIndex = 9;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // Khu_Vui_Choi
             // 
@@ -565,5 +576,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gioDong;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaNL;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaTE;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
