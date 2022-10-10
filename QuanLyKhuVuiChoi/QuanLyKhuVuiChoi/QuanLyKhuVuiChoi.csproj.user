@@ -4,13 +4,23 @@
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="View\khu_vui_choi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\tro_choi.cs">
+=======
+    <Compile Update="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Tickets.cs">
+>>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\User.cs">
