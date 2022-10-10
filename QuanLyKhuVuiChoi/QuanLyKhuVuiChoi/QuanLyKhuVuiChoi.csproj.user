@@ -7,6 +7,12 @@
     <Compile Update="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\khu_vui_choi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\tro_choi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\User.cs">
       <SubType>Form</SubType>
     </Compile>
