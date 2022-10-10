@@ -42,7 +42,14 @@ namespace QuanLyKhuVuiChoi.View
             bthuy.Enabled = false;
             btluu.Enabled = false;
             btxoa.Enabled = false;
-            txmave.Enabled = false;
+            txgiave.Visible = false;
+            cbbloaikh.Visible = false;
+            cbbmakhu.Visible = false;
+            dtpngayban.Visible = false;
+            label4.Visible = false;
+            label3.Visible = false;
+            label6.Visible = false;
+            label5.Visible = false;
             cbbmakhu.DataSource = ticketsController.getMaKhu();
             cbbmakhu.DisplayMember = "maKhu";
             cbbmakhu.ValueMember = "maKhu";
@@ -61,37 +68,50 @@ namespace QuanLyKhuVuiChoi.View
             }
             */
 
-            if (string.IsNullOrEmpty(txgiave.Text))
-            {
-                MessageBox.Show("Chưa nhập giá vé.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txmave.Focus();
-                return false;
-            }
-
             if (string.IsNullOrEmpty(cbbmakhu.Text))
             {
                 MessageBox.Show("Chưa nhập mã khu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txmave.Focus();
+                cbbmakhu.Focus();
                 return false;
             }
 
             if (string.IsNullOrEmpty(cbbloaikh.Text))
             {
                 MessageBox.Show("Chưa nhập loại khách hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txmave.Focus();
+                cbbloaikh.Focus();
                 return false;
             }
             return true;
         }
-
+        string mave;
         private void bttaomoi_Click(object sender, EventArgs e)
         {
-            Random();
-            txmave.Text = Convert.ToString(value);
+            int a = 0;
+            while (a==0)
+            {
+                mave = Convert.ToString(Rd());
+                if (ticketsController.checkMave(mave) == false)
+                {
+                    a = 1;
+                    break;
+                }
+            }
+            cbbmakhu.Text = "";
+            cbbloaikh.Text = "";
+            txgiave.Clear();
             btcapnhat.Enabled = true;
             bthuy.Enabled = true;
             btluu.Enabled = true;
             btxoa.Enabled = true;
+            txgiave.ReadOnly = true;
+            txgiave.Visible = true;
+            cbbloaikh.Visible = true;
+            cbbmakhu.Visible = true;
+            dtpngayban.Visible = true;
+            label4.Visible = true;
+            label3.Visible = true;
+            label6.Visible = true;
+            label5.Visible = true;
         }
         int ID;
 
@@ -101,7 +121,6 @@ namespace QuanLyKhuVuiChoi.View
             if (index >= 0)
             {
                 ID = Convert.ToInt32(dataGridView1.Rows[index].Cells["id"].Value.ToString());
-                txmave.Text = dataGridView1.Rows[index].Cells["maVe"].Value.ToString();
                 txgiave.Text = dataGridView1.Rows[index].Cells["giaVe"].Value.ToString();
                 cbbmakhu.SelectedValue = dataGridView1.Rows[index].Cells["maKhu"].Value.ToString();
                 dtpngayban.Value = Convert.ToDateTime(dataGridView1.Rows[index].Cells["ngayBan"].Value);
@@ -111,32 +130,13 @@ namespace QuanLyKhuVuiChoi.View
                     cbbloaikh.Text = "0";
             }
         }
-        int value;
-        public int Random()
+        public int Rd()
         {
+            int value;
             Random rd = new Random();
-            value = rd.Next(1, 100);
+            value = rd.Next(100000, 999999);
             return value;
         }
-
-        private void btcapnhat_Click(object sender, EventArgs e)
-        {
-            if (CheckData())
-            {
-                tbTickets tk = new tbTickets();
-                tk.id = ID;
-                tk.maVe = "NQ"+txmave.Text;
-                tk.maKhu = cbbmakhu.SelectedValue.ToString();
-                tk.loaiKhachHang = cbbloaikh.SelectedValue.ToString() == "1" ? "NL" : "TE";
-                tk.giaVe = Convert.ToDecimal(txgiave.Text);
-                tk.ngayBan = dtpngayban.Value.Date + dtpngayban.Value.TimeOfDay;
-                if (ticketsController.UpdateTickets(tk))
-                    ShowTickets();
-                else
-                    MessageBox.Show("Cập nhật không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btxoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa vé không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -165,6 +165,7 @@ namespace QuanLyKhuVuiChoi.View
         private void btrefresh_Click(object sender, EventArgs e)
         {
             ShowTickets();
+            txtimkiem.Clear();
         }
 
         private void btluu_Click(object sender, EventArgs e)
@@ -172,7 +173,7 @@ namespace QuanLyKhuVuiChoi.View
             if (CheckData())
             {
                 tbTickets tk = new tbTickets();
-                tk.maVe = txmave.Text;
+                tk.maVe = mave;
                 tk.maKhu = cbbmakhu.SelectedValue.ToString();
                 tk.loaiKhachHang = cbbloaikh.SelectedValue.ToString() == "1" ? "NL" : "TE";
                 tk.giaVe = Convert.ToDecimal(txgiave.Text);
@@ -187,11 +188,15 @@ namespace QuanLyKhuVuiChoi.View
         private void bthuy_Click(object sender, EventArgs e)
         {
             txgiave.Clear();
-            txmave.Clear();
             txtimkiem.Clear();
             cbbloaikh.Text = "";
             cbbmakhu.Text = "";
             dtpngayban.Text = "";
+        }
+
+        private void cbbloaikh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txgiave.Text = cbbloaikh.SelectedValue.ToString() == "0" ? "50000" : "60000";
         }
     }
 }

@@ -95,6 +95,8 @@ namespace QuanLyKhuVuiChoi
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
+            User user = new User();
+            navbar(user, content);
         }
 
         private void btnKhuVuiChoi_Click(object sender, EventArgs e)
@@ -138,5 +140,11 @@ namespace QuanLyKhuVuiChoi
             leftBorderBtn.Visible = false;
         }
 
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color4);
+            Customer customer = new Customer();
+            navbar(customer, content);
+        }
     }
 }

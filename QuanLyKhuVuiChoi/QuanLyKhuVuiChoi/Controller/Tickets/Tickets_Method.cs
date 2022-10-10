@@ -34,6 +34,22 @@ namespace QuanLyKhuVuiChoi.Controller.Tickets
             return dt;
         }
         
+        public bool checkMave(string mv)
+        {
+
+            SqlConnection con = dc.getConnect();
+            SqlCommand checkMave = new SqlCommand("SELECT COUNT(maVe) FROM tblVe WHERE ([maVe] = @maVe)", con);
+            con.Open();
+            checkMave.Parameters.AddWithValue("@maVe", mv);
+            int maVeExist = (int)checkMave.ExecuteScalar();
+
+            if (maVeExist > 0)
+            {
+                return true;
+            }
+            con.Close();
+            return false;
+        }
         public DataTable getMaKhu()
         {
             string sql = "SELECT maKhu FROM tblKhuVuiChoi";
@@ -95,29 +111,6 @@ namespace QuanLyKhuVuiChoi.Controller.Tickets
             return true;
         }
         int ID;
-        public bool UpdateTickets(tbTickets tk)
-        {
-            string sql = "UPDATE  tblVe SET maVe = @maVe,maKhu = @maKhu,giaVe = @giaVe,ngayBan = @ngayBan,loaiKhachHang = @loaiKhachHang WHERE id = @id";
-            SqlConnection con = dc.getConnect();
-            try
-            {
-                cmd = new SqlCommand(sql, con);
-                con.Open();
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = tk.id;
-                cmd.Parameters.Add("@maVe", SqlDbType.NVarChar, 50).Value = tk.maVe;
-                cmd.Parameters.Add("@maKhu", SqlDbType.NVarChar, 50).Value = tk.maKhu;
-                cmd.Parameters.Add("@giaVe", SqlDbType.Decimal, 18).Value = tk.giaVe;
-                cmd.Parameters.Add("@ngayBan", SqlDbType.DateTime).Value = tk.ngayBan;
-                cmd.Parameters.Add("@loaiKhachHang", SqlDbType.NVarChar, 10).Value = tk.loaiKhachHang;
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-            return true;
-        }
         public bool DeleteTickets(tbTickets tk)
         {
             string sql = "DELETE tblVe WHERE id = @id";
@@ -138,7 +131,7 @@ namespace QuanLyKhuVuiChoi.Controller.Tickets
         }
         public DataTable FindTickets(string tk)
         {
-            string sql = "SELECT * FROM tblVe WHERE maVe LIKE '%" + tk + "%' OR maKhu LIKE '%" + tk + "%' OR ngayBan LIKE '%" + tk + "%' OR loaiKhachHang LIKE '%" + tk + "%'";
+            string sql = "SELECT * FROM tblVe WHERE maKhu LIKE '%" + tk + "%' OR ngayBan LIKE '%" + tk + "%' OR loaiKhachHang LIKE '%" + tk + "%'";
             //B2: Tạo một kết nối đến sql
             SqlConnection con = dc.getConnect();
             //B3: Khởi tạo đối tượng của lớp SqlDataAdapter

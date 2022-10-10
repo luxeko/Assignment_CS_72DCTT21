@@ -57,3 +57,4 @@ D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runt
 D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
 D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
 D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
+D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Customer.resources
