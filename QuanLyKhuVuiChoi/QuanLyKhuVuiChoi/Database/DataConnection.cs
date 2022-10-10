@@ -21,12 +21,11 @@ namespace QuanLyKhuVuiChoi.Database
 
             // connection: Dương
             //conStr = "data...."
-
         }
-
         public SqlConnection getConnect()
         {
             return new SqlConnection(conStr);
         }
+
     }
 }
