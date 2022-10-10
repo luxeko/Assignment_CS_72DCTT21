@@ -65,7 +65,6 @@
             this.btXoa = new FontAwesome.Sharp.IconButton();
             this.btLuu = new FontAwesome.Sharp.IconButton();
             this.btHuy = new FontAwesome.Sharp.IconButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhuVuiChoi)).BeginInit();
@@ -90,7 +89,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.txtGioDongCua);
             this.groupBox1.Controls.Add(this.txtGioMoCua);
             this.groupBox1.Controls.Add(this.txtGiaTE);
@@ -504,15 +502,6 @@
             this.btHuy.UseVisualStyleBackColor = true;
             this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(514, 658);
-            this.maskedTextBox1.Mask = "00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(188, 37);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
             // Khu_Vui_Choi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -576,6 +565,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gioDong;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaNL;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaTE;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
