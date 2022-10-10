@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbMaKhu = new System.Windows.Forms.ComboBox();
             this.txtViTri = new System.Windows.Forms.TextBox();
@@ -48,9 +49,16 @@
             this.btXoa = new FontAwesome.Sharp.IconButton();
             this.btCapNhat = new FontAwesome.Sharp.IconButton();
             this.btTaoMoi = new FontAwesome.Sharp.IconButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maTroChoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenTroChoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTroChoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -166,7 +174,13 @@
             // dtgvTroChoi
             // 
             this.dtgvTroChoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTroChoi.Location = new System.Drawing.Point(11, 107);
+            this.dtgvTroChoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.maTroChoi,
+            this.tenTroChoi,
+            this.maKhu,
+            this.viTri});
+            this.dtgvTroChoi.Location = new System.Drawing.Point(18, 102);
             this.dtgvTroChoi.Name = "dtgvTroChoi";
             this.dtgvTroChoi.RowHeadersWidth = 62;
             this.dtgvTroChoi.RowTemplate.Height = 33;
@@ -314,6 +328,52 @@
             this.btTaoMoi.UseVisualStyleBackColor = true;
             this.btTaoMoi.Click += new System.EventHandler(this.btTaoMoi_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // maTroChoi
+            // 
+            this.maTroChoi.DataPropertyName = "maTroChoi";
+            this.maTroChoi.HeaderText = "Mã Trò Chơi";
+            this.maTroChoi.MinimumWidth = 8;
+            this.maTroChoi.Name = "maTroChoi";
+            this.maTroChoi.ReadOnly = true;
+            this.maTroChoi.Width = 250;
+            // 
+            // tenTroChoi
+            // 
+            this.tenTroChoi.DataPropertyName = "tenTroChoi";
+            this.tenTroChoi.HeaderText = "Tên Trò Chơi";
+            this.tenTroChoi.MinimumWidth = 8;
+            this.tenTroChoi.Name = "tenTroChoi";
+            this.tenTroChoi.Width = 250;
+            // 
+            // maKhu
+            // 
+            this.maKhu.DataPropertyName = "maKhu";
+            this.maKhu.HeaderText = "Mã Khu";
+            this.maKhu.MinimumWidth = 8;
+            this.maKhu.Name = "maKhu";
+            this.maKhu.Width = 250;
+            // 
+            // viTri
+            // 
+            this.viTri.DataPropertyName = "viTri";
+            this.viTri.HeaderText = "Vị Trí";
+            this.viTri.MinimumWidth = 8;
+            this.viTri.Name = "viTri";
+            this.viTri.Width = 200;
+            // 
             // Tro_Choi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -334,6 +394,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTroChoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,5 +421,11 @@
         private FontAwesome.Sharp.IconButton btCapNhat;
         private FontAwesome.Sharp.IconButton btTaoMoi;
         private System.Windows.Forms.ComboBox cbMaKhu;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maTroChoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenTroChoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKhu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn viTri;
     }
 }

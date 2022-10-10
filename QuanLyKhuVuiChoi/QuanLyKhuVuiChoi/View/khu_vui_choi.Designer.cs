@@ -56,6 +56,15 @@
             this.btXoa = new FontAwesome.Sharp.IconButton();
             this.btLuu = new FontAwesome.Sharp.IconButton();
             this.btHuy = new FontAwesome.Sharp.IconButton();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dienTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioMo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhuVuiChoi)).BeginInit();
@@ -279,6 +288,16 @@
             // dtgvKhuVuiChoi
             // 
             this.dtgvKhuVuiChoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvKhuVuiChoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.maKhu,
+            this.tenKhu,
+            this.viTri,
+            this.dienTich,
+            this.gioMo,
+            this.gioDong,
+            this.giaNL,
+            this.giaTE});
             this.dtgvKhuVuiChoi.Location = new System.Drawing.Point(24, 113);
             this.dtgvKhuVuiChoi.Name = "dtgvKhuVuiChoi";
             this.dtgvKhuVuiChoi.RowHeadersWidth = 62;
@@ -411,6 +430,78 @@
             this.btHuy.UseVisualStyleBackColor = true;
             this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.MinimumWidth = 8;
+            this.id.Name = "id";
+            this.id.Width = 150;
+            // 
+            // maKhu
+            // 
+            this.maKhu.DataPropertyName = "maKhu";
+            this.maKhu.HeaderText = "Mã Khu";
+            this.maKhu.MinimumWidth = 8;
+            this.maKhu.Name = "maKhu";
+            this.maKhu.Width = 150;
+            // 
+            // tenKhu
+            // 
+            this.tenKhu.DataPropertyName = "tenKhu";
+            this.tenKhu.HeaderText = "Tên Khu";
+            this.tenKhu.MinimumWidth = 8;
+            this.tenKhu.Name = "tenKhu";
+            this.tenKhu.Width = 150;
+            // 
+            // viTri
+            // 
+            this.viTri.DataPropertyName = "viTri";
+            this.viTri.HeaderText = "Vị Trí";
+            this.viTri.MinimumWidth = 8;
+            this.viTri.Name = "viTri";
+            this.viTri.Width = 150;
+            // 
+            // dienTich
+            // 
+            this.dienTich.DataPropertyName = "dienTich";
+            this.dienTich.HeaderText = "Diện Tích";
+            this.dienTich.MinimumWidth = 8;
+            this.dienTich.Name = "dienTich";
+            this.dienTich.Width = 150;
+            // 
+            // gioMo
+            // 
+            this.gioMo.DataPropertyName = "gioMo";
+            this.gioMo.HeaderText = "Giờ Mở Cửa";
+            this.gioMo.MinimumWidth = 8;
+            this.gioMo.Name = "gioMo";
+            this.gioMo.Width = 150;
+            // 
+            // gioDong
+            // 
+            this.gioDong.DataPropertyName = "gioDong";
+            this.gioDong.HeaderText = "Giờ Đóng Cửa";
+            this.gioDong.MinimumWidth = 8;
+            this.gioDong.Name = "gioDong";
+            this.gioDong.Width = 150;
+            // 
+            // giaNL
+            // 
+            this.giaNL.DataPropertyName = "giaNL";
+            this.giaNL.HeaderText = "Giá Người Lớn";
+            this.giaNL.MinimumWidth = 8;
+            this.giaNL.Name = "giaNL";
+            this.giaNL.Width = 150;
+            // 
+            // giaTE
+            // 
+            this.giaTE.DataPropertyName = "giaTE";
+            this.giaTE.HeaderText = "Giá Trẻ Em";
+            this.giaTE.MinimumWidth = 8;
+            this.giaTE.Name = "giaTE";
+            this.giaTE.Width = 150;
+            // 
             // Khu_Vui_Choi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -465,5 +556,14 @@
         private System.Windows.Forms.TextBox txtGioDongCua;
         private System.Windows.Forms.TextBox txtGioMoCua;
         private System.Windows.Forms.DataGridView dtgvKhuVuiChoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKhu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn viTri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dienTich;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioMo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaNL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaTE;
     }
 }

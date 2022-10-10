@@ -123,6 +123,8 @@ namespace QuanLyKhuVuiChoi.Controller.Khu_Vui_Choi
             con.Close();
             return tb;
         }
+
+
     }
 }
        

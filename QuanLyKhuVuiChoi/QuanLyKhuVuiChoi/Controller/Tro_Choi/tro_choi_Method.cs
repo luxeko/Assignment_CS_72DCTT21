@@ -120,6 +120,7 @@ namespace QuanLyKhuVuiChoi.Controller.Tro_Choi
             con.Close();
             return tb;
         }
+        
     }
    
 }
