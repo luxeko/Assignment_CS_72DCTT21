@@ -26,6 +26,6 @@ namespace QuanLyKhuVuiChoi.Database
         {
             return new SqlConnection(conStr);
         }
-
+        
     }
 }
