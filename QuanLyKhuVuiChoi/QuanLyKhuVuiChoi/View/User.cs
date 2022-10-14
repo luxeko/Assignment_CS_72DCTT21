@@ -17,16 +17,18 @@ namespace QuanLyKhuVuiChoi
         public User()
         {
             InitializeComponent();
+            userController = new UserController();
         }
 
         private void User_Load(object sender, EventArgs e)
         {
-
+            getUser();
         }
 
        private void getUser()
        {
-
-       }    
+            DataTable dt = userController.getUser();
+            dataGridView1.DataSource = dt;
+        }    
     }
 }
