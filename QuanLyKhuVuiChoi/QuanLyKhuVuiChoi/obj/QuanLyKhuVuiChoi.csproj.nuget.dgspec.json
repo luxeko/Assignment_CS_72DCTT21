@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj": {}
+    "C:\\Users\\Admin\\Documents\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj": {
+    "C:\\Users\\Admin\\Documents\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
         "projectName": "QuanLyKhuVuiChoi",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,6 +16,7 @@ namespace btl2
     public partial class NhanVien : Form
     {
         NhanVienController controller = new NhanVienController();
+        string urlAnh = "";
         public NhanVien()
         {
             InitializeComponent();
@@ -73,113 +74,29 @@ namespace btl2
 
         }
 
+        public void setImageError()
+        {
+            iconMaNV.Visible = false;
+            iconHoten.Visible = false;
+            iconMakhu.Visible = false;
+            iconChucvu.Visible = false;
+            iconSDT.Visible = false;
+            iconDC.Visible = false;
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if(TxtMaNV.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã nhân viên");
-            }
-            else if(TxtHoTen.Text == "")
-            {
-                MessageBox.Show("Chưa nhập họ tên");
-            }
-            else if (TxtMaKhu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã khu");
-            }
-            else if (TxtChucVu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập chức vụ");
-            }
-            else if (TxtDC.Text == "")
-            {
-                MessageBox.Show("Chưa nhập địa chỉ");
-            }
-            else if (TxtSDT.Text == "")
-            {
-                MessageBox.Show("Chưa nhập số điện thoại");
-            }
-            else
-            {
-                tbl_nhanvien nhanvien = new tbl_nhanvien();
-                nhanvien.id = 0;
-                nhanvien.anhNV = "";
-                nhanvien.maNV = TxtMaNV.Text;
-                nhanvien.hoTen = TxtHoTen.Text;
-                nhanvien.maKhu = TxtMaKhu.Text;
-                nhanvien.ngaySinh = Ngay_Sinh.Text;
-                nhanvien.soDT = TxtSDT.Text;
-                nhanvien.diaChi = TxtDC.Text;
-                if (CbGioiTinh.Text.Equals("Nữ"))
-                {
-                    nhanvien.gioiTinh = 1;
-                }
-                else
-                {
-                    nhanvien.gioiTinh = 0;
-                }
-                nhanvien.chucVu = TxtChucVu.Text;
-                nhanvien.Luong = 0;
-                controller.Them_moi_NV(nhanvien);
-                NhanVien_Load(sender, e);
-            }
+            
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (TxtMaNV.Text == "")
-            {
-                MessageBox.Show("Chưa chọn nhân viên cần sửa");
-            }
-            else if (TxtHoTen.Text == "")
-            {
-                MessageBox.Show("Chưa nhập họ tên");
-            }
-            else if (TxtMaKhu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã khu");
-            }
-            else if (TxtChucVu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập chức vụ");
-            }
-            else if (TxtDC.Text == "")
-            {
-                MessageBox.Show("Chưa nhập địa chỉ");
-            }
-            else if (TxtSDT.Text == "")
-            {
-                MessageBox.Show("Chưa nhập số điện thoại");
-            }
-            else
-            {
-
-                tbl_nhanvien nhanvien = new tbl_nhanvien();
-                nhanvien.id = 0;
-                nhanvien.anhNV = "";
-                nhanvien.maNV = TxtMaNV.Text;
-                nhanvien.hoTen = TxtHoTen.Text;
-                nhanvien.maKhu = TxtMaKhu.Text;
-                nhanvien.ngaySinh = Ngay_Sinh.Text;
-                nhanvien.soDT = TxtSDT.Text;
-                nhanvien.diaChi = TxtDC.Text;
-                if (CbGioiTinh.Text.Equals("Nữ"))
-                {
-                    nhanvien.gioiTinh = 1;
-                }
-                else
-                {
-                    nhanvien.gioiTinh = 0;
-                }
-                nhanvien.chucVu = TxtChucVu.Text;
-                nhanvien.Luong = 0;
-                controller.Sua_NV(nhanvien);
-                NhanVien_Load(sender, e);
-            }
+            
         }
 
         private void NhanVien_Load(object sender, EventArgs e)
         {
+            setImageError();
             DataTable data = new DataTable();
             data = controller.DanhSachNV();
             if(data.Rows.Count == 0)
@@ -193,33 +110,17 @@ namespace btl2
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (TxtMaNV.Text == "")
-            {
-                MessageBox.Show("Chưa chọn nhân viên cần xóa");
-            }
-            else
-            {
-                controller.Xoa_NV(TxtMaNV.Text);
-                NhanVien_Load(sender, e);
-            }
+            
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            if(TxtTimKiem.Text == "")
-            {
-                MessageBox.Show("Nhập tên nhân viên để tìm kiếm");
-            }
-            else
-            {
-                controller.Tim_Kiem_NV(TxtTimKiem.Text);
-                NhanVien_Load(sender, e);
-            }
+            
         }
 
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
-            NhanVien_Load(sender, e);
+            
         }
 
         private void pictureAnh_Click(object sender, EventArgs e)
@@ -229,6 +130,7 @@ namespace btl2
             if (open.ShowDialog() == DialogResult.OK)
             {
                 pictureAnh.Image = new Bitmap(open.FileName);
+                urlAnh = open.FileName;
             }
         }
 
@@ -238,6 +140,7 @@ namespace btl2
             TxtHoTen.Text = NVdataGrid.CurrentRow.Cells[2].Value.ToString();
             if(NVdataGrid.CurrentRow.Cells[3].Value.ToString() != "")
             {
+                urlAnh = NVdataGrid.CurrentRow.Cells[3].Value.ToString();
                 pictureAnh.Image = new Bitmap(NVdataGrid.CurrentRow.Cells[3].Value.ToString());
             }
             Ngay_Sinh.Text = NVdataGrid.CurrentRow.Cells[4].Value.ToString();
@@ -257,6 +160,176 @@ namespace btl2
             TxtMaNV.Text = "";
             TxtSDT.Text = "";
             CbGioiTinh.Text = "";
+            pictureAnh.Image = null;
+        }
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+            if (TxtTimKiem.Text == "")
+            {
+                MessageBox.Show("Nhập tên nhân viên để tìm kiếm");
+            }
+            else
+            {
+                controller.Tim_Kiem_NV(TxtTimKiem.Text);
+                NhanVien_Load(sender, e);
+            }
+        }
+
+        private void btTaiLai_Click(object sender, EventArgs e)
+        {
+            NhanVien_Load(sender, e);
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            if (TxtMaNV.Text == "")
+            {
+                MessageBox.Show("Chưa nhập mã nhân viên");
+                iconMaNV.Visible = true;
+            }
+            else if (TxtHoTen.Text == "")
+            {
+                MessageBox.Show("Chưa nhập họ tên");
+                iconHoten.Visible = true;
+            }
+            else if (TxtMaKhu.Text == "")
+            {
+                MessageBox.Show("Chưa nhập mã khu");
+                iconMakhu.Visible = true;
+            }
+            else if (TxtChucVu.Text == "")
+            {
+                MessageBox.Show("Chưa nhập chức vụ");
+                iconChucvu.Visible = true;
+            }
+            else if (TxtDC.Text == "")
+            {
+                MessageBox.Show("Chưa nhập địa chỉ");
+                iconDC.Visible = true;
+            }
+            else if (TxtSDT.Text == "")
+            {
+                MessageBox.Show("Chưa nhập số điện thoại");
+                iconSDT.Visible = true;
+            }
+            else
+            {
+                setImageError();
+                tbl_nhanvien nhanvien = new tbl_nhanvien();
+                nhanvien.id = 0;
+                if (urlAnh != "")
+                {
+                    nhanvien.anhNV = urlAnh;
+                }
+                else
+                {
+                    nhanvien.anhNV = "";
+                }
+                nhanvien.maNV = TxtMaNV.Text;
+                nhanvien.hoTen = TxtHoTen.Text;
+                nhanvien.maKhu = TxtMaKhu.Text;
+                nhanvien.ngaySinh = Ngay_Sinh.Text;
+                nhanvien.soDT = TxtSDT.Text;
+                nhanvien.diaChi = TxtDC.Text;
+                if (CbGioiTinh.Text.Equals("Nữ"))
+                {
+                    nhanvien.gioiTinh = 1;
+                }
+                else
+                {
+                    nhanvien.gioiTinh = 0;
+                }
+                nhanvien.chucVu = TxtChucVu.Text;
+                nhanvien.Luong = 0;
+                controller.Them_moi_NV(nhanvien);
+                NhanVien_Load(sender, e);
+                clearText();
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            if (TxtMaNV.Text == "")
+            {
+                MessageBox.Show("Chưa chọn nhân viên cần sửa");
+                iconMaNV.Visible = true;
+            }
+            else if (TxtHoTen.Text == "")
+            {
+                MessageBox.Show("Chưa nhập họ tên");
+                iconHoten.Visible = true;
+            }
+            else if (TxtMaKhu.Text == "")
+            {
+                MessageBox.Show("Chưa nhập mã khu");
+                iconMakhu.Visible = true;
+            }
+            else if (TxtChucVu.Text == "")
+            {
+                MessageBox.Show("Chưa nhập chức vụ");
+                iconChucvu.Visible = true;
+            }
+            else if (TxtDC.Text == "")
+            {
+                MessageBox.Show("Chưa nhập địa chỉ");
+                iconDC.Visible = true;
+            }
+            else if (TxtSDT.Text == "")
+            {
+                MessageBox.Show("Chưa nhập số điện thoại");
+                iconSDT.Visible = true;
+            }
+            else
+            {
+                setImageError();
+                tbl_nhanvien nhanvien = new tbl_nhanvien();
+                nhanvien.id = 0;
+                if (urlAnh != "")
+                {
+                    nhanvien.anhNV = urlAnh;
+                }
+                else
+                {
+                    nhanvien.anhNV = "";
+                }
+                nhanvien.maNV = TxtMaNV.Text;
+                nhanvien.hoTen = TxtHoTen.Text;
+                nhanvien.maKhu = TxtMaKhu.Text;
+                nhanvien.ngaySinh = Ngay_Sinh.Text;
+                nhanvien.soDT = TxtSDT.Text;
+                nhanvien.diaChi = TxtDC.Text;
+                if (CbGioiTinh.Text.Equals("Nữ"))
+                {
+                    nhanvien.gioiTinh = 1;
+                }
+                else
+                {
+                    nhanvien.gioiTinh = 0;
+                }
+                nhanvien.chucVu = TxtChucVu.Text;
+                nhanvien.Luong = 0;
+                controller.Sua_NV(nhanvien);
+                NhanVien_Load(sender, e);
+                clearText();
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            if (TxtMaNV.Text == "")
+            {
+                MessageBox.Show("Chưa chọn nhân viên cần xóa");
+            }
+            else
+            {
+                if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    controller.Xoa_NV(TxtMaNV.Text);
+                    NhanVien_Load(sender, e);
+                    clearText();
+                }
+            }
         }
     }
 }
