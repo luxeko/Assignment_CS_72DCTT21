@@ -42,6 +42,9 @@ namespace QuanLyKhuVuiChoi.Controller.Tro_Choi
             con.Open();
             DataTable tb = new DataTable();
             da.Fill(tb);
+            DataRow r = tb.NewRow();
+            r["makhu"] = "--- Vui lòng chọn mã khu ---";
+            tb.Rows.InsertAt(r, 0);
             con.Close();
             return tb;
         }

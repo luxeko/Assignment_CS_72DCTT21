@@ -102,14 +102,14 @@ namespace QuanLyKhuVuiChoi
         private void btnKhuVuiChoi_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color4);
-            Khu_Vui_Choi KhuVuiChoi = new Khu_Vui_Choi();
+            khu_vui_choi KhuVuiChoi = new khu_vui_choi();
             navbar(KhuVuiChoi, content);
         }
 
         private void btnTroChoi_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color5);
-            Tro_Choi TroChoi = new Tro_Choi();
+            tro_choi TroChoi = new tro_choi();
             navbar(TroChoi, content);
         }
 

@@ -14,13 +14,12 @@ namespace QuanLyKhuVuiChoi.Database
         public DataConnection()
         {
             //conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";
-<<<<<<< HEAD
+
             //connection: Giao
             conStr = "Data Source=GLAPTOPO\\SQLEXPRESS;Initial Catalog=BT_Big;Integrated Security=True";
-        }
-=======
-            conStr = "Data Source=DESKTOP-KFGVGP3\\SQLEXPRESS;Initial Catalog=QLKhuTroChoi;Integrated Security=True";
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+
+            //connection: Hiền
+           // conStr = "Data Source=DESKTOP-KFGVGP3\\SQLEXPRESS;Initial Catalog=QLKhuTroChoi;Integrated Security=True";
 
             // connection: Đức Anh
             // conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";
