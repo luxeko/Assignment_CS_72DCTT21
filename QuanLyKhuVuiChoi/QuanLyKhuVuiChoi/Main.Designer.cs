@@ -23,6 +23,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new FontAwesome.Sharp.IconButton();
             this.btnGiamGia = new FontAwesome.Sharp.IconButton();
             this.btnVaiTro = new FontAwesome.Sharp.IconButton();
             this.btnVe = new FontAwesome.Sharp.IconButton();
@@ -40,7 +41,6 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.content = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnKhachHang = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,14 +63,30 @@
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(275, 978);
+            this.panelMenu.Size = new System.Drawing.Size(220, 803);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.FlatAppearance.BorderSize = 0;
+            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachHang.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.LocationArrow;
+            this.btnKhachHang.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnKhachHang.IconSize = 32;
+            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 568);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(220, 50);
+            this.btnKhachHang.TabIndex = 11;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnGiamGia
             // 
@@ -83,14 +99,9 @@
             this.btnGiamGia.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGiamGia.IconSize = 32;
             this.btnGiamGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGiamGia.Location = new System.Drawing.Point(0, 644);
-<<<<<<< HEAD
-            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnGiamGia.Location = new System.Drawing.Point(0, 518);
             this.btnGiamGia.Name = "btnGiamGia";
-            this.btnGiamGia.Size = new System.Drawing.Size(275, 62);
+            this.btnGiamGia.Size = new System.Drawing.Size(220, 50);
             this.btnGiamGia.TabIndex = 10;
             this.btnGiamGia.Text = "Giảm giá";
             this.btnGiamGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,14 +120,9 @@
             this.btnVaiTro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVaiTro.IconSize = 32;
             this.btnVaiTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVaiTro.Location = new System.Drawing.Point(0, 582);
-<<<<<<< HEAD
-            this.btnVaiTro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnVaiTro.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnVaiTro.Location = new System.Drawing.Point(0, 468);
             this.btnVaiTro.Name = "btnVaiTro";
-            this.btnVaiTro.Size = new System.Drawing.Size(275, 62);
+            this.btnVaiTro.Size = new System.Drawing.Size(220, 50);
             this.btnVaiTro.TabIndex = 9;
             this.btnVaiTro.Text = "Vai trò";
             this.btnVaiTro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,14 +141,9 @@
             this.btnVe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVe.IconSize = 32;
             this.btnVe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVe.Location = new System.Drawing.Point(0, 520);
-<<<<<<< HEAD
-            this.btnVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnVe.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnVe.Location = new System.Drawing.Point(0, 418);
             this.btnVe.Name = "btnVe";
-            this.btnVe.Size = new System.Drawing.Size(275, 62);
+            this.btnVe.Size = new System.Drawing.Size(220, 50);
             this.btnVe.TabIndex = 8;
             this.btnVe.Text = "Vé ";
             this.btnVe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,14 +162,9 @@
             this.btnDichVu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDichVu.IconSize = 32;
             this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(0, 458);
-<<<<<<< HEAD
-            this.btnDichVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnDichVu.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnDichVu.Location = new System.Drawing.Point(0, 368);
             this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Size = new System.Drawing.Size(275, 62);
+            this.btnDichVu.Size = new System.Drawing.Size(220, 50);
             this.btnDichVu.TabIndex = 7;
             this.btnDichVu.Text = "Dịch vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -187,14 +183,9 @@
             this.btnTroChoi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTroChoi.IconSize = 32;
             this.btnTroChoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroChoi.Location = new System.Drawing.Point(0, 396);
-<<<<<<< HEAD
-            this.btnTroChoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnTroChoi.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnTroChoi.Location = new System.Drawing.Point(0, 318);
             this.btnTroChoi.Name = "btnTroChoi";
-            this.btnTroChoi.Size = new System.Drawing.Size(275, 62);
+            this.btnTroChoi.Size = new System.Drawing.Size(220, 50);
             this.btnTroChoi.TabIndex = 6;
             this.btnTroChoi.Text = "Trò chơi";
             this.btnTroChoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -213,14 +204,9 @@
             this.btnKhuVuiChoi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKhuVuiChoi.IconSize = 32;
             this.btnKhuVuiChoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhuVuiChoi.Location = new System.Drawing.Point(0, 334);
-<<<<<<< HEAD
-            this.btnKhuVuiChoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnKhuVuiChoi.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnKhuVuiChoi.Location = new System.Drawing.Point(0, 268);
             this.btnKhuVuiChoi.Name = "btnKhuVuiChoi";
-            this.btnKhuVuiChoi.Size = new System.Drawing.Size(275, 62);
+            this.btnKhuVuiChoi.Size = new System.Drawing.Size(220, 50);
             this.btnKhuVuiChoi.TabIndex = 5;
             this.btnKhuVuiChoi.Text = "Khu vui chơi";
             this.btnKhuVuiChoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,14 +225,9 @@
             this.btnNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhanVien.IconSize = 32;
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(0, 272);
-<<<<<<< HEAD
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnNhanVien.Location = new System.Drawing.Point(0, 218);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(275, 62);
+            this.btnNhanVien.Size = new System.Drawing.Size(220, 50);
             this.btnNhanVien.TabIndex = 4;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,14 +246,9 @@
             this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUser.IconSize = 32;
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(0, 210);
-<<<<<<< HEAD
-            this.btnUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnUser.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnUser.Location = new System.Drawing.Point(0, 168);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(275, 62);
+            this.btnUser.Size = new System.Drawing.Size(220, 50);
             this.btnUser.TabIndex = 3;
             this.btnUser.Text = "Người dùng";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,14 +267,9 @@
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 32;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 148);
-<<<<<<< HEAD
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.btnDashboard.Location = new System.Drawing.Point(0, 118);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(275, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(220, 50);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -311,13 +282,8 @@
             this.panel3.Controls.Add(this.logoBtn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(275, 148);
+            this.panel3.Size = new System.Drawing.Size(220, 118);
             this.panel3.TabIndex = 1;
             // 
             // logoBtn
@@ -331,13 +297,8 @@
             this.logoBtn.IconColor = System.Drawing.Color.Black;
             this.logoBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.logoBtn.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-            this.logoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.logoBtn.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             this.logoBtn.Name = "logoBtn";
-            this.logoBtn.Size = new System.Drawing.Size(275, 148);
+            this.logoBtn.Size = new System.Drawing.Size(220, 118);
             this.logoBtn.TabIndex = 0;
             this.logoBtn.Text = "LOGO";
             this.logoBtn.UseVisualStyleBackColor = true;
@@ -352,13 +313,8 @@
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(270, 81);
+            this.iconButton1.Size = new System.Drawing.Size(216, 65);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.Text = "User";
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -370,14 +326,9 @@
             this.panel2.Controls.Add(this.iconButton2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panel2.Location = new System.Drawing.Point(275, 0);
-<<<<<<< HEAD
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1327, 109);
+            this.panel2.Size = new System.Drawing.Size(1192, 87);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -385,10 +336,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(1188, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(950, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 30);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đức Anh";
             // 
@@ -397,14 +347,9 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(1110, 15);
-<<<<<<< HEAD
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.iconButton2.Location = new System.Drawing.Point(888, 12);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(70, 70);
+            this.iconButton2.Size = new System.Drawing.Size(56, 56);
             this.iconButton2.TabIndex = 0;
             this.iconButton2.Text = "iconButton2";
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -413,14 +358,9 @@
             // 
             this.content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.content.Location = new System.Drawing.Point(275, 109);
-<<<<<<< HEAD
-            this.content.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.content.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+            this.content.Location = new System.Drawing.Point(220, 87);
             this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(1327, 869);
+            this.content.Size = new System.Drawing.Size(1192, 716);
             this.content.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -428,45 +368,15 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-<<<<<<< HEAD
-=======
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhachHang.FlatAppearance.BorderSize = 0;
-            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachHang.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.LocationArrow;
-            this.btnKhachHang.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnKhachHang.IconSize = 32;
-            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 706);
-            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(275, 62);
-            this.btnKhachHang.TabIndex = 11;
-            this.btnKhachHang.Text = "Khách hàng";
-            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKhachHang.UseVisualStyleBackColor = true;
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1602, 978);
+            this.ClientSize = new System.Drawing.Size(1412, 803);
             this.Controls.Add(this.content);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
-<<<<<<< HEAD
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
             this.Name = "Main";
             this.Text = "Main";
             this.panelMenu.ResumeLayout(false);

@@ -30,10 +30,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -89,10 +93,14 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -112,10 +120,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -127,10 +139,14 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -485,45 +501,26 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Giao_o\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Sinh Viên\\Code\\BT_Large\\luxeko\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
       "projectName": "QuanLyKhuVuiChoi",
-      "projectPath": "D:\\Sinh Viên\\Code\\BT_Large\\luxeko\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
-      "packagesPath": "C:\\Users\\Giao_o\\.nuget\\packages\\",
-      "outputPath": "D:\\Sinh Viên\\Code\\BT_Large\\luxeko\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
-=======
-      "projectUniqueName": "D:\\language\\BT_L\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
-      "projectName": "QuanLyKhuVuiChoi",
-      "projectPath": "D:\\language\\BT_L\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\language\\BT_L\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+      "projectPath": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Downloads\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\Giao_o\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net5.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -557,7 +554,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -569,11 +567,7 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
