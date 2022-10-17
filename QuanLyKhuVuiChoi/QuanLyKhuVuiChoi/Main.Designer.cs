@@ -19,17 +19,11 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new FontAwesome.Sharp.IconButton();
             this.btnGiamGia = new FontAwesome.Sharp.IconButton();
             this.btnVaiTro = new FontAwesome.Sharp.IconButton();
             this.btnVe = new FontAwesome.Sharp.IconButton();
@@ -43,9 +37,9 @@
             this.logoBtn = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.content = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -55,6 +49,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnKhachHang);
             this.panelMenu.Controls.Add(this.btnGiamGia);
             this.panelMenu.Controls.Add(this.btnVaiTro);
             this.panelMenu.Controls.Add(this.btnVe);
@@ -71,6 +66,27 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 782);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.FlatAppearance.BorderSize = 0;
+            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachHang.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.btnKhachHang.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnKhachHang.IconSize = 32;
+            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 568);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(220, 50);
+            this.btnKhachHang.TabIndex = 11;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnGiamGia
             // 
@@ -225,7 +241,7 @@
             this.btnUser.FlatAppearance.BorderSize = 0;
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnUser.IconColor = System.Drawing.Color.Gainsboro;
             this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUser.IconSize = 32;
@@ -315,16 +331,30 @@
             this.panel2.Size = new System.Drawing.Size(1062, 87);
             this.panel2.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(808, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Đức Anh";
+            // 
             // iconButton2
             // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromFile;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(888, 12);
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.Location = new System.Drawing.Point(903, 12);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(56, 56);
+            this.iconButton2.Size = new System.Drawing.Size(147, 56);
             this.iconButton2.TabIndex = 0;
-            this.iconButton2.Text = "iconButton2";
+            this.iconButton2.Text = "Đăng xuất";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // content
@@ -336,22 +366,11 @@
             this.content.Size = new System.Drawing.Size(1062, 695);
             this.content.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(950, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Đức Anh";
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 32);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Main
             // 
@@ -362,7 +381,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.Name = "Main";
-            this.Text = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản lý khu vui chơi";
             this.panelMenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -371,7 +391,6 @@
 
         }
 
-        #endregion
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel3;
@@ -391,5 +410,6 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private FontAwesome.Sharp.IconButton btnKhachHang;
     }
 }

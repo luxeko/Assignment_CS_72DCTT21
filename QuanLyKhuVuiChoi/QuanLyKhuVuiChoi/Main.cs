@@ -24,6 +24,7 @@ namespace QuanLyKhuVuiChoi
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             panelMenu.Controls.Add(leftBorderBtn);
+
         }
 
         private void navbar(Form form, Panel panel)
@@ -101,11 +102,15 @@ namespace QuanLyKhuVuiChoi
         private void btnKhuVuiChoi_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color4);
+            Khu_Vui_Choi KhuVuiChoi = new Khu_Vui_Choi();
+            navbar(KhuVuiChoi, content);
         }
 
         private void btnTroChoi_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color5);
+            Tro_Choi TroChoi = new Tro_Choi();
+            navbar(TroChoi, content);
         }
 
         private void btnDichVu_Click(object sender, EventArgs e)
@@ -116,6 +121,8 @@ namespace QuanLyKhuVuiChoi
         private void btnVe_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color1);
+            Tickets tickets = new Tickets();
+            navbar(tickets, content);
         }
 
         private void btnVaiTro_Click(object sender, EventArgs e)
@@ -137,5 +144,11 @@ namespace QuanLyKhuVuiChoi
             leftBorderBtn.Visible = false;
         }
 
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color4);
+            Customer customer = new Customer();
+            navbar(customer, content);
+        }
     }
 }

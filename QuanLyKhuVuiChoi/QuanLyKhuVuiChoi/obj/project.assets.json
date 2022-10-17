@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "DG.AdvancedDataGridView/1.2.27314.8": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/AdvancedDataGridView.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/AdvancedDataGridView.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "FontAwesome.Sharp/6.1.1": {
         "type": "package",
         "compile": {
@@ -85,7 +97,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -162,6 +174,21 @@
     }
   },
   "libraries": {
+    "DG.AdvancedDataGridView/1.2.27314.8": {
+      "sha512": "OZ177+/7wVcQI4wf6xT2KsRiDt8v6yc+mJbEz1ZeI+nw+IZSRToGumfpdwtAKiuPyLs4ArY3G3dbWbtkGl5Zbw==",
+      "type": "package",
+      "path": "dg.advanceddatagridview/1.2.27314.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AdvancedDataGridView_logo.png",
+        "LICENSE",
+        "dg.advanceddatagridview.1.2.27314.8.nupkg.sha512",
+        "dg.advanceddatagridview.nuspec",
+        "lib/net40/AdvancedDataGridView.dll",
+        "lib/net5.0-windows7.0/AdvancedDataGridView.dll"
+      ]
+    },
     "FontAwesome.Sharp/6.1.1": {
       "sha512": "p6dnSMcKQg790vGSJgvFk6S8gXQnEcCugfaJ21WFxZz9h+9KyxL+sX6kbGv8p4iVoX/e5BAMnTV4QJFJvx8QxQ==",
       "type": "package",
@@ -307,10 +334,10 @@
         "version.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.3": {
-      "sha512": "yERfVLXAY0QbylAgaGLByYN0hFxX28aeEQ0hUgJO+Ntn1AfmWl5HHUoYJA0Yl9HhIUUJHVaS/Sw/RLZr5aaC+A==",
+    "System.Data.SqlClient/4.8.4": {
+      "sha512": "45YflfcVXAu+Tnf0WnZzQIp9iGm+XvSvh8OosYHqax/nW3gV28NBSRvHFZ/IsuwV4JIypYCKBEOVzW+RB5+zgQ==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.3",
+      "path": "system.data.sqlclient/4.8.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -387,7 +414,7 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.3.nupkg.sha512",
+        "system.data.sqlclient.4.8.4.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -496,8 +523,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "DG.AdvancedDataGridView >= 1.2.27314.8",
       "FontAwesome.Sharp >= 6.1.1",
-      "System.Data.SqlClient >= 4.8.3"
+      "System.Data.SqlClient >= 4.8.4"
     ]
   },
   "packageFolders": {
@@ -544,13 +572,17 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "DG.AdvancedDataGridView": {
+            "target": "Package",
+            "version": "[1.2.27314.8, )"
+          },
           "FontAwesome.Sharp": {
             "target": "Package",
             "version": "[6.1.1, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
-            "version": "[4.8.3, )"
+            "version": "[4.8.4, )"
           }
         },
         "imports": [
