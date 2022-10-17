@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace QuanLyKhuVuiChoi.Model.Customers
     {
         public int id { get; set; }
         public string maKH { get; set; }
+        public string sdt { get; set; }
         public string hoTen { get; set; }
         public string ngaySinh { get; set; }
         public string diaChi { get; set; }
