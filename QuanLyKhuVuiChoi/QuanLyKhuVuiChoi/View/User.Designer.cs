@@ -122,6 +122,10 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản lý user";
+<<<<<<< HEAD
+=======
+            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+>>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
             // 
             // label13
             // 
