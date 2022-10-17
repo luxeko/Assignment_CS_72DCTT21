@@ -1,10 +1,10 @@
-﻿using QuanLyKhuVuiChoi.Model.Dich_Vu;
-using System;
+﻿using System;
 using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuanLyKhuVuiChoi.Model.Dich_Vu;
 namespace QuanLyKhuVuiChoi.Controller.Dich_vu
 {
     internal class dich_vu_Controller

@@ -274,7 +274,7 @@
             this.btnTaoMoi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTaoMoi.IconSize = 25;
             this.btnTaoMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoMoi.Location = new System.Drawing.Point(35, 599);
+            this.btnTaoMoi.Location = new System.Drawing.Point(33, 612);
             this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(111, 30);
@@ -292,7 +292,7 @@
             this.btnCapNhat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCapNhat.IconSize = 25;
             this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(162, 600);
+            this.btnCapNhat.Location = new System.Drawing.Point(162, 613);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(108, 29);
@@ -310,7 +310,7 @@
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 25;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(291, 600);
+            this.btnXoa.Location = new System.Drawing.Point(291, 613);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(108, 29);
@@ -328,7 +328,7 @@
             this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLuu.IconSize = 25;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(657, 599);
+            this.btnLuu.Location = new System.Drawing.Point(657, 612);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(108, 29);
@@ -346,7 +346,7 @@
             this.btnHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHuy.IconSize = 25;
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(785, 599);
+            this.btnHuy.Location = new System.Drawing.Point(785, 612);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(109, 29);

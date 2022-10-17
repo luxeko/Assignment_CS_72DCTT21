@@ -1,7 +1,4 @@
-﻿using QuanLyKhuVuiChoi.Database;
-using QuanLyKhuVuiChoi.Model.Dich_Vu;
-using QuanLyKhuVuiChoi.View;
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections.Generic;
@@ -9,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyKhuVuiChoi.Database;
+using QuanLyKhuVuiChoi.Model.Dich_Vu;
+using QuanLyKhuVuiChoi.View;
 
 namespace QuanLyKhuVuiChoi.Controller.Dich_vu
 {
@@ -51,8 +51,8 @@ namespace QuanLyKhuVuiChoi.Controller.Dich_vu
             {
                 cmd = new SqlCommand(sql, con);
                 con.Open();
-                cmd.Parameters.Add("@tenDichVu", SqlDbType.NVarChar, 50).Value = dv.tenDichVu;
                 cmd.Parameters.Add("@maDichVu", SqlDbType.NVarChar, 100).Value = dv.maDichVu;
+                cmd.Parameters.Add("@tenDichVu", SqlDbType.NVarChar, 50).Value = dv.tenDichVu;
                 cmd.Parameters.Add("@giaDichVu", SqlDbType.NVarChar, 100).Value = dv.giaDichVu;
                 cmd.Parameters.Add("@maKhu", SqlDbType.NVarChar, 100).Value = dv.maKhu;
                 cmd.ExecuteNonQuery();
@@ -66,15 +66,15 @@ namespace QuanLyKhuVuiChoi.Controller.Dich_vu
         }
         public bool cap_nhat_DV(tbl_dich_vu dv)
         {
-            string sql = "Update tblDichVu SET tenDichVu=@tenDichVu, maDichVu=@maDichVu, giaDichVu=@giaDichVu, maKhu=@maKhu Where id = @id";
+            string sql = "Update tblDichVu SET maDichVu=@maDichVu, tenDichVu=@tenDichVu, giaDichVu=@giaDichVu, maKhu=@maKhu Where id = @id";
             SqlConnection con = dc.getConnect();
             try
             {
                 cmd = new SqlCommand(sql, con);
                 con.Open();
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = dv.id;
-                cmd.Parameters.Add("@tenDichVu", SqlDbType.NVarChar, 50).Value = dv.tenDichVu;
                 cmd.Parameters.Add("@maDichVu", SqlDbType.NVarChar, 100).Value = dv.maDichVu;
+                cmd.Parameters.Add("@tenDichVu", SqlDbType.NVarChar, 50).Value = dv.tenDichVu;
                 cmd.Parameters.Add("@giaDichVu", SqlDbType.NVarChar, 100).Value = dv.giaDichVu;
                 cmd.Parameters.Add("@maKhu", SqlDbType.NVarChar, 100).Value = dv.maKhu;
                 cmd.ExecuteNonQuery();

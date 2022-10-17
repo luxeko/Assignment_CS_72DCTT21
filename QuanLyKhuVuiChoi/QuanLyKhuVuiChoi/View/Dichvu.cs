@@ -39,16 +39,16 @@ namespace QuanLyKhuVuiChoi.View
         }
         public bool Check_data()
         {
-            if (string.IsNullOrEmpty(txtTenDichVu.Text))
-            {
-                MessageBox.Show("Bạn chưa nhập tên dịch vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtTenDichVu.Focus();
-                return false;
-            }
             if (string.IsNullOrEmpty(txtMaDichVu.Text))
             {
                 MessageBox.Show("Bạn chưa nhập mã dịch vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMaDichVu.Focus();
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtTenDichVu.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập tên dịch vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTenDichVu.Focus();
                 return false;
             }
             if (string.IsNullOrEmpty(txtGiaDichVu.Text))
