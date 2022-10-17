@@ -330,6 +330,7 @@ namespace QuanLyKhuVuiChoi.View
                 }
             }
             obj.ActiveWorkbook.SaveCopyAs(duongDan + name + ".xlsx");
+            obj.Columns.AutoFit();
             obj.ActiveWorkbook.Saved = true;
         }
 
