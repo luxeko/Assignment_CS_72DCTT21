@@ -13,12 +13,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLyKhuVuiChoi
-<<<<<<< HEAD
-build_property.ProjectDir = D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\
-=======
-<<<<<<< HEAD
-build_property.ProjectDir = D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\
-=======
-build_property.ProjectDir = E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\
->>>>>>> 1c3e7ec0e6522abc2d20463365748241955fb380
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+build_property.ProjectDir = C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\

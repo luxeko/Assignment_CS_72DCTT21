@@ -1,126 +1,111 @@
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
-<<<<<<< HEAD
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Khu_Vui_Choi.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tro_Choi.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
-D:\Sinh Viên\Code\BT_Large\luxeko\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
-=======
-<<<<<<< HEAD
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tickets.resources
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
-D:\language\BT_L\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Customer.resources
-=======
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
-E:\Winform\New folder\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
->>>>>>> 1c3e7ec0e6522abc2d20463365748241955fb380
->>>>>>> e4f65055704a78ea97d0eed9d892eae34b549dfe
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.VSLangProj.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.ResolveComReference.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Customer.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Khu_Vui_Choi.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Login.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\btl2.NhanVien.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tickets.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tro_Choi.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
+C:\Users\hccm0\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.VSLangProj.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.ResolveComReference.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Customer.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Khu_Vui_Choi.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Login.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\btl2.NhanVien.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tickets.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tro_Choi.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
+C:\Users\Admin\Downloads\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.exe
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.deps.json
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.json
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.VSLangProj.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Properties.Resources.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Customer.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Dashboard.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Khu_Vui_Choi.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Login.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\btl2.NhanVien.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tickets.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.View.Tro_Choi.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.User.resources
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.AssemblyInfo.cs
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.CopyComplete
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\refint\QuanLyKhuVuiChoi.dll
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
+C:\Users\Admin\Documents\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
