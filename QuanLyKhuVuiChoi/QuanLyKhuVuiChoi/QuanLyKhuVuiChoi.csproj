@@ -11,6 +11,9 @@
     <Folder Include="Access\Image\" />
     <Folder Include="Access\Icons\" />
     <Folder Include="Controller\Authentication\" />
+
+    <Folder Include="Controller\Tickets_Authentication\" />
+    <Folder Include="Controller\User\" />
   </ItemGroup>
 
   <ItemGroup>

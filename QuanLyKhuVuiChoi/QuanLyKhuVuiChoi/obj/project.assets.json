@@ -501,24 +501,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\caube\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Coder\\CS\\72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+      "projectUniqueName": "D:\\Bài tập lớn\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
       "projectName": "QuanLyKhuVuiChoi",
-      "projectPath": "E:\\Coder\\CS\\72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
-      "packagesPath": "C:\\Users\\caube\\.nuget\\packages\\",
-      "outputPath": "E:\\Coder\\CS\\72DCTT21\\Assignment_CS_72DCTT21\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
+      "projectPath": "D:\\Bài tập lớn\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Bài tập lớn\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\caube\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -575,5 +570,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Bài tập lớn\\QuanLyKhuVuiChoi\\QuanLyKhuVuiChoi\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
