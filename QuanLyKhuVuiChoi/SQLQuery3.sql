@@ -1,4 +1,6 @@
-﻿create table tblKhuVuiChoi (
+﻿create database QuanLyKhuVuiChoi
+
+create table tblKhuVuiChoi (
 	id int IDENTITY(1,1), -- IDENTITY(1,1) - Gán tăng dần
   	maDV nvarchar(50) not null unique,
   	maKhu nvarchar(50) not null unique, --chỉ cóa duy nhât 1 colum maKhu
@@ -20,9 +22,9 @@ create table  tblNhanVien(
   	ngaySinh date,
   	maKhu nvarchar(50) FOREIGN KEY REFERENCES tblKhuVuiChoi(maKhu), --Khóa ngoại
   	soDT nvarchar(20) not null unique,
-  	diaChi nvarchar not null unique,
-  	gioiTinh enum("Male", "Famale"),
-  	chucVu enum("TN", "DV", "LC", "BV"),
-  	luong decimal(18,0),
+  	diaChi nvarchar(50) not null unique,
+  	gioiTinh bit,
+  	chucVu nvarchar(50),
+  	luong int,
 	PRIMARY KEY(maNV)
 );
