@@ -22,12 +22,18 @@ namespace QuanLyKhuVuiChoi.Database
 
             //conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";            //connection: Giao
             //conStr = "Data Source=DESKTOP-6RN79CK;Initial Catalog=QuanLyKhuVuiChoi;Integrated Security=True";
+            //conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=72DCTT21;User ID=ducanh;Password=ducanh";
+            //connection: Giao
+            //conStr = "Data Source=GLAPTOPO\\SQLEXPRESS;Initial Catalog=BT_Big;Integrated Security=True";
+        
+            conStr = "Data Source=DESKTOP-KFGVGP3\\SQLEXPRESS;Initial Catalog=QLKhuTroChoi;Integrated Security=True";
             // connection: Đức Anh
             //conStr = "Data Source=DESKTOP-G82NOOM;Initial Catalog=QuanLyKhuVuiChoi;Persist Security Info=True;User ID=ducanh;Password=ducanh";
 
             // connection: Dương
             //conStr = "data...."
         }
+
         public SqlConnection getConnect()
         {
             return new SqlConnection(conStr);

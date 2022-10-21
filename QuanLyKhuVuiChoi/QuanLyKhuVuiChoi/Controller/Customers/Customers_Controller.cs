@@ -10,22 +10,38 @@ namespace QuanLyKhuVuiChoi.Controller.Customers
 {
     internal class Customers_Controller
     {
-        Customers_Method Customers_Method;
+        Customers_Method customers_Method;
+        public Customers_Controller()
+        {
+            customers_Method = new Customers_Method();
+        }
         public DataTable getCustomers()
         {
-            return Customers_Method.getCustomers();
+            return customers_Method.getCustomers();
         }
         public bool InsertCustomers(tblCustomers cts)
         {
-            return Customers_Method.InsertCustomers(cts);
+            return customers_Method.InsertCustomers(cts);
         }
         public bool DeleteCustomers(tblCustomers cts)
         {
-            return Customers_Method.DeleteCustomers(cts);
+            return customers_Method.DeleteCustomers(cts);
         }
         public DataTable FindCustomers(string cts)
         {
-            return Customers_Method.FindCustomers(cts);
+            return customers_Method.FindCustomers(cts);
+        }
+        public bool UpdateCustomers(tblCustomers cts)
+        {
+            return customers_Method.UpdateCustomers(cts);
+        }
+        public DataTable getGioiTinh()
+        {
+            return customers_Method.getGioiTinh();
+        }
+        public DataTable ExcelCustomers(tblCustomers cts)
+        {
+            return customers_Method.ExcelCustomers(cts);
         }
         }
 }

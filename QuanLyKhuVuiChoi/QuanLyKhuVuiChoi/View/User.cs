@@ -1,5 +1,4 @@
-﻿using QuanLyKhuVuiChoi.Controller.Tickets;
-using QuanLyKhuVuiChoi.Controller.User;
+﻿using QuanLyKhuVuiChoi.Controller.User;
 using QuanLyKhuVuiChoi.Model.User;
 using System;
 using System.Collections.Generic;

@@ -26,6 +26,12 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+    <Compile Remove="Controller\Tickets_Authentication\**" />
+    <EmbeddedResource Remove="Controller\Tickets_Authentication\**" />
+    <None Remove="Controller\Tickets_Authentication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>9</VersionMinor>

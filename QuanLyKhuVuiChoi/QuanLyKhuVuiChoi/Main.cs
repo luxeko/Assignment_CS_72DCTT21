@@ -122,7 +122,7 @@ namespace QuanLyKhuVuiChoi
         private void btnVe_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color1);
-            Tickets tickets = new Tickets();
+            Ticketsss tickets = new Ticketsss();
             navbar(tickets, content);
         }
 
@@ -134,6 +134,8 @@ namespace QuanLyKhuVuiChoi
         private void btnGiamGia_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
+            GiamGia markDown = new GiamGia();
+            navbar(markDown, content);
         }
         private void logoBtn_Click(object sender, EventArgs e)
         {
