@@ -15,14 +15,18 @@ namespace btl2
 {
     public partial class NhanVien : Form
     {
-        NhanVienController controller = new NhanVienController();
+        NhanVienController controller = new NhanVienController(); //khởi tạo đối tượng controller để thực hiện
+        // tương tác giữa form Nhân viên và cơ sở dữ liệu
         string urlAnh = "";
+        bool checkLuu = false;
         public NhanVien()
         {
             InitializeComponent();
+            TrangThaiButton(false);
         }
         public void showDataGridView()
-        {
+        {   //tạo các cột dữ liệu trong bảng dataGridView, để hiển thị thông tin về nhân viên khi đọc dữ liệu từ 
+            //cơ sở dữ liệu
             DataGridViewTextBoxColumn column = new DataGridViewTextBoxColumn();
             column.DataPropertyName = "id";
             column.HeaderText = "ID";
@@ -76,67 +80,47 @@ namespace btl2
 
         public void setImageError()
         {
+            //đặt trạng thái ban đầu để ẩn đi icon thông báo lỗi của các textbox
             iconMaNV.Visible = false;
             iconHoten.Visible = false;
             iconMakhu.Visible = false;
             iconChucvu.Visible = false;
             iconSDT.Visible = false;
             iconDC.Visible = false;
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            
+            iconLuong.Visible = false;
         }
 
         private void NhanVien_Load(object sender, EventArgs e)
         {
-            setImageError();
+            setImageError(); //gọi hàm set trạng thái để mỗi khi load form sẽ đặt lại trạng thái của các icon
             DataTable data = new DataTable();
-            data = controller.DanhSachNV();
-            if(data.Rows.Count == 0)
+            data = controller.DanhSachNV(); //đọc dữ liệu danh sách nhân viên từ cơ sở dữ liệu
+            if (data.Rows.Count == 0) //kiểm tra nếu dữ liệu không đọc được dòng nào thì
             {
-                NVdataGrid.DataSource = null;
-                showDataGridView();
-                NVdataGrid.DataSource = data;
+                NVdataGrid.DataSource = null; //xóa data cũ trong dataGridView
+                showDataGridView(); //gọi hàm tạo cột hiển thị cho dataGridView
+                NVdataGrid.DataSource = data; //thêm dữ liệu đọc được vào trong dataGridView
             }
-            else NVdataGrid.DataSource = data;
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnTaiLai_Click(object sender, EventArgs e)
-        {
-            
+            else NVdataGrid.DataSource = data; //nếu đã có dữ liệu sẵn thì thêm luôn phần dữ liệu đọc được
+            // vào dataGridView không cần gọi hàm tạo cột hiển thị
         }
 
         private void pictureAnh_Click(object sender, EventArgs e)
-        {
+        {   //mở cửa sổ chọn ảnh
             OpenFileDialog open = new OpenFileDialog();
+            //định dạng file có thể nhận được để hiển thị ảnh lên picturebox
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                pictureAnh.Image = new Bitmap(open.FileName);
+                pictureAnh.Image = new Bitmap(open.FileName); //hiển thị ảnh qua tên file ảnh được chọn
                 urlAnh = open.FileName;
             }
         }
 
         private void NVdataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            TxtMaNV.Text = NVdataGrid.CurrentRow.Cells[1].Value.ToString();
+        {   //khi click vào 1 dòng trong dataGridView thì gán giá trị của các cột trong dòng đó tương ứng với
+            //các textbox
+            TxtMaNV.Text = NVdataGrid.CurrentRow.Cells[1].Value.ToString(); //currentRow: hàng đang click
             TxtHoTen.Text = NVdataGrid.CurrentRow.Cells[2].Value.ToString();
             if(NVdataGrid.CurrentRow.Cells[3].Value.ToString() != "")
             {
@@ -183,136 +167,14 @@ namespace btl2
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            if (TxtMaNV.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã nhân viên");
-                iconMaNV.Visible = true;
-            }
-            else if (TxtHoTen.Text == "")
-            {
-                MessageBox.Show("Chưa nhập họ tên");
-                iconHoten.Visible = true;
-            }
-            else if (TxtMaKhu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã khu");
-                iconMakhu.Visible = true;
-            }
-            else if (TxtChucVu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập chức vụ");
-                iconChucvu.Visible = true;
-            }
-            else if (TxtDC.Text == "")
-            {
-                MessageBox.Show("Chưa nhập địa chỉ");
-                iconDC.Visible = true;
-            }
-            else if (TxtSDT.Text == "")
-            {
-                MessageBox.Show("Chưa nhập số điện thoại");
-                iconSDT.Visible = true;
-            }
-            else
-            {
-                setImageError();
-                tbl_nhanvien nhanvien = new tbl_nhanvien();
-                nhanvien.id = 0;
-                if (urlAnh != "")
-                {
-                    nhanvien.anhNV = urlAnh;
-                }
-                else
-                {
-                    nhanvien.anhNV = "";
-                }
-                nhanvien.maNV = TxtMaNV.Text;
-                nhanvien.hoTen = TxtHoTen.Text;
-                nhanvien.maKhu = TxtMaKhu.Text;
-                nhanvien.ngaySinh = Ngay_Sinh.Text;
-                nhanvien.soDT = TxtSDT.Text;
-                nhanvien.diaChi = TxtDC.Text;
-                if (CbGioiTinh.Text.Equals("Nữ"))
-                {
-                    nhanvien.gioiTinh = 1;
-                }
-                else
-                {
-                    nhanvien.gioiTinh = 0;
-                }
-                nhanvien.chucVu = TxtChucVu.Text;
-                nhanvien.Luong = 0;
-                controller.Them_moi_NV(nhanvien);
-                NhanVien_Load(sender, e);
-                clearText();
-            }
+            checkLuu = true;
+            TrangThaiButton(true);
         }
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            if (TxtMaNV.Text == "")
-            {
-                MessageBox.Show("Chưa chọn nhân viên cần sửa");
-                iconMaNV.Visible = true;
-            }
-            else if (TxtHoTen.Text == "")
-            {
-                MessageBox.Show("Chưa nhập họ tên");
-                iconHoten.Visible = true;
-            }
-            else if (TxtMaKhu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập mã khu");
-                iconMakhu.Visible = true;
-            }
-            else if (TxtChucVu.Text == "")
-            {
-                MessageBox.Show("Chưa nhập chức vụ");
-                iconChucvu.Visible = true;
-            }
-            else if (TxtDC.Text == "")
-            {
-                MessageBox.Show("Chưa nhập địa chỉ");
-                iconDC.Visible = true;
-            }
-            else if (TxtSDT.Text == "")
-            {
-                MessageBox.Show("Chưa nhập số điện thoại");
-                iconSDT.Visible = true;
-            }
-            else
-            {
-                setImageError();
-                tbl_nhanvien nhanvien = new tbl_nhanvien();
-                nhanvien.id = 0;
-                if (urlAnh != "")
-                {
-                    nhanvien.anhNV = urlAnh;
-                }
-                else
-                {
-                    nhanvien.anhNV = "";
-                }
-                nhanvien.maNV = TxtMaNV.Text;
-                nhanvien.hoTen = TxtHoTen.Text;
-                nhanvien.maKhu = TxtMaKhu.Text;
-                nhanvien.ngaySinh = Ngay_Sinh.Text;
-                nhanvien.soDT = TxtSDT.Text;
-                nhanvien.diaChi = TxtDC.Text;
-                if (CbGioiTinh.Text.Equals("Nữ"))
-                {
-                    nhanvien.gioiTinh = 1;
-                }
-                else
-                {
-                    nhanvien.gioiTinh = 0;
-                }
-                nhanvien.chucVu = TxtChucVu.Text;
-                nhanvien.Luong = 0;
-                controller.Sua_NV(nhanvien);
-                NhanVien_Load(sender, e);
-                clearText();
-            }
+            checkLuu = false;
+            TrangThaiButton(true);
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -330,6 +192,193 @@ namespace btl2
                     clearText();
                 }
             }
+        }
+
+        private void NVdataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TxtMaNV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if(checkLuu == true)
+            {
+                if (TxtMaNV.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập mã nhân viên");
+                    iconMaNV.Visible = true;
+                }
+                else if (TxtHoTen.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập họ tên");
+                    iconHoten.Visible = true;
+                }
+                else if (TxtMaKhu.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập mã khu");
+                    iconMakhu.Visible = true;
+                }
+                else if (TxtChucVu.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập chức vụ");
+                    iconChucvu.Visible = true;
+                }
+                else if (TxtDC.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập địa chỉ");
+                    iconDC.Visible = true;
+                }
+                else if (TxtSDT.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập số điện thoại");
+                    iconSDT.Visible = true;
+                }else if (TxtLuong.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập lương cơ bản cho nhân viên");
+                    iconLuong.Visible = true;
+                }
+                else
+                {
+                    setImageError();
+                    tbl_nhanvien nhanvien = new tbl_nhanvien(); //khởi tạo một đối tượng nhân viên
+                                                                //gán giá trị cho các thuộc tính của đối tượng
+                    nhanvien.id = 0;
+                    if (urlAnh != "")
+                    {
+                        nhanvien.anhNV = urlAnh;
+                    }
+                    else
+                    {
+                        nhanvien.anhNV = "";
+                    }
+                    nhanvien.maNV = TxtMaNV.Text;
+                    nhanvien.hoTen = TxtHoTen.Text;
+                    nhanvien.maKhu = TxtMaKhu.Text;
+                    nhanvien.ngaySinh = Ngay_Sinh.Text;
+                    nhanvien.soDT = TxtSDT.Text;
+                    nhanvien.diaChi = TxtDC.Text;
+                    if (CbGioiTinh.Text.Equals("Nữ"))
+                    {
+                        nhanvien.gioiTinh = 1;
+                    }
+                    else
+                    {
+                        nhanvien.gioiTinh = 0;
+                    }
+                    nhanvien.chucVu = TxtChucVu.Text;
+                    nhanvien.Luong = int.Parse(TxtLuong.Text);
+                    controller.Them_moi_NV(nhanvien); //gọi hàm thêm mới để thực hiện thêm nv vào cơ sở dữ liệu
+                    NhanVien_Load(sender, e); // thực hiện load lại form sau khi thêm để cập nhật dữ liệu trên dataGridView
+                    clearText();
+                    TrangThaiButton(false);
+                }
+            }
+            else {
+                if (TxtMaNV.Text == "")
+                {
+                    MessageBox.Show("Chưa chọn nhân viên cần sửa");
+                    iconMaNV.Visible = true;
+                }
+                else if (TxtHoTen.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập họ tên");
+                    iconHoten.Visible = true;
+                }
+                else if (TxtMaKhu.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập mã khu");
+                    iconMakhu.Visible = true;
+                }
+                else if (TxtChucVu.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập chức vụ");
+                    iconChucvu.Visible = true;
+                }
+                else if (TxtDC.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập địa chỉ");
+                    iconDC.Visible = true;
+                }
+                else if (TxtSDT.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập số điện thoại");
+                    iconSDT.Visible = true;
+                }
+                else if (TxtLuong.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập lương cho nhân viên");
+                    iconLuong.Visible = true;
+                }
+                else
+                {
+                    setImageError();
+                    tbl_nhanvien nhanvien = new tbl_nhanvien();
+                    nhanvien.id = 0;
+                    if (urlAnh != "")
+                    {
+                        nhanvien.anhNV = urlAnh;
+                    }
+                    else
+                    {
+                        nhanvien.anhNV = "";
+                    }
+                    nhanvien.maNV = TxtMaNV.Text;
+                    nhanvien.hoTen = TxtHoTen.Text;
+                    nhanvien.maKhu = TxtMaKhu.Text;
+                    nhanvien.ngaySinh = Ngay_Sinh.Text;
+                    nhanvien.soDT = TxtSDT.Text;
+                    nhanvien.diaChi = TxtDC.Text;
+                    if (CbGioiTinh.Text.Equals("Nữ"))
+                    {
+                        nhanvien.gioiTinh = 1;
+                    }
+                    else
+                    {
+                        nhanvien.gioiTinh = 0;
+                    }
+                    nhanvien.chucVu = TxtChucVu.Text;
+                    nhanvien.Luong = int.Parse(TxtLuong.Text);
+                    controller.Sua_NV(nhanvien);
+                    NhanVien_Load(sender, e);
+                    clearText();
+                    TrangThaiButton(false);
+                }
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            TrangThaiButton(false);
+            clearText();
+        }
+
+        private void TrangThaiButton(bool b)
+        {
+            TxtMaNV.Enabled = b;
+            TxtChucVu.Enabled = b;
+            TxtDC.Enabled = b;
+            TxtHoTen.Enabled = b;
+            TxtSDT.Enabled = b;
+            TxtMaKhu.Enabled = b;
+            CbGioiTinh.Enabled = b;
+            Ngay_Sinh.Enabled = b;
+            TxtLuong.Enabled = b;
+
+            btnLuu.Enabled = b;
+            btnHuy.Enabled = b;
+            btThem.Enabled = !b;
+            btSua.Enabled = !b;
+            btXoa.Enabled = !b;
+        }
+
+        private void btnXuatExcel_Click(object sender, EventArgs e)
+        {
+            controller.InExcel();
         }
     }
 }
