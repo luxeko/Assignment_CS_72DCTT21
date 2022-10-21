@@ -91,7 +91,5 @@ namespace QuanLyKhuVuiChoi.Controller.Nhan_vien
             tableTK = app_config.GetDataTable(sql);
             return tableTK;
         }
-
-        
     }
 }

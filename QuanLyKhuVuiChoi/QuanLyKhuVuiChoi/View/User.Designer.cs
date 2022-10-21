@@ -28,385 +28,703 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cbTrangThai = new System.Windows.Forms.ComboBox();
+            this.cbMaNv = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.btnSearch = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filterUpdatedAt = new FontAwesome.Sharp.IconButton();
+            this.filterCreatedAt = new FontAwesome.Sharp.IconButton();
+            this.filterTrangThai = new FontAwesome.Sharp.IconButton();
+            this.filterMaNv = new FontAwesome.Sharp.IconButton();
+            this.filterUsername = new FontAwesome.Sharp.IconButton();
+            this.filterEmail = new FontAwesome.Sharp.IconButton();
+            this.filterId = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewUser = new System.Windows.Forms.DataGridView();
+            this.dbId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbUsername = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.created_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updated_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbPassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExport = new FontAwesome.Sharp.IconButton();
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.btnCreate = new FontAwesome.Sharp.IconButton();
+            this.btnUpdate = new FontAwesome.Sharp.IconButton();
+            this.btnDelete = new FontAwesome.Sharp.IconButton();
+            this.btnLuu = new FontAwesome.Sharp.IconButton();
+            this.btnCancel = new FontAwesome.Sharp.IconButton();
+            this.errorPassword = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorEmail = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorConPassword = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorStatus = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorMaNv = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorUserName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorConPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMaNv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorUserName)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.cbTrangThai);
+            this.groupBox1.Controls.Add(this.cbMaNv);
             this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtConfirmPassword);
+            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtUserName);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(875, 474);
+            this.groupBox1.Size = new System.Drawing.Size(1000, 622);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản lý user";
+<<<<<<< HEAD
+=======
             //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+>>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
             // 
-            // comboBox3
+            // label13
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(595, 420);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(133, 28);
-            this.comboBox3.TabIndex = 18;
+            this.label13.AutoSize = true;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.Crimson;
+            this.label13.Location = new System.Drawing.Point(597, 578);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(24, 31);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "*";
             // 
-            // comboBox2
+            // label12
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(165, 420);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(126, 28);
-            this.comboBox2.TabIndex = 17;
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Crimson;
+            this.label12.Location = new System.Drawing.Point(139, 577);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 31);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "*";
             // 
-            // comboBox1
+            // label11
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(595, 376);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 28);
-            this.comboBox1.TabIndex = 16;
+            this.label11.AutoSize = true;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Crimson;
+            this.label11.Location = new System.Drawing.Point(641, 526);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 31);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "*";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(432, 422);
-            this.label10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Crimson;
+            this.label10.Location = new System.Drawing.Point(138, 526);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 20);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Vai trò";
+            this.label10.Size = new System.Drawing.Size(24, 31);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "*";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(66, 422);
-            this.label9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Crimson;
+            this.label9.Location = new System.Drawing.Point(531, 470);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Trạng thái";
+            this.label9.Size = new System.Drawing.Size(24, 31);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "*";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(432, 378);
-            this.label8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Crimson;
+            this.label8.Location = new System.Drawing.Point(138, 470);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 20);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Giới tính";
+            this.label8.Size = new System.Drawing.Size(24, 31);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "*";
             // 
-            // textBox6
+            // cbTrangThai
             // 
-            this.textBox6.Location = new System.Drawing.Point(165, 378);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(205, 27);
-            this.textBox6.TabIndex = 11;
+            this.cbTrangThai.FormattingEnabled = true;
+            this.cbTrangThai.Location = new System.Drawing.Point(189, 575);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(143, 33);
+            this.cbTrangThai.TabIndex = 17;
+            this.cbTrangThai.SelectedIndexChanged += new System.EventHandler(this.cbTrangThai_SelectedIndexChanged);
             // 
-            // textBox5
+            // cbMaNv
             // 
-            this.textBox5.Location = new System.Drawing.Point(595, 332);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 27);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(165, 332);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 27);
-            this.textBox4.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(595, 287);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 27);
-            this.textBox3.TabIndex = 8;
+            this.cbMaNv.FormattingEnabled = true;
+            this.cbMaNv.Location = new System.Drawing.Point(680, 575);
+            this.cbMaNv.Name = "cbMaNv";
+            this.cbMaNv.Size = new System.Drawing.Size(141, 33);
+            this.cbMaNv.TabIndex = 16;
+            this.cbMaNv.SelectedIndexChanged += new System.EventHandler(this.cbMaNv_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(63, 378);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(49, 578);
+            this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Điện thoại";
+            this.label6.Size = new System.Drawing.Size(95, 25);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Trạng thái";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(480, 578);
+            this.label7.Margin = new System.Windows.Forms.Padding(3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(124, 25);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Mã nhân viên";
+            // 
+            // txtConfirmPassword
+            // 
+            this.txtConfirmPassword.Location = new System.Drawing.Point(680, 523);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '*';
+            this.txtConfirmPassword.Size = new System.Drawing.Size(243, 32);
+            this.txtConfirmPassword.TabIndex = 10;
+            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(189, 523);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(234, 32);
+            this.txtPassword.TabIndex = 9;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(680, 467);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(243, 32);
+            this.txtEmail.TabIndex = 8;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(432, 334);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(480, 526);
+            this.label5.Margin = new System.Windows.Forms.Padding(3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 20);
+            this.label5.Size = new System.Drawing.Size(167, 25);
             this.label5.TabIndex = 5;
             this.label5.Text = "Xác nhận mật khẩu";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 334);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(49, 526);
+            this.label4.Margin = new System.Windows.Forms.Padding(3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mật khẩu";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(432, 290);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(480, 470);
+            this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
+            this.label3.Size = new System.Drawing.Size(56, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Họ và tên";
+            this.label3.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 290);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(49, 470);
+            this.label2.Margin = new System.Windows.Forms.Padding(3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.Size = new System.Drawing.Size(96, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Email";
+            this.label2.Text = "Username";
             // 
-            // textBox2
+            // txtUserName
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 287);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 27);
-            this.textBox2.TabIndex = 1;
+            this.txtUserName.Location = new System.Drawing.Point(189, 467);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(234, 32);
+            this.txtUserName.TabIndex = 1;
+            this.txtUserName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.iconButton1);
-            this.groupBox2.Controls.Add(this.btnSearch);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.filterUpdatedAt);
+            this.groupBox2.Controls.Add(this.filterCreatedAt);
+            this.groupBox2.Controls.Add(this.filterTrangThai);
+            this.groupBox2.Controls.Add(this.filterMaNv);
+            this.groupBox2.Controls.Add(this.filterUsername);
+            this.groupBox2.Controls.Add(this.filterEmail);
+            this.groupBox2.Controls.Add(this.filterId);
+            this.groupBox2.Controls.Add(this.dataGridViewUser);
+            this.groupBox2.Controls.Add(this.btnExport);
+            this.groupBox2.Controls.Add(this.btnRefresh);
+            this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(10, 23);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(11, 31);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(856, 238);
+            this.groupBox2.Size = new System.Drawing.Size(978, 420);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách user";
             // 
-            // iconButton1
+            // filterUpdatedAt
             // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Rotate;
-            this.iconButton1.IconColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(374, 24);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(92, 22);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "Refresh";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.filterUpdatedAt.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterUpdatedAt.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterUpdatedAt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterUpdatedAt.IconSize = 25;
+            this.filterUpdatedAt.Location = new System.Drawing.Point(821, 77);
+            this.filterUpdatedAt.Name = "filterUpdatedAt";
+            this.filterUpdatedAt.Size = new System.Drawing.Size(151, 31);
+            this.filterUpdatedAt.TabIndex = 25;
+            this.filterUpdatedAt.Text = "Updated_at";
+            this.filterUpdatedAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterUpdatedAt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterUpdatedAt.UseVisualStyleBackColor = true;
+            this.filterUpdatedAt.Click += new System.EventHandler(this.filterUpdatedAt_Click);
             // 
-            // btnSearch
+            // filterCreatedAt
             // 
-            this.btnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnSearch.IconColor = System.Drawing.Color.DodgerBlue;
-            this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSearch.IconSize = 25;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(295, 25);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(74, 22);
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.Text = "Tìm";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.filterCreatedAt.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterCreatedAt.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterCreatedAt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterCreatedAt.IconSize = 25;
+            this.filterCreatedAt.Location = new System.Drawing.Point(672, 77);
+            this.filterCreatedAt.Name = "filterCreatedAt";
+            this.filterCreatedAt.Size = new System.Drawing.Size(143, 31);
+            this.filterCreatedAt.TabIndex = 24;
+            this.filterCreatedAt.Text = "Created_at";
+            this.filterCreatedAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterCreatedAt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterCreatedAt.UseVisualStyleBackColor = true;
+            this.filterCreatedAt.Click += new System.EventHandler(this.filterCreatedAt_Click);
             // 
-            // textBox1
+            // filterTrangThai
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 25);
-            this.textBox1.TabIndex = 2;
+            this.filterTrangThai.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterTrangThai.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterTrangThai.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterTrangThai.IconSize = 25;
+            this.filterTrangThai.Location = new System.Drawing.Point(448, 77);
+            this.filterTrangThai.Name = "filterTrangThai";
+            this.filterTrangThai.Size = new System.Drawing.Size(96, 31);
+            this.filterTrangThai.TabIndex = 23;
+            this.filterTrangThai.Text = "Status";
+            this.filterTrangThai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterTrangThai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterTrangThai.UseVisualStyleBackColor = true;
+            this.filterTrangThai.Click += new System.EventHandler(this.filterTrangThai_Click);
+            // 
+            // filterMaNv
+            // 
+            this.filterMaNv.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterMaNv.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterMaNv.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterMaNv.IconSize = 25;
+            this.filterMaNv.Location = new System.Drawing.Point(550, 77);
+            this.filterMaNv.Name = "filterMaNv";
+            this.filterMaNv.Size = new System.Drawing.Size(116, 31);
+            this.filterMaNv.TabIndex = 23;
+            this.filterMaNv.Text = "Mã NV";
+            this.filterMaNv.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterMaNv.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterMaNv.UseVisualStyleBackColor = true;
+            this.filterMaNv.Click += new System.EventHandler(this.filterMaNv_Click);
+            // 
+            // filterUsername
+            // 
+            this.filterUsername.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterUsername.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterUsername.IconSize = 25;
+            this.filterUsername.Location = new System.Drawing.Point(100, 77);
+            this.filterUsername.Name = "filterUsername";
+            this.filterUsername.Size = new System.Drawing.Size(134, 31);
+            this.filterUsername.TabIndex = 22;
+            this.filterUsername.Text = "Username";
+            this.filterUsername.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterUsername.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterUsername.UseVisualStyleBackColor = true;
+            this.filterUsername.Click += new System.EventHandler(this.filterUsername_Click);
+            // 
+            // filterEmail
+            // 
+            this.filterEmail.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterEmail.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterEmail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterEmail.IconSize = 25;
+            this.filterEmail.Location = new System.Drawing.Point(240, 77);
+            this.filterEmail.Name = "filterEmail";
+            this.filterEmail.Size = new System.Drawing.Size(202, 31);
+            this.filterEmail.TabIndex = 21;
+            this.filterEmail.Text = "Email";
+            this.filterEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterEmail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterEmail.UseVisualStyleBackColor = true;
+            this.filterEmail.Click += new System.EventHandler(this.filterEmail_Click);
+            // 
+            // filterId
+            // 
+            this.filterId.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.filterId.IconColor = System.Drawing.Color.DodgerBlue;
+            this.filterId.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.filterId.IconSize = 25;
+            this.filterId.Location = new System.Drawing.Point(6, 77);
+            this.filterId.Name = "filterId";
+            this.filterId.Size = new System.Drawing.Size(88, 31);
+            this.filterId.TabIndex = 20;
+            this.filterId.Text = "ID";
+            this.filterId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.filterId.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.filterId.UseVisualStyleBackColor = true;
+            this.filterId.Click += new System.EventHandler(this.filterId_Click);
+            // 
+            // dataGridViewUser
+            // 
+            this.dataGridViewUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dbId,
+            this.dbUsername,
+            this.dbEmail,
+            this.dbTrangThai,
+            this.dbMaNV,
+            this.created_at,
+            this.updated_at,
+            this.dbPassword});
+            this.dataGridViewUser.Location = new System.Drawing.Point(6, 114);
+            this.dataGridViewUser.Name = "dataGridViewUser";
+            this.dataGridViewUser.RowHeadersWidth = 51;
+            this.dataGridViewUser.RowTemplate.Height = 29;
+            this.dataGridViewUser.Size = new System.Drawing.Size(966, 300);
+            this.dataGridViewUser.TabIndex = 19;
+            this.dataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // dbId
+            // 
+            this.dbId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dbId.DataPropertyName = "id";
+            this.dbId.FillWeight = 8.776232F;
+            this.dbId.HeaderText = "ID";
+            this.dbId.MinimumWidth = 6;
+            this.dbId.Name = "dbId";
+            this.dbId.Width = 40;
+            // 
+            // dbUsername
+            // 
+            this.dbUsername.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dbUsername.DataPropertyName = "username";
+            this.dbUsername.FillWeight = 25.88988F;
+            this.dbUsername.HeaderText = "Username";
+            this.dbUsername.MinimumWidth = 6;
+            this.dbUsername.Name = "dbUsername";
+            this.dbUsername.Width = 140;
+            // 
+            // dbEmail
+            // 
+            this.dbEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dbEmail.DataPropertyName = "email";
+            this.dbEmail.FillWeight = 84.55116F;
+            this.dbEmail.HeaderText = "Email";
+            this.dbEmail.MinimumWidth = 6;
+            this.dbEmail.Name = "dbEmail";
+            // 
+            // dbTrangThai
+            // 
+            this.dbTrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dbTrangThai.DataPropertyName = "trangThai";
+            this.dbTrangThai.FillWeight = 37.61242F;
+            this.dbTrangThai.HeaderText = "Status";
+            this.dbTrangThai.MinimumWidth = 40;
+            this.dbTrangThai.Name = "dbTrangThai";
+            this.dbTrangThai.Width = 125;
+            // 
+            // dbMaNV
+            // 
+            this.dbMaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dbMaNV.DataPropertyName = "maNV";
+            this.dbMaNV.FillWeight = 262.032F;
+            this.dbMaNV.HeaderText = "Mã NV";
+            this.dbMaNV.MinimumWidth = 70;
+            this.dbMaNV.Name = "dbMaNV";
+            this.dbMaNV.Width = 125;
+            // 
+            // created_at
+            // 
+            this.created_at.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.created_at.DataPropertyName = "created_at";
+            this.created_at.FillWeight = 159.5036F;
+            this.created_at.HeaderText = "Created_at";
+            this.created_at.MinimumWidth = 6;
+            this.created_at.Name = "created_at";
+            this.created_at.Width = 150;
+            // 
+            // updated_at
+            // 
+            this.updated_at.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.updated_at.DataPropertyName = "updated_at";
+            this.updated_at.FillWeight = 121.6345F;
+            this.updated_at.HeaderText = "Updated_at";
+            this.updated_at.MinimumWidth = 6;
+            this.updated_at.Name = "updated_at";
+            this.updated_at.Width = 150;
+            // 
+            // dbPassword
+            // 
+            this.dbPassword.DataPropertyName = "password";
+            this.dbPassword.HeaderText = "Password";
+            this.dbPassword.MinimumWidth = 6;
+            this.dbPassword.Name = "dbPassword";
+            this.dbPassword.Visible = false;
+            // 
+            // btnExport
+            // 
+            this.btnExport.IconChar = FontAwesome.Sharp.IconChar.FileImport;
+            this.btnExport.IconColor = System.Drawing.Color.LimeGreen;
+            this.btnExport.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExport.IconSize = 25;
+            this.btnExport.Location = new System.Drawing.Point(840, 39);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(125, 31);
+            this.btnExport.TabIndex = 18;
+            this.btnExport.Text = "Xuất excel";
+            this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Rotate;
+            this.btnRefresh.IconColor = System.Drawing.Color.Crimson;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRefresh.IconSize = 25;
+            this.btnRefresh.Location = new System.Drawing.Point(337, 36);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(105, 31);
+            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(91, 36);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(230, 31);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(5, 27);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(6, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 19);
+            this.label1.Size = new System.Drawing.Size(80, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm";
             // 
-            // dataGridView1
+            // btnCreate
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 58);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(845, 171);
-            this.dataGridView1.TabIndex = 0;
+            this.btnCreate.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnCreate.IconColor = System.Drawing.Color.LimeGreen;
+            this.btnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCreate.IconSize = 25;
+            this.btnCreate.Location = new System.Drawing.Point(17, 637);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(99, 29);
+            this.btnCreate.TabIndex = 1;
+            this.btnCreate.Text = "Tạo mới";
+            this.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // iconButton2
+            // btnUpdate
             // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.iconButton2.IconColor = System.Drawing.Color.LimeGreen;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 25;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(34, 484);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(82, 22);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Tạo mới";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.btnUpdate.IconColor = System.Drawing.Color.SteelBlue;
+            this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpdate.IconSize = 25;
+            this.btnUpdate.Location = new System.Drawing.Point(122, 637);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(110, 29);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // iconButton3
+            // btnDelete
             // 
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconButton3.IconColor = System.Drawing.Color.SteelBlue;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 25;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(122, 484);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(82, 22);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Cập nhật";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnDelete.IconColor = System.Drawing.Color.Crimson;
+            this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDelete.IconSize = 25;
+            this.btnDelete.Location = new System.Drawing.Point(238, 637);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(94, 29);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // iconButton4
+            // btnLuu
             // 
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.iconButton4.IconColor = System.Drawing.Color.Red;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 25;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(209, 484);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(82, 22);
-            this.iconButton4.TabIndex = 3;
-            this.iconButton4.Text = "Xoá";
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.btnLuu.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btnLuu.IconColor = System.Drawing.Color.LimeGreen;
+            this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLuu.IconSize = 25;
+            this.btnLuu.Location = new System.Drawing.Point(789, 637);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(94, 29);
+            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // iconButton5
+            // btnCancel
             // 
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.iconButton5.IconColor = System.Drawing.Color.LimeGreen;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 25;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(675, 484);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(82, 22);
-            this.iconButton5.TabIndex = 4;
-            this.iconButton5.Text = "Lưu";
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.btnCancel.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnCancel.IconColor = System.Drawing.Color.Crimson;
+            this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancel.IconSize = 25;
+            this.btnCancel.Location = new System.Drawing.Point(889, 636);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(94, 29);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "Huỷ";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // iconButton6
+            // errorPassword
             // 
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.iconButton6.IconColor = System.Drawing.Color.Red;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 25;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(762, 484);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(82, 22);
-            this.iconButton6.TabIndex = 5;
-            this.iconButton6.Text = "Huỷ";
-            this.iconButton6.UseVisualStyleBackColor = true;
+            this.errorPassword.ContainerControl = this;
+            // 
+            // errorEmail
+            // 
+            this.errorEmail.ContainerControl = this;
+            // 
+            // errorConPassword
+            // 
+            this.errorConPassword.ContainerControl = this;
+            // 
+            // errorStatus
+            // 
+            this.errorStatus.ContainerControl = this;
+            // 
+            // errorMaNv
+            // 
+            this.errorMaNv.ContainerControl = this;
+            // 
+            // errorUserName
+            // 
+            this.errorUserName.ContainerControl = this;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "password";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Password";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // User
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 508);
-            this.Controls.Add(this.iconButton6);
-            this.Controls.Add(this.iconButton5);
-            this.Controls.Add(this.iconButton4);
-            this.Controls.Add(this.iconButton3);
-            this.Controls.Add(this.iconButton2);
+            this.ClientSize = new System.Drawing.Size(1000, 677);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "User";
             this.Text = "User";
             this.Load += new System.EventHandler(this.User_Load);
@@ -414,7 +732,13 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorConPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMaNv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorUserName)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,30 +748,72 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton btnSearch;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label conPassword;
+        private System.Windows.Forms.Label passWord;
+        private System.Windows.Forms.Label email;
+        private System.Windows.Forms.Label userName;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label trangThai;
+        private System.Windows.Forms.Label maNV;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton6;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cbTrangThai;
+        private System.Windows.Forms.ComboBox cbMaNv;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtUserName;
+        private FontAwesome.Sharp.IconButton btnRefresh;
+        private System.Windows.Forms.TextBox txtSearch;
+        private FontAwesome.Sharp.IconButton btnCreate;
+        private FontAwesome.Sharp.IconButton btnUpdate;
+        private FontAwesome.Sharp.IconButton btnDelete;
+        private FontAwesome.Sharp.IconButton btnLuu;
+        private FontAwesome.Sharp.IconButton btnCancel;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.ErrorProvider errorPassword;
+        private System.Windows.Forms.ErrorProvider errorEmail;
+        private System.Windows.Forms.ErrorProvider errorConPassword;
+        private System.Windows.Forms.ErrorProvider errorStatus;
+        private System.Windows.Forms.ErrorProvider errorMaNv;
+        private System.Windows.Forms.ErrorProvider errorUserName;
+        private FontAwesome.Sharp.IconButton btnExport;
+  
+        private System.Windows.Forms.DataGridView dataUser;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridView dataGridViewUser;
+        private FontAwesome.Sharp.IconButton filterUpdatedAt;
+        private FontAwesome.Sharp.IconButton filterCreatedAt;
+        private FontAwesome.Sharp.IconButton filterTrangThai;
+        private FontAwesome.Sharp.IconButton filterMaNv;
+        private FontAwesome.Sharp.IconButton filterUsername;
+        private FontAwesome.Sharp.IconButton filterEmail;
+        private FontAwesome.Sharp.IconButton filterId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbUsername;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbTrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbMaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn created_at;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updated_at;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dbPassword;
     }
 }
