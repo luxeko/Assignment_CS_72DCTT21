@@ -13,6 +13,9 @@
     <Compile Update="View\ForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\GiamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\khu_vui_choi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -20,6 +23,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Ticketsss.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\tro_choi.cs">
@@ -31,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Main.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\khu_vui_choi.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="View\User.resx">

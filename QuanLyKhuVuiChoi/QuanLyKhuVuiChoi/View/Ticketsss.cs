@@ -211,7 +211,7 @@ namespace QuanLyKhuVuiChoi.View
 
         private void btnhienthi_Click(object sender, EventArgs e)
         {
-            ExportExcel(advancedDataGridView1, @"D:\", "Quản lý vé");
+            ExportExcel(advancedDataGridView1, @"D:\", "QL_Ve");
         }
 
         private void txtimkiem_Enter(object sender, EventArgs e)
