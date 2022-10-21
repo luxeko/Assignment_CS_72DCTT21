@@ -11,11 +11,10 @@
     <Compile Update="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Update="View\ForgetPassword.cs">
-=======
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\NhanVien.cs">
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\khu_vui_choi.cs">
@@ -38,11 +37,5 @@
     <EmbeddedResource Update="Main.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Update="View\Customer.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-=======
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
   </ItemGroup>
 </Project>
