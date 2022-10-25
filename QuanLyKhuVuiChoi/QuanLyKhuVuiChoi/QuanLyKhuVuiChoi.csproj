@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
+
     <COMReference Include="VSLangProj">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>0</VersionMinor>
@@ -25,8 +24,6 @@
     <Folder Include="Access\Image\" />
     <Folder Include="Access\Icons\" />
     <Folder Include="Controller\Authentication\" />
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
-
     <Folder Include="Controller\Tickets_Authentication\" />
     <Folder Include="Controller\User\" />
   </ItemGroup>

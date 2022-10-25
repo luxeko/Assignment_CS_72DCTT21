@@ -18,6 +18,8 @@ namespace QuanLyKhuVuiChoi.View
         {
             InitializeComponent();
             loginController = new Login_Controller();
+            this.ActiveControl = userName;
+            userName.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -105,46 +107,23 @@ namespace QuanLyKhuVuiChoi.View
 
         }
 
-        private void button1_Enter(object sender, EventArgs e)
+        private void passWord_KeyDown(object sender, KeyEventArgs e)
         {
-            if (this.userName.Text == "")
+            if (e.KeyCode == Keys.Enter)
             {
-                this.errorUsername.Visible = true;
-                this.userName.Focus();
-                return;
+                button1.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
             }
+        }
 
-            if (this.passWord.Text == "")
+        private void userName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
-                this.errorPassword.Visible = true;
-                this.passWord.Focus();
-                return;
-            }
-
-            string userName = this.userName.Text, passWord = this.passWord.Text;
-            DataTable dt = loginController.login(userName, passWord);
-
-            if (dt.Rows.Count > 0)
-            {
-                foreach (DataRow row in dt.Rows)
-                {
-                    if (row["trangThai"].ToString() == " Active")
-                    {
-                        Main main = new Main();
-                        main.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Tài khoản chưa được cấp quyền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        this.passWord.Clear();
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.passWord.Clear();
+                button1.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
             }
         }
     }

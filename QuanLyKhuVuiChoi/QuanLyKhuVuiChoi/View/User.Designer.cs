@@ -122,10 +122,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản lý user";
-<<<<<<< HEAD
-=======
-            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
             // 
             // label13
             // 
@@ -332,9 +328,9 @@
             this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(11, 31);
+            this.groupBox2.Location = new System.Drawing.Point(11, 46);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(978, 420);
+            this.groupBox2.Size = new System.Drawing.Size(978, 405);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách user";
@@ -377,9 +373,9 @@
             this.filterTrangThai.IconColor = System.Drawing.Color.DodgerBlue;
             this.filterTrangThai.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.filterTrangThai.IconSize = 25;
-            this.filterTrangThai.Location = new System.Drawing.Point(448, 77);
+            this.filterTrangThai.Location = new System.Drawing.Point(426, 77);
             this.filterTrangThai.Name = "filterTrangThai";
-            this.filterTrangThai.Size = new System.Drawing.Size(96, 31);
+            this.filterTrangThai.Size = new System.Drawing.Size(118, 31);
             this.filterTrangThai.TabIndex = 23;
             this.filterTrangThai.Text = "Status";
             this.filterTrangThai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -427,7 +423,7 @@
             this.filterEmail.IconSize = 25;
             this.filterEmail.Location = new System.Drawing.Point(240, 77);
             this.filterEmail.Name = "filterEmail";
-            this.filterEmail.Size = new System.Drawing.Size(202, 31);
+            this.filterEmail.Size = new System.Drawing.Size(180, 31);
             this.filterEmail.TabIndex = 21;
             this.filterEmail.Text = "Email";
             this.filterEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -464,11 +460,11 @@
             this.created_at,
             this.updated_at,
             this.dbPassword});
-            this.dataGridViewUser.Location = new System.Drawing.Point(6, 114);
+            this.dataGridViewUser.Location = new System.Drawing.Point(7, 114);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 29;
-            this.dataGridViewUser.Size = new System.Drawing.Size(966, 300);
+            this.dataGridViewUser.Size = new System.Drawing.Size(966, 285);
             this.dataGridViewUser.TabIndex = 19;
             this.dataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -557,7 +553,7 @@
             this.btnExport.IconSize = 25;
             this.btnExport.Location = new System.Drawing.Point(840, 39);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(125, 31);
+            this.btnExport.Size = new System.Drawing.Size(132, 31);
             this.btnExport.TabIndex = 18;
             this.btnExport.Text = "Xuất excel";
             this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -748,21 +744,21 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label conPassword;
-        private System.Windows.Forms.Label passWord;
-        private System.Windows.Forms.Label email;
-        private System.Windows.Forms.Label userName;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label trangThai;
-        private System.Windows.Forms.Label maNV;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private System.Windows.Forms.TextBox textBox3;
+        //private System.Windows.Forms.TextBox textBox1;
+        //private System.Windows.Forms.TextBox textBox5;
+        //private System.Windows.Forms.TextBox textBox4;
+        //private System.Windows.Forms.Label conPassword;
+        //private System.Windows.Forms.Label passWord;
+        //private System.Windows.Forms.Label email;
+        //private System.Windows.Forms.Label userName;
+        //private System.Windows.Forms.TextBox textBox2;
+        //private System.Windows.Forms.ComboBox comboBox2;
+        //private System.Windows.Forms.ComboBox comboBox1;
+        //private System.Windows.Forms.Label trangThai;
+        //private System.Windows.Forms.Label maNV;
+        //private FontAwesome.Sharp.IconButton iconButton5;
+        //private FontAwesome.Sharp.IconButton iconButton6;
+        //private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox cbTrangThai;
         private System.Windows.Forms.ComboBox cbMaNv;
         private System.Windows.Forms.Label label6;
@@ -796,9 +792,9 @@
         private System.Windows.Forms.ErrorProvider errorUserName;
         private FontAwesome.Sharp.IconButton btnExport;
   
-        private System.Windows.Forms.DataGridView dataUser;
+        //private System.Windows.Forms.DataGridView dataUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridView dataGridViewUser;
         private FontAwesome.Sharp.IconButton filterUpdatedAt;
         private FontAwesome.Sharp.IconButton filterCreatedAt;

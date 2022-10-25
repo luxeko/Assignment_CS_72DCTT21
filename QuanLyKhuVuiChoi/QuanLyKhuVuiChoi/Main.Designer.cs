@@ -64,11 +64,8 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-<<<<<<< HEAD
             this.panelMenu.Size = new System.Drawing.Size(220, 782);
-=======
-            this.panelMenu.Size = new System.Drawing.Size(220, 803);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.panelMenu.TabIndex = 0;
             // 
             // btnKhachHang
@@ -77,11 +74,8 @@
             this.btnKhachHang.FlatAppearance.BorderSize = 0;
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachHang.ForeColor = System.Drawing.Color.Gainsboro;
-<<<<<<< HEAD
             this.btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
-=======
-            this.btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.LocationArrow;
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.btnKhachHang.IconColor = System.Drawing.Color.Gainsboro;
             this.btnKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKhachHang.IconSize = 32;
@@ -336,11 +330,8 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-<<<<<<< HEAD
             this.panel2.Size = new System.Drawing.Size(1062, 87);
-=======
-            this.panel2.Size = new System.Drawing.Size(1192, 87);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -348,11 +339,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(808, 26);
-=======
-            this.label1.Location = new System.Drawing.Point(950, 30);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 1;
@@ -363,16 +351,11 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromFile;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-<<<<<<< HEAD
             this.iconButton2.IconSize = 40;
             this.iconButton2.Location = new System.Drawing.Point(903, 12);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(147, 56);
-=======
-            this.iconButton2.Location = new System.Drawing.Point(888, 12);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(56, 56);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.iconButton2.TabIndex = 0;
             this.iconButton2.Text = "Đăng xuất";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -385,11 +368,8 @@
             this.content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.content.Location = new System.Drawing.Point(220, 87);
             this.content.Name = "content";
-<<<<<<< HEAD
             this.content.Size = new System.Drawing.Size(1062, 695);
-=======
-            this.content.Size = new System.Drawing.Size(1192, 716);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.content.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -402,11 +382,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1282, 782);
-=======
-            this.ClientSize = new System.Drawing.Size(1412, 803);
->>>>>>> 3da21206eebfb696dc6faab7572021e86f1d5548
+
             this.Controls.Add(this.content);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);

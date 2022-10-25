@@ -32,6 +32,7 @@ namespace QuanLyKhuVuiChoi
         {
             InitializeComponent();
             userController = new UserController();
+            dataGridViewUser.ClearSelection();
         }
 
         private void User_Load(object sender, EventArgs e)
@@ -318,7 +319,6 @@ namespace QuanLyKhuVuiChoi
             filterMaNv.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
             filterCreatedAt.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
             filterUpdatedAt.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
-
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

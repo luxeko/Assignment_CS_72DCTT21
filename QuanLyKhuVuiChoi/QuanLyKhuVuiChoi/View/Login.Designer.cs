@@ -103,7 +103,6 @@
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.Enter += new System.EventHandler(this.button1_Enter);
             // 
             // panel6
             // 
@@ -171,6 +170,7 @@
             this.passWord.TabIndex = 3;
             this.passWord.Click += new System.EventHandler(this.textBox2_Click);
             this.passWord.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.passWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passWord_KeyDown);
             // 
             // pictureBox2
             // 
@@ -260,6 +260,7 @@
             this.userName.TabIndex = 3;
             this.userName.Click += new System.EventHandler(this.textBox1_Click);
             this.userName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.userName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userName_KeyDown);
             // 
             // pictureBox1
             // 
