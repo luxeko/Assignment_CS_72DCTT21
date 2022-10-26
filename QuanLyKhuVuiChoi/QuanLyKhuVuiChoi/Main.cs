@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using btl2;
+using FontAwesome.Sharp;
 using QuanLyKhuVuiChoi.View;
 using System;
 using System.Collections.Generic;
@@ -95,8 +96,8 @@ namespace QuanLyKhuVuiChoi
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
-            User user = new User();
-            navbar(user, content);
+            NhanVien nhanVien = new NhanVien();
+            navbar(nhanVien, content);
         }
 
         private void btnKhuVuiChoi_Click(object sender, EventArgs e)
@@ -123,7 +124,7 @@ namespace QuanLyKhuVuiChoi
         private void btnVe_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color1);
-            Tickets tickets = new Tickets();
+            Ticketsss tickets = new Ticketsss();
             navbar(tickets, content);
         }
 
@@ -135,6 +136,8 @@ namespace QuanLyKhuVuiChoi
         private void btnGiamGia_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
+            GiamGia markDown = new GiamGia();
+            navbar(markDown, content);
         }
         private void logoBtn_Click(object sender, EventArgs e)
         {

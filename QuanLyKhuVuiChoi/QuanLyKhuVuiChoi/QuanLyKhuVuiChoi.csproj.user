@@ -13,13 +13,22 @@
     <Compile Update="View\Dichvu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\GiamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\khu_vui_choi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Tickets.cs">
+    <Compile Update="View\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Ticketsss.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\tro_choi.cs">
