@@ -17,7 +17,7 @@ namespace QuanLyKhuVuiChoi.Cache
         public static string soDT { get; set; }
         public static string gioiTinh { get; set; }
         public static string chucVu { get; set; }
-        public static string ngaySinh { get; set; }
+        public static DateTime ngaySinh { get; set; }
 
     }
 }

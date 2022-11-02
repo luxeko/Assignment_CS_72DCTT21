@@ -2,6 +2,7 @@
 using QuanLyKhuVuiChoi.Database;
 using QuanLyKhuVuiChoi.Model.User;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -123,12 +124,29 @@ namespace QuanLyKhuVuiChoi.Controller.Authentication
             return false;
         }
 
-        public bool UpdateProfile(string maNV, string hoTen, string gioiTinh, string ngaySinh, string soDT, string diaChi)
+        public bool UpdateProfile(string maNV, string hoTen, string gioiTinh, DateTime ngaySinh, string soDT, string diaChi)
         {
-
-
-
-            return false;
+            string query = "update tblNhanVien set hoTen = @hoTen, gioiTinh = @gioiTinh, ngaySinh = @ngaySinh, soDT = @soDT, diaChi = @diaChi where maNV = @maNV";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.Parameters.AddWithValue("@maNV", maNV);
+                cmd.Parameters.Add("@hoTen", SqlDbType.NVarChar).Value = hoTen;
+                cmd.Parameters.Add("@gioiTinh", SqlDbType.NVarChar).Value = gioiTinh;
+                cmd.Parameters.Add("@ngaySinh", SqlDbType.DateTime).Value = ngaySinh;
+                cmd.Parameters.Add("@soDT", SqlDbType.NVarChar).Value = soDT;
+                cmd.Parameters.Add("@diaChi", SqlDbType.NVarChar).Value = diaChi;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+            return true;
         }
     }
 }

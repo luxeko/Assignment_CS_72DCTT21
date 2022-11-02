@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using app = Microsoft.Office.Interop.Excel.Application;
+using app = Microsoft.Office.Interop.Excel;
 
 namespace QuanLyKhuVuiChoi.View
 {
@@ -229,27 +229,27 @@ namespace QuanLyKhuVuiChoi.View
         }
         private void ExportExcel(DataGridView dg, string duongDan, string name)
         {
-            app obj = new app();
-            obj.Application.Workbooks.Add(Type.Missing);
-            //Laays header(id, maKH,...)
-            for (int i = 1; i < dg.Columns.Count + 1; i++)
-            {
-                obj.Cells[1, i] = dg.Columns[i - 1].HeaderText;
-            }
-            //Lấy nội dung bên trong
-            //Chạy từng hàng cuả Dtgrview
-            for (int i = 0; i < dg.Rows.Count; i++)
-            {
-                for (int j = 0; j < dg.Columns.Count; j++)
-                {
-                    if (dg.Rows[i].Cells[j].Value != null)
-                    {
-                        obj.Cells[i + 2, j + 1] = dg.Rows[i].Cells[j].Value.ToString();
-                    }
-                }
-            }
-            obj.ActiveWorkbook.SaveCopyAs(duongDan + name + ".xlsx");
-            obj.ActiveWorkbook.Saved = true;
+            //app obj = new app();
+            //obj.Application.Workbooks.Add(Type.Missing);
+            ////Laays header(id, maKH,...)
+            //for (int i = 1; i < dg.Columns.Count + 1; i++)
+            //{
+            //    obj.Cells[1, i] = dg.Columns[i - 1].HeaderText;
+            //}
+            ////Lấy nội dung bên trong
+            ////Chạy từng hàng cuả Dtgrview
+            //for (int i = 0; i < dg.Rows.Count; i++)
+            //{
+            //    for (int j = 0; j < dg.Columns.Count; j++)
+            //    {
+            //        if (dg.Rows[i].Cells[j].Value != null)
+            //        {
+            //            obj.Cells[i + 2, j + 1] = dg.Rows[i].Cells[j].Value.ToString();
+            //        }
+            //    }
+            //}
+            //obj.ActiveWorkbook.SaveCopyAs(duongDan + name + ".xlsx");
+            //obj.ActiveWorkbook.Saved = true;
         }
 
         private void btnhienthi_Click(object sender, EventArgs e)

@@ -167,6 +167,7 @@
             this.btnGiamGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGiamGia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGiamGia.UseVisualStyleBackColor = true;
+            this.btnGiamGia.Click += new System.EventHandler(this.btnGiamGia_Click);
             // 
             // btnVaiTro
             // 

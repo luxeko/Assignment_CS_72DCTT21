@@ -1,4 +1,6 @@
-﻿namespace QuanLyKhuVuiChoi.View
+﻿using System.Windows.Forms;
+
+namespace QuanLyKhuVuiChoi.View
 {
     partial class Profile
     {
@@ -37,6 +39,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimeBirthDay = new System.Windows.Forms.DateTimePicker();
+            this.cbcGioiTinh = new System.Windows.Forms.ComboBox();
+            this.errSoDT = new System.Windows.Forms.Label();
+            this.errDiaChi = new System.Windows.Forms.Label();
+            this.errGioiTinh = new System.Windows.Forms.Label();
+            this.errBirthDay = new System.Windows.Forms.Label();
+            this.errHoTen = new System.Windows.Forms.Label();
+            this.txtChucVu = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtSoDT = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.showConfPass = new FontAwesome.Sharp.IconButton();
             this.showNewpass = new FontAwesome.Sharp.IconButton();
@@ -51,17 +64,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.cbcGioiTinh = new System.Windows.Forms.ComboBox();
-            this.mskBirthDay = new System.Windows.Forms.MaskedTextBox();
-            this.errSoDT = new System.Windows.Forms.Label();
-            this.errDiaChi = new System.Windows.Forms.Label();
-            this.errGioiTinh = new System.Windows.Forms.Label();
-            this.errBirthDay = new System.Windows.Forms.Label();
-            this.errHoTen = new System.Windows.Forms.Label();
-            this.txtChucVu = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.txtSoDT = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLuuProfile = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -177,8 +179,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox4);
+            this.groupBox1.Controls.Add(this.dateTimeBirthDay);
             this.groupBox1.Controls.Add(this.cbcGioiTinh);
-            this.groupBox1.Controls.Add(this.mskBirthDay);
             this.groupBox1.Controls.Add(this.errSoDT);
             this.groupBox1.Controls.Add(this.errDiaChi);
             this.groupBox1.Controls.Add(this.errGioiTinh);
@@ -202,6 +205,126 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cơ bản";
             // 
+            // dateTimeBirthDay
+            // 
+            this.dateTimeBirthDay.CalendarFont = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimeBirthDay.CustomFormat = "dd-MM-yyyy";
+            this.dateTimeBirthDay.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimeBirthDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeBirthDay.Location = new System.Drawing.Point(445, 85);
+            this.dateTimeBirthDay.Name = "dateTimeBirthDay";
+            this.dateTimeBirthDay.Size = new System.Drawing.Size(315, 36);
+            this.dateTimeBirthDay.TabIndex = 34;
+            // 
+            // cbcGioiTinh
+            // 
+            this.cbcGioiTinh.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbcGioiTinh.FormattingEnabled = true;
+            this.cbcGioiTinh.Location = new System.Drawing.Point(28, 194);
+            this.cbcGioiTinh.Name = "cbcGioiTinh";
+            this.cbcGioiTinh.Size = new System.Drawing.Size(315, 38);
+            this.cbcGioiTinh.TabIndex = 3;
+            this.cbcGioiTinh.SelectedIndexChanged += new System.EventHandler(this.cbcGioiTinh_SelectedIndexChanged);
+            // 
+            // errSoDT
+            // 
+            this.errSoDT.AutoSize = true;
+            this.errSoDT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errSoDT.ForeColor = System.Drawing.Color.Red;
+            this.errSoDT.Location = new System.Drawing.Point(445, 235);
+            this.errSoDT.Name = "errSoDT";
+            this.errSoDT.Size = new System.Drawing.Size(60, 20);
+            this.errSoDT.TabIndex = 33;
+            this.errSoDT.Text = "label12";
+            this.errSoDT.Visible = false;
+            // 
+            // errDiaChi
+            // 
+            this.errDiaChi.AutoSize = true;
+            this.errDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errDiaChi.ForeColor = System.Drawing.Color.Red;
+            this.errDiaChi.Location = new System.Drawing.Point(28, 359);
+            this.errDiaChi.Name = "errDiaChi";
+            this.errDiaChi.Size = new System.Drawing.Size(60, 20);
+            this.errDiaChi.TabIndex = 33;
+            this.errDiaChi.Text = "label12";
+            this.errDiaChi.Visible = false;
+            // 
+            // errGioiTinh
+            // 
+            this.errGioiTinh.AutoSize = true;
+            this.errGioiTinh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errGioiTinh.ForeColor = System.Drawing.Color.Red;
+            this.errGioiTinh.Location = new System.Drawing.Point(28, 235);
+            this.errGioiTinh.Name = "errGioiTinh";
+            this.errGioiTinh.Size = new System.Drawing.Size(60, 20);
+            this.errGioiTinh.TabIndex = 32;
+            this.errGioiTinh.Text = "label11";
+            this.errGioiTinh.Visible = false;
+            // 
+            // errBirthDay
+            // 
+            this.errBirthDay.AutoSize = true;
+            this.errBirthDay.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errBirthDay.ForeColor = System.Drawing.Color.Red;
+            this.errBirthDay.Location = new System.Drawing.Point(449, 126);
+            this.errBirthDay.Name = "errBirthDay";
+            this.errBirthDay.Size = new System.Drawing.Size(60, 20);
+            this.errBirthDay.TabIndex = 31;
+            this.errBirthDay.Text = "label10";
+            this.errBirthDay.Visible = false;
+            // 
+            // errHoTen
+            // 
+            this.errHoTen.AutoSize = true;
+            this.errHoTen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errHoTen.ForeColor = System.Drawing.Color.Red;
+            this.errHoTen.Location = new System.Drawing.Point(28, 126);
+            this.errHoTen.Name = "errHoTen";
+            this.errHoTen.Size = new System.Drawing.Size(51, 20);
+            this.errHoTen.TabIndex = 30;
+            this.errHoTen.Text = "label9";
+            this.errHoTen.Visible = false;
+            // 
+            // txtChucVu
+            // 
+            this.txtChucVu.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtChucVu.Location = new System.Drawing.Point(445, 320);
+            this.txtChucVu.Name = "txtChucVu";
+            this.txtChucVu.ReadOnly = true;
+            this.txtChucVu.Size = new System.Drawing.Size(315, 36);
+            this.txtChucVu.TabIndex = 6;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDiaChi.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtDiaChi.Location = new System.Drawing.Point(28, 320);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(315, 36);
+            this.txtDiaChi.TabIndex = 5;
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.txtDiaChi_TextChanged);
+            // 
+            // txtSoDT
+            // 
+            this.txtSoDT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSoDT.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSoDT.Location = new System.Drawing.Point(445, 196);
+            this.txtSoDT.Name = "txtSoDT";
+            this.txtSoDT.Size = new System.Drawing.Size(315, 36);
+            this.txtSoDT.TabIndex = 4;
+            this.txtSoDT.TextChanged += new System.EventHandler(this.txtSoDT_TextChanged);
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtHoTen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtHoTen.Location = new System.Drawing.Point(28, 87);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(315, 36);
+            this.txtHoTen.TabIndex = 1;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.showConfPass);
@@ -218,7 +341,7 @@
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(22, 166);
+            this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(799, 415);
             this.groupBox4.TabIndex = 35;
@@ -388,127 +511,6 @@
             this.label14.TabIndex = 28;
             this.label14.Text = "Xác nhận mật khẩu";
             // 
-            // cbcGioiTinh
-            // 
-            this.cbcGioiTinh.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbcGioiTinh.FormattingEnabled = true;
-            this.cbcGioiTinh.Location = new System.Drawing.Point(28, 194);
-            this.cbcGioiTinh.Name = "cbcGioiTinh";
-            this.cbcGioiTinh.Size = new System.Drawing.Size(315, 38);
-            this.cbcGioiTinh.TabIndex = 3;
-            this.cbcGioiTinh.SelectedIndexChanged += new System.EventHandler(this.cbcGioiTinh_SelectedIndexChanged);
-            // 
-            // mskBirthDay
-            // 
-            this.mskBirthDay.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mskBirthDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.mskBirthDay.Location = new System.Drawing.Point(445, 87);
-            this.mskBirthDay.Mask = "00/00/0000";
-            this.mskBirthDay.Name = "mskBirthDay";
-            this.mskBirthDay.Size = new System.Drawing.Size(315, 36);
-            this.mskBirthDay.TabIndex = 2;
-            this.mskBirthDay.ValidatingType = typeof(System.DateTime);
-            this.mskBirthDay.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskBirthDay_MaskInputRejected);
-            // 
-            // errSoDT
-            // 
-            this.errSoDT.AutoSize = true;
-            this.errSoDT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errSoDT.ForeColor = System.Drawing.Color.Red;
-            this.errSoDT.Location = new System.Drawing.Point(445, 235);
-            this.errSoDT.Name = "errSoDT";
-            this.errSoDT.Size = new System.Drawing.Size(60, 20);
-            this.errSoDT.TabIndex = 33;
-            this.errSoDT.Text = "label12";
-            this.errSoDT.Visible = false;
-            // 
-            // errDiaChi
-            // 
-            this.errDiaChi.AutoSize = true;
-            this.errDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errDiaChi.ForeColor = System.Drawing.Color.Red;
-            this.errDiaChi.Location = new System.Drawing.Point(28, 359);
-            this.errDiaChi.Name = "errDiaChi";
-            this.errDiaChi.Size = new System.Drawing.Size(60, 20);
-            this.errDiaChi.TabIndex = 33;
-            this.errDiaChi.Text = "label12";
-            this.errDiaChi.Visible = false;
-            // 
-            // errGioiTinh
-            // 
-            this.errGioiTinh.AutoSize = true;
-            this.errGioiTinh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errGioiTinh.ForeColor = System.Drawing.Color.Red;
-            this.errGioiTinh.Location = new System.Drawing.Point(28, 235);
-            this.errGioiTinh.Name = "errGioiTinh";
-            this.errGioiTinh.Size = new System.Drawing.Size(60, 20);
-            this.errGioiTinh.TabIndex = 32;
-            this.errGioiTinh.Text = "label11";
-            this.errGioiTinh.Visible = false;
-            // 
-            // errBirthDay
-            // 
-            this.errBirthDay.AutoSize = true;
-            this.errBirthDay.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errBirthDay.ForeColor = System.Drawing.Color.Red;
-            this.errBirthDay.Location = new System.Drawing.Point(449, 126);
-            this.errBirthDay.Name = "errBirthDay";
-            this.errBirthDay.Size = new System.Drawing.Size(60, 20);
-            this.errBirthDay.TabIndex = 31;
-            this.errBirthDay.Text = "label10";
-            this.errBirthDay.Visible = false;
-            // 
-            // errHoTen
-            // 
-            this.errHoTen.AutoSize = true;
-            this.errHoTen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errHoTen.ForeColor = System.Drawing.Color.Red;
-            this.errHoTen.Location = new System.Drawing.Point(28, 126);
-            this.errHoTen.Name = "errHoTen";
-            this.errHoTen.Size = new System.Drawing.Size(51, 20);
-            this.errHoTen.TabIndex = 30;
-            this.errHoTen.Text = "label9";
-            this.errHoTen.Visible = false;
-            // 
-            // txtChucVu
-            // 
-            this.txtChucVu.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtChucVu.Location = new System.Drawing.Point(445, 320);
-            this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.ReadOnly = true;
-            this.txtChucVu.Size = new System.Drawing.Size(315, 36);
-            this.txtChucVu.TabIndex = 6;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDiaChi.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDiaChi.Location = new System.Drawing.Point(28, 320);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(315, 36);
-            this.txtDiaChi.TabIndex = 5;
-            this.txtDiaChi.TextChanged += new System.EventHandler(this.txtDiaChi_TextChanged);
-            // 
-            // txtSoDT
-            // 
-            this.txtSoDT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSoDT.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSoDT.Location = new System.Drawing.Point(445, 196);
-            this.txtSoDT.Name = "txtSoDT";
-            this.txtSoDT.Size = new System.Drawing.Size(315, 36);
-            this.txtSoDT.TabIndex = 4;
-            this.txtSoDT.TextChanged += new System.EventHandler(this.txtSoDT_TextChanged);
-            // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtHoTen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtHoTen.Location = new System.Drawing.Point(28, 87);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(315, 36);
-            this.txtHoTen.TabIndex = 1;
-            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnLuuProfile);
@@ -550,7 +552,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.groupBox4);
             this.panel4.Controls.Add(this.btnPassword);
             this.panel4.Controls.Add(this.btnProfile);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -704,7 +705,6 @@
         private System.Windows.Forms.TextBox txtSoDT;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.MaskedTextBox mskBirthDay;
         private System.Windows.Forms.Button btnLuuProfile;
         private System.Windows.Forms.ComboBox cbcGioiTinh;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -731,5 +731,6 @@
         private FontAwesome.Sharp.IconButton showConfPass;
         private FontAwesome.Sharp.IconButton showNewpass;
         private FontAwesome.Sharp.IconButton showCurrentPass;
+        private System.Windows.Forms.DateTimePicker dateTimeBirthDay;
     }
 }

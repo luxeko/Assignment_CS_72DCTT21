@@ -14,7 +14,6 @@ E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bi
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.AssemblyReference.cache
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.VSLangProj.dll
-E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Core.dll
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.csproj.ResolveComReference.cache
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.Main.resources
@@ -43,3 +42,15 @@ E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\ob
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.pdb
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\QuanLyKhuVuiChoi.genruntimeconfig.cache
 E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\net5.0-windows\ref\QuanLyKhuVuiChoi.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\EPPlus.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\EPPlus.Interfaces.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\EPPlus.System.Drawing.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+E:\Coder\CS\72DCTT21\Assignment_CS_72DCTT21\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\bin\Debug\net5.0-windows\Microsoft.IO.RecyclableMemoryStream.dll

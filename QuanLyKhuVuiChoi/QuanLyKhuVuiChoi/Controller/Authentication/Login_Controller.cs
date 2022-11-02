@@ -37,7 +37,7 @@ namespace QuanLyKhuVuiChoi.Controller.Authentication
             return loginMethod.CheckPassword(password, id);
         }
 
-        public bool UpdateProfile(string maNV, string hoTen, string gioiTinh, string ngaySinh, string soDT, string diaChi)
+        public bool UpdateProfile(string maNV, string hoTen, string gioiTinh, DateTime ngaySinh, string soDT, string diaChi)
         {
             return loginMethod.UpdateProfile(maNV, hoTen, gioiTinh, ngaySinh, soDT, diaChi);
         }

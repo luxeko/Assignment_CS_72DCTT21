@@ -54,7 +54,7 @@ namespace QuanLyKhuVuiChoi.View
             txtHoTen.Text = UserLoginCache.hoTen;
             txtDiaChi.Text = UserLoginCache.diaChi;
             txtSoDT.Text = UserLoginCache.soDT;
-            mskBirthDay.Text = UserLoginCache.ngaySinh;
+            dateTimeBirthDay.Value = UserLoginCache.ngaySinh;
             username.Text = UserLoginCache.username;
             maNV.Text = UserLoginCache.maNV;
             if (UserLoginCache.chucVu == "TN")
@@ -77,7 +77,7 @@ namespace QuanLyKhuVuiChoi.View
             {
                 cbcGioiTinh.SelectedIndex = 1;
             }
-            else if (UserLoginCache.chucVu == "DV")
+            else if (UserLoginCache.gioiTinh == "Famale")
             {
                 cbcGioiTinh.SelectedIndex = 2;
             }
@@ -87,12 +87,19 @@ namespace QuanLyKhuVuiChoi.View
         private void lockControl()
         {
             txtHoTen.ReadOnly = true;
-            mskBirthDay.ReadOnly = true;
+            dateTimeBirthDay.Enabled = false;
             txtDiaChi.ReadOnly = true;
             txtChucVu.ReadOnly = true;
             cbcGioiTinh.Enabled = false;
             txtSoDT.ReadOnly = true;
-            cbcGioiTinh.SelectedIndex = 0;
+            if (UserLoginCache.gioiTinh == "Male")
+            {
+                cbcGioiTinh.SelectedIndex = 1;
+            }
+            else if (UserLoginCache.gioiTinh == "Famale")
+            {
+                cbcGioiTinh.SelectedIndex = 2;
+            }
             btnChinhSua.Focus();
 
             txtCurrentPassword.ReadOnly = true;
@@ -107,7 +114,7 @@ namespace QuanLyKhuVuiChoi.View
         private void unlockControl()
         {
             txtHoTen.ReadOnly = false;
-            mskBirthDay.ReadOnly = false;
+            dateTimeBirthDay.Enabled = true;
             txtDiaChi.ReadOnly = false;
             cbcGioiTinh.Enabled = true;
             txtSoDT.ReadOnly = false;
@@ -138,13 +145,7 @@ namespace QuanLyKhuVuiChoi.View
                 errDiaChi.Text = "Vui lòng nhập địa chỉ";
                 return false;
             }
-            if (string.IsNullOrEmpty(mskBirthDay.Text))
-            {
-                errBirthDay.Text = "Vui lòng nhập ngày sinh";
-                mskBirthDay.Focus();
-                return false;
-            }
-            if (cbcGioiTinh.SelectedIndex != 1 || cbcGioiTinh.SelectedIndex != 2)
+            if (cbcGioiTinh.SelectedIndex != 1 && cbcGioiTinh.SelectedIndex != 2)
             {
                 errGioiTinh.Text = "Vui lòng chọn giới tính";
                 cbcGioiTinh.Focus();
@@ -189,7 +190,34 @@ namespace QuanLyKhuVuiChoi.View
                 case "profile":
                     if (checkDataProfile())
                     {
-                        //login_Controller.UpdateProfile()
+                        string hoTen = txtHoTen.Text, diaChi = txtDiaChi.Text, soDT = txtSoDT.Text;
+                        string gioiTinh;
+                        DateTime birthDay = dateTimeBirthDay.Value;
+
+                        if (cbcGioiTinh.SelectedItem.ToString().Trim() == "Nam")
+                        {
+                            gioiTinh = "Male";
+                        }
+                        else
+                        {
+                            gioiTinh = "Famale";
+                        }
+
+                        if (login_Controller.UpdateProfile(UserLoginCache.maNV, hoTen, gioiTinh, birthDay, soDT, diaChi))
+                        {
+                            MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            UserLoginCache.hoTen = txtHoTen.Text;
+                            UserLoginCache.gioiTinh = cbcGioiTinh.Text;
+                            UserLoginCache.ngaySinh = birthDay;
+                            UserLoginCache.soDT = txtSoDT.Text;
+                            UserLoginCache.diaChi = txtDiaChi.Text;
+                            lockControl();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cập nhật thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
                     }
                     break;
                 case "password":
@@ -208,6 +236,10 @@ namespace QuanLyKhuVuiChoi.View
                                 txtConfPassword.Clear();
                                 txtCurrentPassword.Clear();
                                 MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Đổi mật khẩu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }

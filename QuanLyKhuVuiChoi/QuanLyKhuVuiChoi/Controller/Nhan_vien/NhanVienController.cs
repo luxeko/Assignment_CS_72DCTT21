@@ -87,7 +87,7 @@ namespace QuanLyKhuVuiChoi.Controller.Nhan_vien
             exrange.Range["D2:F2"].Value = "THÔNG TIN NHÂN VIÊN";
 
             string sql = "select maNV,hoTen,avatarSrc,ngaySinh,maKhu,soDT,diachi,case when gioiTinh='1' then N'Nữ' when gioiTinh='0' then 'Nam'end as gioiTinh,chucVu,luong from tblNhanVien";
-            DataTable data = app_config.GetDataTable(sql); 
+            DataTable data = app_config.GetDataTable(sql);
             //tạo dòng tiêu đề
             exrange.Range["A6:K6"].Font.Bold = true;
             exrange.Range["A6:K6"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;

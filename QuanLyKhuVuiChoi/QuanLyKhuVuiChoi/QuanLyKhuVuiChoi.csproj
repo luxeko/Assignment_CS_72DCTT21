@@ -17,15 +17,6 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
-    <COMReference Include="Microsoft.Office.Core">
-      <WrapperTool>tlbimp</WrapperTool>
-      <VersionMinor>8</VersionMinor>
-      <VersionMajor>2</VersionMajor>
-      <Guid>2df8d04c-5bfa-101b-bde5-00aa0044de52</Guid>
-      <Lcid>0</Lcid>
-      <Isolated>false</Isolated>
-      <EmbedInteropTypes>true</EmbedInteropTypes>
-    </COMReference>
     <Compile Remove="Controller\Tickets_Authentication\**" />
     <EmbeddedResource Remove="Controller\Tickets_Authentication\**" />
     <None Remove="Controller\Tickets_Authentication\**" />
@@ -57,6 +48,7 @@
 
   <ItemGroup>
     <PackageReference Include="DG.AdvancedDataGridView" Version="1.2.27314.8" />
+    <PackageReference Include="EPPlus" Version="6.0.8" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.1.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
   </ItemGroup>

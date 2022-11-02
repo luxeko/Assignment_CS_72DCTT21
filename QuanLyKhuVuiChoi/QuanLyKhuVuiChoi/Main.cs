@@ -172,7 +172,7 @@ namespace QuanLyKhuVuiChoi
 
         private void Main_Load_1(object sender, EventArgs e)
         {
-            lbHoTen.Text = UserLoginCache.hoTen;
+            lbHoTen.Text = UserLoginCache.email ;
         }
 
         private void btnUser_Click(object sender, EventArgs e)
@@ -187,6 +187,11 @@ namespace QuanLyKhuVuiChoi
             ActiveButton(sender, RGBColor.color3);
             NhanVien nhanVien = new NhanVien();
             navbar(nhanVien, content);
+        }
+
+        private void btnGiamGia_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

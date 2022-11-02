@@ -97,7 +97,7 @@ namespace QuanLyKhuVuiChoi.View
                         UserLoginCache.email = row["email"].ToString().Trim();
                         UserLoginCache.maNV = row["maNV"].ToString().Trim();
                         UserLoginCache.hoTen = row["hoTen"].ToString().Trim();
-                        UserLoginCache.ngaySinh = row["ngaySinh"].ToString().Trim();
+                        UserLoginCache.ngaySinh = Convert.ToDateTime(row["ngaySinh"]);
                         UserLoginCache.chucVu = row["chucVu"].ToString().Trim();
                         UserLoginCache.soDT = row["soDT"].ToString().Trim();
                         UserLoginCache.gioiTinh = row["gioiTinh"].ToString().Trim();

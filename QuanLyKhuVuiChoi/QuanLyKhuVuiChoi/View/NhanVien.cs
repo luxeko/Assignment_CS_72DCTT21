@@ -380,5 +380,10 @@ namespace btl2
         {
             controller.InExcel();
         }
+
+        private void Ngay_Sinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

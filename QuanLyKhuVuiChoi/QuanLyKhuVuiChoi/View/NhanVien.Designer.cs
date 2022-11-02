@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.DirectoryServices.SortOption sortOption2 = new System.DirectoryServices.SortOption();
+            System.DirectoryServices.SortOption sortOption1 = new System.DirectoryServices.SortOption();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtTimKiem = new System.Windows.Forms.TextBox();
@@ -102,7 +102,7 @@
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.Sort = sortOption2;
+            this.directorySearcher1.Sort = sortOption1;
             // 
             // NVdataGrid
             // 
@@ -195,6 +195,7 @@
             this.Ngay_Sinh.Name = "Ngay_Sinh";
             this.Ngay_Sinh.Size = new System.Drawing.Size(235, 27);
             this.Ngay_Sinh.TabIndex = 14;
+            this.Ngay_Sinh.ValueChanged += new System.EventHandler(this.Ngay_Sinh_ValueChanged);
             // 
             // pictureAnh
             // 
@@ -282,7 +283,7 @@
             this.iconMaNV.Enabled = false;
             this.iconMaNV.Image = ((System.Drawing.Image)(resources.GetObject("iconMaNV.Image")));
             this.iconMaNV.Location = new System.Drawing.Point(562, 308);
-            this.iconMaNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconMaNV.Margin = new System.Windows.Forms.Padding(2);
             this.iconMaNV.Name = "iconMaNV";
             this.iconMaNV.Size = new System.Drawing.Size(19, 19);
             this.iconMaNV.TabIndex = 32;
@@ -293,7 +294,7 @@
             this.iconHoten.Enabled = false;
             this.iconHoten.Image = ((System.Drawing.Image)(resources.GetObject("iconHoten.Image")));
             this.iconHoten.Location = new System.Drawing.Point(562, 352);
-            this.iconHoten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconHoten.Margin = new System.Windows.Forms.Padding(2);
             this.iconHoten.Name = "iconHoten";
             this.iconHoten.Size = new System.Drawing.Size(19, 19);
             this.iconHoten.TabIndex = 33;
@@ -303,7 +304,7 @@
             // 
             this.iconSDT.Image = ((System.Drawing.Image)(resources.GetObject("iconSDT.Image")));
             this.iconSDT.Location = new System.Drawing.Point(562, 468);
-            this.iconSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconSDT.Margin = new System.Windows.Forms.Padding(2);
             this.iconSDT.Name = "iconSDT";
             this.iconSDT.Size = new System.Drawing.Size(19, 19);
             this.iconSDT.TabIndex = 35;
@@ -315,7 +316,7 @@
             this.iconDC.Enabled = false;
             this.iconDC.Image = ((System.Drawing.Image)(resources.GetObject("iconDC.Image")));
             this.iconDC.Location = new System.Drawing.Point(1003, 306);
-            this.iconDC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconDC.Margin = new System.Windows.Forms.Padding(2);
             this.iconDC.Name = "iconDC";
             this.iconDC.Size = new System.Drawing.Size(19, 19);
             this.iconDC.TabIndex = 36;
@@ -326,7 +327,7 @@
             this.iconChucvu.Enabled = false;
             this.iconChucvu.Image = ((System.Drawing.Image)(resources.GetObject("iconChucvu.Image")));
             this.iconChucvu.Location = new System.Drawing.Point(1003, 356);
-            this.iconChucvu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconChucvu.Margin = new System.Windows.Forms.Padding(2);
             this.iconChucvu.Name = "iconChucvu";
             this.iconChucvu.Size = new System.Drawing.Size(19, 19);
             this.iconChucvu.TabIndex = 37;
@@ -337,7 +338,7 @@
             this.iconMakhu.Enabled = false;
             this.iconMakhu.Image = ((System.Drawing.Image)(resources.GetObject("iconMakhu.Image")));
             this.iconMakhu.Location = new System.Drawing.Point(1003, 402);
-            this.iconMakhu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconMakhu.Margin = new System.Windows.Forms.Padding(2);
             this.iconMakhu.Name = "iconMakhu";
             this.iconMakhu.Size = new System.Drawing.Size(19, 19);
             this.iconMakhu.TabIndex = 38;
@@ -351,7 +352,7 @@
             this.btTimKiem.IconSize = 24;
             this.btTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btTimKiem.Location = new System.Drawing.Point(366, 42);
-            this.btTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btTimKiem.Name = "btTimKiem";
             this.btTimKiem.Size = new System.Drawing.Size(100, 27);
             this.btTimKiem.TabIndex = 39;
@@ -368,7 +369,7 @@
             this.btTaiLai.IconSize = 24;
             this.btTaiLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btTaiLai.Location = new System.Drawing.Point(483, 42);
-            this.btTaiLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btTaiLai.Margin = new System.Windows.Forms.Padding(2);
             this.btTaiLai.Name = "btTaiLai";
             this.btTaiLai.Size = new System.Drawing.Size(98, 27);
             this.btTaiLai.TabIndex = 40;
@@ -384,7 +385,7 @@
             this.btThem.IconSize = 24;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThem.Location = new System.Drawing.Point(27, 631);
-            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(96, 32);
             this.btThem.TabIndex = 41;
@@ -400,7 +401,7 @@
             this.btSua.IconSize = 24;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSua.Location = new System.Drawing.Point(176, 631);
-            this.btSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(96, 32);
             this.btSua.TabIndex = 42;
@@ -416,7 +417,7 @@
             this.btXoa.IconSize = 24;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btXoa.Location = new System.Drawing.Point(328, 631);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(96, 32);
             this.btXoa.TabIndex = 43;
@@ -432,7 +433,7 @@
             this.btnLuu.IconSize = 24;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(812, 631);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(96, 32);
             this.btnLuu.TabIndex = 44;
@@ -448,7 +449,7 @@
             this.btnHuy.IconSize = 24;
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHuy.Location = new System.Drawing.Point(944, 631);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(96, 32);
             this.btnHuy.TabIndex = 45;
@@ -476,7 +477,7 @@
             // 
             this.iconLuong.Image = ((System.Drawing.Image)(resources.GetObject("iconLuong.Image")));
             this.iconLuong.Location = new System.Drawing.Point(562, 522);
-            this.iconLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconLuong.Margin = new System.Windows.Forms.Padding(2);
             this.iconLuong.Name = "iconLuong";
             this.iconLuong.Size = new System.Drawing.Size(19, 19);
             this.iconLuong.TabIndex = 48;
@@ -491,7 +492,7 @@
             this.btnXuatExcel.IconSize = 24;
             this.btnXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXuatExcel.Location = new System.Drawing.Point(950, 39);
-            this.btnXuatExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuatExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuatExcel.Name = "btnXuatExcel";
             this.btnXuatExcel.Size = new System.Drawing.Size(101, 27);
             this.btnXuatExcel.TabIndex = 49;

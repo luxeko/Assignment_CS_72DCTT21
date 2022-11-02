@@ -10,6 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using OfficeOpenXml;
+using excel = Microsoft.Office.Interop.Excel;
+using VSLangProj;
 
 namespace QuanLyKhuVuiChoi
 {
@@ -118,7 +122,7 @@ namespace QuanLyKhuVuiChoi
                 txtConfirmPassword.Focus();
                 return false;
             }
-            if (cbTrangThai.SelectedIndex != 1 || cbTrangThai.SelectedIndex != 2)
+            if (cbTrangThai.SelectedIndex != 1 && cbTrangThai.SelectedIndex != 2)
             {
                 errorStatus.SetError(cbTrangThai, "Vui lòng chọn trạng thái [Active] hoặc [Disable]");
                 cbTrangThai.Focus();
@@ -285,7 +289,7 @@ namespace QuanLyKhuVuiChoi
                             }
                             else
                             {
-                                MessageBox.Show("Lỗi khi xoá dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("Lỗi khi cập nhật dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
 
@@ -344,11 +348,9 @@ namespace QuanLyKhuVuiChoi
             dataGridViewUser.DataSource = dt;
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        private void test(string p)
         {
-
         }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
@@ -473,6 +475,45 @@ namespace QuanLyKhuVuiChoi
                 filterUpdatedAt.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
                 orderByDESC(filterValue);
             }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Title = "Xuất dữ liệu người dùng";
+            saveFileDialog.Filter = "Excel (*.xlsx)|* .xlsx|Excel 2019 (*.xls)|*.xls";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                try
+                {
+                    xuatExcel(saveFileDialog.FileName);
+                    MessageBox.Show("Xuất file thành công");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Xuất file ko thành công");
+
+                }
+        }
+
+        private void xuatExcel(string path)
+        {
+            excel.Application app = new excel.Application();
+            app.Application.Workbooks.Add(Type.Missing);
+            for (int i = 0; i < dataGridViewUser.Columns.Count; i++)
+            {
+                app.Cells[1, i + 1] = dataGridViewUser.Columns[i].HeaderText;
+            }
+            for (int i = 0; i < dataGridViewUser.Rows.Count; i++)
+            {
+                for (int j = 0; j < dataGridViewUser.Columns.Count; j++)
+                {
+                    app.Cells[i + 2, j + 1] = dataGridViewUser.Rows[i].Cells[j].Value;
+                }
+            }
+
+            app.Columns.AutoFit();
+            app.ActiveWorkbook.SaveCopyAs(path);
+            app.ActiveWorkbook.Saved = true;
         }
     }
 }
