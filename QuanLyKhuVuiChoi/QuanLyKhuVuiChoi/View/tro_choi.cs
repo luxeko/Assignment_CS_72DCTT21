@@ -179,5 +179,25 @@ namespace QuanLyKhuVuiChoi.View
                 txtTimKiem.Text = "<Nhập tên trò chơi>";
             }
         }
+
+        private void txtMaTroChoi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -136,6 +136,8 @@ namespace QuanLyKhuVuiChoi
         private void btnDichVu_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color6);
+            Dichvu DichVu = new Dichvu();
+            navbar(DichVu, content);
         }
 
         private void btnVe_Click(object sender, EventArgs e)
