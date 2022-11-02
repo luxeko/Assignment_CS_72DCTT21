@@ -42,7 +42,6 @@ namespace QuanLyKhuVuiChoi
             cbMaNv.Items.Insert(0, " -- Chọn --");
             getUser();
             lockControl();
-
         }
 
         public void lockControl()
@@ -100,7 +99,7 @@ namespace QuanLyKhuVuiChoi
                 txtUserName.Focus();
                 errorUserName.SetError(txtUserName, "Bạn chưa nhập Username");
                 return false;
-            } 
+            }
             if (string.IsNullOrEmpty(txtEmail.Text))
             {
                 errorEmail.SetError(txtEmail, "Bạn chưa nhập Email");
@@ -119,7 +118,7 @@ namespace QuanLyKhuVuiChoi
                 txtConfirmPassword.Focus();
                 return false;
             }
-            if (cbTrangThai.SelectedIndex != 1 && cbTrangThai.SelectedIndex != 2)
+            if (cbTrangThai.SelectedIndex != 1 || cbTrangThai.SelectedIndex != 2)
             {
                 errorStatus.SetError(cbTrangThai, "Vui lòng chọn trạng thái [Active] hoặc [Disable]");
                 cbTrangThai.Focus();
@@ -187,7 +186,7 @@ namespace QuanLyKhuVuiChoi
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            switch(flag)
+            switch (flag)
             {
                 case "create":
                     if (checkData())
@@ -230,7 +229,7 @@ namespace QuanLyKhuVuiChoi
                     }
                     break;
                 case "delete":
-                    if(userController.delete(ID))
+                    if (userController.delete(ID))
                     {
                         getUser();
                         txtUserName.Clear();
@@ -246,9 +245,9 @@ namespace QuanLyKhuVuiChoi
                     }
                     break;
                 case "update":
-                    if(checkData())
+                    if (checkData())
                     {
-                        DataTable dtUserName = userController.checkUserNameAfterUpdate(ID,txtUserName.Text);
+                        DataTable dtUserName = userController.checkUserNameAfterUpdate(ID, txtUserName.Text);
                         DataTable dtEmail = userController.checkEmailAfterUpdate(ID, txtEmail.Text);
                         if (dtUserName.Rows.Count > 0)
                         {
@@ -289,15 +288,15 @@ namespace QuanLyKhuVuiChoi
                                 MessageBox.Show("Lỗi khi xoá dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
-                      
+
                     }
-                  
+
                     break;
                 default:
                     break;
             }
         }
-        
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             lockControl();
@@ -336,7 +335,7 @@ namespace QuanLyKhuVuiChoi
 
         private void orderByDESC(string value)
         {
-            DataTable dt = userController.orderByDESC(value) ;
+            DataTable dt = userController.orderByDESC(value);
             dataGridViewUser.DataSource = dt;
         }
         private void orderByASC(string value)

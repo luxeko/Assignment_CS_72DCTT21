@@ -26,7 +26,7 @@ namespace QuanLyKhuVuiChoi.View
 
         private void Login_Load(object sender, EventArgs e)
         {
-            this.panel1.BackColor = Color.FromArgb(200,255, 255, 255);
+            this.panel1.BackColor = Color.FromArgb(200, 255, 255, 255);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace QuanLyKhuVuiChoi.View
                 this.userName.ForeColor = Color.Black;
                 this.errorUsername.Visible = false;
                 this.errorMessage.Visible = false;
-            } 
+            }
             catch
             {
 
@@ -68,13 +68,13 @@ namespace QuanLyKhuVuiChoi.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(this.userName.Text.Trim() == "")
+            if (this.userName.Text.Trim() == "")
             {
                 this.errorUsername.Visible = true;
                 this.userName.Focus();
                 return;
             }
-            
+
             if (this.passWord.Text.Trim() == "")
             {
                 this.errorPassword.Visible = true;
@@ -84,7 +84,7 @@ namespace QuanLyKhuVuiChoi.View
 
             string userName = this.userName.Text, passWord = this.passWord.Text;
             DataTable dt = loginController.login(userName, passWord);
-           
+
             if (dt.Rows.Count > 0)
             {
                 foreach (DataRow row in dt.Rows)
@@ -96,6 +96,12 @@ namespace QuanLyKhuVuiChoi.View
                         UserLoginCache.username = row["username"].ToString().Trim();
                         UserLoginCache.email = row["email"].ToString().Trim();
                         UserLoginCache.maNV = row["maNV"].ToString().Trim();
+                        UserLoginCache.hoTen = row["hoTen"].ToString().Trim();
+                        UserLoginCache.ngaySinh = row["ngaySinh"].ToString().Trim();
+                        UserLoginCache.chucVu = row["chucVu"].ToString().Trim();
+                        UserLoginCache.soDT = row["soDT"].ToString().Trim();
+                        UserLoginCache.gioiTinh = row["gioiTinh"].ToString().Trim();
+                        UserLoginCache.diaChi = row["diaChi"].ToString().Trim();
                         main.Show();
                         this.Hide();
                     }
@@ -105,7 +111,7 @@ namespace QuanLyKhuVuiChoi.View
                         this.errorMessage.Text = "Tài khoản chưa được cấp quyền truy cập";
                     }
                 }
-            } 
+            }
             else
             {
                 this.errorMessage.Text = "Tài khoản hoặc mật khẩu không chính xác";

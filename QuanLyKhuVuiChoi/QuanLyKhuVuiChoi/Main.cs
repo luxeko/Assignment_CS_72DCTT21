@@ -32,25 +32,11 @@ namespace QuanLyKhuVuiChoi
             leftBorderBtn.Size = new Size(7, 50);
             panelMenu.Controls.Add(leftBorderBtn);
         }
-
-        private void Init(string hoTen)
-        {
-         
-            List<Item> items = new List<Item>();
-            items.Add(new Item() { Text = hoTen, id = 0 });
-            items.Add(new Item() { Text = "Hồ sơ", id = 1 });
-            items.Add(new Item() { Text = "Đăng xuất", id = 2 });
-        }
-        public class Item
-        {
-            public Item() { }
-            public int id { set; get; }
-            public string Text { set; get; }
-        }
+       
         private void navbar(Form form, Panel panel)
         {
             form.TopLevel = false;
-            //form.Size = panel.Size;
+            form.Size = panel.Size;
             panel.Controls.Clear();
             panel.Controls.Add(form);
             form.Show();
@@ -59,16 +45,16 @@ namespace QuanLyKhuVuiChoi
         // Struct
         private struct RGBColor
         {
-            public static Color color1 = Color.FromArgb(172,126,241);
-            public static Color color2 = Color.FromArgb(249,118,176);
-            public static Color color3 = Color.FromArgb(253,138,114);
-            public static Color color4 = Color.FromArgb(95,71,221);
-            public static Color color5 = Color.FromArgb(249,88,155);
-            public static Color color6 = Color.FromArgb(24,161,251);
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color3 = Color.FromArgb(253, 138, 114);
+            public static Color color4 = Color.FromArgb(95, 71, 221);
+            public static Color color5 = Color.FromArgb(249, 88, 155);
+            public static Color color6 = Color.FromArgb(24, 161, 251);
         }
         public void ActiveButton(object senderBtn, Color color)
         {
-            if(senderBtn != null)
+            if (senderBtn != null)
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
@@ -84,11 +70,11 @@ namespace QuanLyKhuVuiChoi
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-            }    
+            }
         }
         public void DisableButton()
         {
-            if(currentBtn != null)
+            if (currentBtn != null)
             {
                 currentBtn.BackColor = Color.FromArgb(31, 30, 68);
                 currentBtn.ForeColor = Color.Gainsboro;
@@ -96,67 +82,7 @@ namespace QuanLyKhuVuiChoi
                 currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }    
-        }
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color1);
-            Dashboard dashboard = new Dashboard();
-            navbar(dashboard, content);
-        }
-
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color2);
-            User user = new User();
-            navbar(user, content);
-        }
-
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color3);
-            NhanVien nhanVien = new NhanVien();
-            navbar(nhanVien, content);
-        }
-
-        private void btnKhuVuiChoi_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color4);
-            Khu_Vui_Choi KhuVuiChoi = new Khu_Vui_Choi();
-            navbar(KhuVuiChoi, content);
-        }
-
-        private void btnTroChoi_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color5);
-            Tro_Choi TroChoi = new Tro_Choi();
-            navbar(TroChoi, content);
-        }
-
-        private void btnDichVu_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color6);
-            Dichvu DichVu = new Dichvu();
-            navbar(DichVu, content);
-        }
-
-        private void btnVe_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color1);
-            Ticketsss tickets = new Ticketsss();
-            navbar(tickets, content);
-        }
-
-        private void btnVaiTro_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color2);
-        }
-
-        private void btnGiamGia_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColor.color3);
-            GiamGia markDown = new GiamGia();
-            navbar(markDown, content);
+            }
         }
         private void logoBtn_Click(object sender, EventArgs e)
         {
@@ -175,9 +101,61 @@ namespace QuanLyKhuVuiChoi
             navbar(customer, content);
         }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
+        private void btnNhanVien_Click_1(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có chắc muốn đăng xuất không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            
+        }
+
+        private void btnKhuVuiChoi_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color4);
+            Khu_Vui_Choi KhuVuiChoi = new Khu_Vui_Choi();
+            navbar(KhuVuiChoi, content);
+        }
+
+        private void btnTroChoi_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color5);
+            Tro_Choi TroChoi = new Tro_Choi();
+            navbar(TroChoi, content);
+        }
+
+        private void btnDichVu_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color6);
+            Dichvu DichVu = new Dichvu();
+            navbar(DichVu, content);
+        }
+
+        private void btnVe_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color1);
+            Ticketsss tickets = new Ticketsss();
+            navbar(tickets, content);
+        }
+
+        private void btnVaiTro_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color2);
+        }
+
+        private void btnGiamGia_Click_1(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color3);
+            GiamGia markDown = new GiamGia();
+            navbar(markDown, content);
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color1);
+            Dashboard dashboard = new Dashboard();
+            navbar(dashboard, content);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn đăng xuất không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Login login = new Login();
                 login.Show();
@@ -185,23 +163,30 @@ namespace QuanLyKhuVuiChoi
             }
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        private void btnProfile_Click(object sender, EventArgs e)
         {
-            string hoTen = "";
-            DataTable dt = nhanVienController.layThongTinNhanVien(UserLoginCache.maNV);
-            if (dt.Rows.Count > 0)
-            {
-                foreach (DataRow row in dt.Rows)
-                {
-                    hoTen = row["hoTen"].ToString();
-                }
-            }
-            Init(hoTen); 
+            ActiveButton(sender, RGBColor.color4);
+            Profile profile = new Profile();
+            navbar(profile, content);
         }
 
-        private void profileBtn_Click(object sender, EventArgs e)
+        private void Main_Load_1(object sender, EventArgs e)
         {
+            lbHoTen.Text = UserLoginCache.hoTen;
+        }
 
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color2);
+            User user = new User();
+            navbar(user, content);
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RGBColor.color3);
+            NhanVien nhanVien = new NhanVien();
+            navbar(nhanVien, content);
         }
     }
 }

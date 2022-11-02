@@ -103,7 +103,8 @@ namespace QuanLyKhuVuiChoi.View
         {
             this.txtMaNv.SelectAll();
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnCheckAccount_Click(object sender, EventArgs e)
         {
             if (this.userName.Text.Trim() == "")
             {
@@ -119,18 +120,18 @@ namespace QuanLyKhuVuiChoi.View
                 return;
             }
 
-            if(this.txtMaNv.Text.Trim() == "")
+            if (this.txtMaNv.Text.Trim() == "")
             {
                 this.errorMaNV.Visible = true;
                 this.txtMaNv.Focus();
                 return;
-            }  
-            
-            if(this.txtCCCD.Text.Trim() == "")
+            }
+
+            if (this.txtCCCD.Text.Trim() == "")
             {
                 this.errorCCCD.Visible = true;
                 this.txtCCCD.Focus();
-            }    
+            }
 
             string userName = this.userName.Text,
                     email = this.email.Text,
@@ -140,6 +141,14 @@ namespace QuanLyKhuVuiChoi.View
 
             if (dt.Rows.Count > 0)
             {
+                foreach (DataRow row in dt.Rows)
+                {
+                    UserLoginCache.Id = Convert.ToInt32(row["id"]);
+                    UserLoginCache.maNV = row["maNV"].ToString();
+                    UserLoginCache.username = row["username"].ToString();
+                    UserLoginCache.email = row["email"].ToString();
+                    
+                }
                 this.Hide();
                 ChangePassword changePassword = new ChangePassword();
                 changePassword.Show();
@@ -151,11 +160,51 @@ namespace QuanLyKhuVuiChoi.View
             }
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnChangePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void userName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCheckAccount.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
+
+        private void email_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCheckAccount.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
+
+        private void txtCCCD_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCheckAccount.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
+
+        private void txtMaNv_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCheckAccount.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
         }
     }
 }

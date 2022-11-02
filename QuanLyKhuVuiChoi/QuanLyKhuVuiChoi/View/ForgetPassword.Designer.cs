@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorMessage = new System.Windows.Forms.Label();
+            this.btnChangePassword = new System.Windows.Forms.LinkLabel();
+            this.btnCheckAccount = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -45,9 +48,6 @@
             this.txtCCCD = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.errorMessage = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -88,15 +88,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.errorMessage);
+            this.panel1.Controls.Add(this.btnChangePassword);
+            this.panel1.Controls.Add(this.btnCheckAccount);
             this.panel1.Controls.Add(this.panel14);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.errorMessage);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label5);
@@ -109,6 +109,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(538, 545);
             this.panel1.TabIndex = 1;
+            // 
+            // errorMessage
+            // 
+            this.errorMessage.AutoSize = true;
+            this.errorMessage.BackColor = System.Drawing.Color.Transparent;
+            this.errorMessage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorMessage.ForeColor = System.Drawing.Color.Red;
+            this.errorMessage.Location = new System.Drawing.Point(196, 402);
+            this.errorMessage.Name = "errorMessage";
+            this.errorMessage.Size = new System.Drawing.Size(14, 17);
+            this.errorMessage.TabIndex = 20;
+            this.errorMessage.Text = "*";
+            this.errorMessage.Visible = false;
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.AutoSize = true;
+            this.btnChangePassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnChangePassword.LinkColor = System.Drawing.Color.Black;
+            this.btnChangePassword.Location = new System.Drawing.Point(223, 512);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(98, 23);
+            this.btnChangePassword.TabIndex = 19;
+            this.btnChangePassword.TabStop = true;
+            this.btnChangePassword.Text = "Đăng nhập";
+            this.btnChangePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnChangePassword_LinkClicked);
+            // 
+            // btnCheckAccount
+            // 
+            this.btnCheckAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCheckAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCheckAccount.ForeColor = System.Drawing.Color.White;
+            this.btnCheckAccount.Location = new System.Drawing.Point(146, 444);
+            this.btnCheckAccount.Name = "btnCheckAccount";
+            this.btnCheckAccount.Size = new System.Drawing.Size(264, 53);
+            this.btnCheckAccount.TabIndex = 18;
+            this.btnCheckAccount.Text = "Kiểm tra";
+            this.btnCheckAccount.UseVisualStyleBackColor = false;
+            this.btnCheckAccount.Click += new System.EventHandler(this.btnCheckAccount_Click);
             // 
             // panel14
             // 
@@ -175,6 +215,7 @@
             this.txtMaNv.TabIndex = 3;
             this.txtMaNv.Click += new System.EventHandler(this.txtMaNv_Click);
             this.txtMaNv.TextChanged += new System.EventHandler(this.txtMaNv_TextChanged);
+            this.txtMaNv.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaNv_KeyDown);
             // 
             // pictureBox4
             // 
@@ -264,6 +305,7 @@
             this.txtCCCD.TabIndex = 3;
             this.txtCCCD.Click += new System.EventHandler(this.txtCCCD_Click);
             this.txtCCCD.TextChanged += new System.EventHandler(this.txtCCCD_TextChanged);
+            this.txtCCCD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCCCD_KeyDown);
             // 
             // pictureBox3
             // 
@@ -287,46 +329,6 @@
             this.label4.Size = new System.Drawing.Size(145, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Số CCCD/CMND";
-            // 
-            // errorMessage
-            // 
-            this.errorMessage.AutoSize = true;
-            this.errorMessage.BackColor = System.Drawing.Color.Transparent;
-            this.errorMessage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errorMessage.ForeColor = System.Drawing.Color.Red;
-            this.errorMessage.Location = new System.Drawing.Point(176, 397);
-            this.errorMessage.Name = "errorMessage";
-            this.errorMessage.Size = new System.Drawing.Size(14, 17);
-            this.errorMessage.TabIndex = 11;
-            this.errorMessage.Text = "*";
-            this.errorMessage.Visible = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(148, 492);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(268, 23);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Bạn đã có tài khoản? Đăng nhập";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(148, 427);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(264, 53);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Kiểm tra";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel6
             // 
@@ -393,6 +395,7 @@
             this.email.TabIndex = 3;
             this.email.Click += new System.EventHandler(this.email_Click);
             this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
+            this.email.KeyDown += new System.Windows.Forms.KeyEventHandler(this.email_KeyDown);
             // 
             // pictureBox2
             // 
@@ -482,6 +485,7 @@
             this.userName.TabIndex = 3;
             this.userName.Click += new System.EventHandler(this.userName_Click);
             this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
+            this.userName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userName_KeyDown);
             // 
             // pictureBox1
             // 
@@ -582,9 +586,6 @@
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label errorMessage;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
@@ -601,5 +602,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel telephone;
         private System.Windows.Forms.TextBox txtMaNv;
+        private System.Windows.Forms.Label errorMessage;
+        private System.Windows.Forms.LinkLabel btnChangePassword;
+        private System.Windows.Forms.Button btnCheckAccount;
     }
 }

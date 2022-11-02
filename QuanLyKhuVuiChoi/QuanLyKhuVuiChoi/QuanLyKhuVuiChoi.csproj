@@ -32,6 +32,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="README.mc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>9</VersionMinor>

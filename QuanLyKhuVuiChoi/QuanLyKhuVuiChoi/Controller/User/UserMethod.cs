@@ -91,7 +91,7 @@ namespace QuanLyKhuVuiChoi.Controller.User
         }
         public bool create(tblUser user)
         {
-            string query = "insert into tblUser (username, password, trangThai, email, created_at, updated_at) values (@username, @password, @trangThai, @email, @created_at, @updated_at)";
+            string query = "insert into tblUser (username, password, trangThai, email, maNV, created_at, updated_at) values (@username, @password, @trangThai, @email, @maNV, @created_at, @updated_at)";
             SqlConnection con = dc.getConnect();
             try
             {
@@ -100,7 +100,7 @@ namespace QuanLyKhuVuiChoi.Controller.User
                 cmd.Parameters.Add("@username", SqlDbType.NVarChar, 100).Value = user.username;
                 cmd.Parameters.Add("@password", SqlDbType.NVarChar, 100).Value = user.password;
                 cmd.Parameters.Add("@trangThai", SqlDbType.VarChar, 10).Value = user.trangThai;
-                //cmd.Parameters.Add("@maNV", SqlDbType.NVarChar, 50).Value = user.maNV;
+                cmd.Parameters.Add("@maNV", SqlDbType.NVarChar, 50).Value = user.maNV;
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar, 100).Value = user.email;
                 cmd.Parameters.Add("@created_at", SqlDbType.DateTime).Value = user.created_at;
                 cmd.Parameters.Add("@updated_at", SqlDbType.DateTime).Value = user.updated_at;
@@ -182,7 +182,7 @@ namespace QuanLyKhuVuiChoi.Controller.User
 
         public bool update(int id, tblUser user)
         {
-            string query = "update tblUser set username = @username, password = @password, trangThai = @trangThai, email = @email, updated_at = @updated_at where id = @id";
+            string query = "update tblUser set username = @username, password = @password, trangThai = @trangThai, email = @email, maNV = @maNV, updated_at = @updated_at where id = @id";
             SqlConnection con = dc.getConnect();
             try
             {
@@ -192,7 +192,7 @@ namespace QuanLyKhuVuiChoi.Controller.User
                 cmd.Parameters.Add("@username", SqlDbType.NVarChar, 100).Value = user.username;
                 cmd.Parameters.Add("@password", SqlDbType.NVarChar, 100).Value = user.password;
                 cmd.Parameters.Add("@trangThai", SqlDbType.VarChar, 10).Value = user.trangThai;
-                //cmd.Parameters.Add("@maNV", SqlDbType.NVarChar, 50).Value = user.maNV;
+                cmd.Parameters.Add("@maNV", SqlDbType.NVarChar, 50).Value = user.maNV;
                 cmd.Parameters.Add("@email", SqlDbType.NVarChar, 100).Value = user.email;
                 cmd.Parameters.Add("@updated_at", SqlDbType.DateTime).Value = user.updated_at;
 

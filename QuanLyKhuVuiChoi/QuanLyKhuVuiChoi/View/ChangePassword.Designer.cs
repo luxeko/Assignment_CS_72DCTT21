@@ -32,19 +32,18 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.errorNewPassword = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnShowNewPassword = new FontAwesome.Sharp.IconButton();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
-            this.errorMessage = new System.Windows.Forms.Label();
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.errorPassword = new System.Windows.Forms.Label();
+            this.errorConfirmPassword = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.showPassword = new FontAwesome.Sharp.IconButton();
+            this.btnShowConfPassword = new FontAwesome.Sharp.IconButton();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.errorMessage);
             this.panel1.Controls.Add(this.linkLogin);
             this.panel1.Controls.Add(this.btnConfirm);
             this.panel1.Controls.Add(this.panel6);
@@ -81,7 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(591, 394);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel10
             // 
@@ -97,7 +94,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.label3);
+            this.panel11.Controls.Add(this.errorNewPassword);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 44);
             this.panel11.Name = "panel11";
@@ -112,23 +109,23 @@
             this.panel12.Size = new System.Drawing.Size(321, 1);
             this.panel12.TabIndex = 5;
             // 
-            // label3
+            // errorNewPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(3, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mật khẩu không được để trống";
-            this.label3.Visible = false;
+            this.errorNewPassword.AutoSize = true;
+            this.errorNewPassword.BackColor = System.Drawing.Color.Transparent;
+            this.errorNewPassword.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorNewPassword.ForeColor = System.Drawing.Color.Red;
+            this.errorNewPassword.Location = new System.Drawing.Point(3, 3);
+            this.errorNewPassword.Name = "errorNewPassword";
+            this.errorNewPassword.Size = new System.Drawing.Size(201, 17);
+            this.errorNewPassword.TabIndex = 2;
+            this.errorNewPassword.Text = "Mật khẩu không được để trống";
+            this.errorNewPassword.Visible = false;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel13.Controls.Add(this.iconButton1);
+            this.panel13.Controls.Add(this.btnShowNewPassword);
             this.panel13.Controls.Add(this.txtNewPassword);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
@@ -136,21 +133,22 @@
             this.panel13.Size = new System.Drawing.Size(321, 44);
             this.panel13.TabIndex = 4;
             // 
-            // iconButton1
+            // btnShowNewPassword
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(279, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(42, 44);
-            this.iconButton1.TabIndex = 13;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnShowNewPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShowNewPassword.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShowNewPassword.FlatAppearance.BorderSize = 0;
+            this.btnShowNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowNewPassword.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnShowNewPassword.IconColor = System.Drawing.Color.Black;
+            this.btnShowNewPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnShowNewPassword.IconSize = 30;
+            this.btnShowNewPassword.Location = new System.Drawing.Point(279, 0);
+            this.btnShowNewPassword.Name = "btnShowNewPassword";
+            this.btnShowNewPassword.Size = new System.Drawing.Size(42, 44);
+            this.btnShowNewPassword.TabIndex = 13;
+            this.btnShowNewPassword.UseVisualStyleBackColor = false;
+            this.btnShowNewPassword.Click += new System.EventHandler(this.btnShowNewPassword_Click);
             // 
             // txtNewPassword
             // 
@@ -164,31 +162,21 @@
             this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(296, 29);
             this.txtNewPassword.TabIndex = 3;
+            this.txtNewPassword.Click += new System.EventHandler(this.txtNewPassword_Click);
             this.txtNewPassword.TextChanged += new System.EventHandler(this.txtNewPassword_TextChanged);
-            // 
-            // errorMessage
-            // 
-            this.errorMessage.AutoSize = true;
-            this.errorMessage.BackColor = System.Drawing.Color.Transparent;
-            this.errorMessage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errorMessage.ForeColor = System.Drawing.Color.Red;
-            this.errorMessage.Location = new System.Drawing.Point(148, 226);
-            this.errorMessage.Name = "errorMessage";
-            this.errorMessage.Size = new System.Drawing.Size(0, 17);
-            this.errorMessage.TabIndex = 11;
-            this.errorMessage.Visible = false;
+            this.txtNewPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNewPassword_KeyDown);
             // 
             // linkLogin
             // 
             this.linkLogin.AutoSize = true;
             this.linkLogin.BackColor = System.Drawing.Color.Transparent;
             this.linkLogin.LinkColor = System.Drawing.Color.Black;
-            this.linkLogin.Location = new System.Drawing.Point(148, 356);
+            this.linkLogin.Location = new System.Drawing.Point(249, 362);
             this.linkLogin.Name = "linkLogin";
-            this.linkLogin.Size = new System.Drawing.Size(268, 23);
+            this.linkLogin.Size = new System.Drawing.Size(98, 23);
             this.linkLogin.TabIndex = 10;
             this.linkLogin.TabStop = true;
-            this.linkLogin.Text = "Bạn đã có tài khoản? Đăng nhập";
+            this.linkLogin.Text = "Đăng nhập";
             this.linkLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLogin_LinkClicked);
             // 
             // btnConfirm
@@ -197,12 +185,13 @@
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirm.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(148, 282);
+            this.btnConfirm.Location = new System.Drawing.Point(168, 283);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(264, 53);
             this.btnConfirm.TabIndex = 9;
             this.btnConfirm.Text = "Xác nhận";
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // panel6
             // 
@@ -218,7 +207,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.errorPassword);
+            this.panel7.Controls.Add(this.errorConfirmPassword);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 44);
             this.panel7.Name = "panel7";
@@ -233,23 +222,23 @@
             this.panel9.Size = new System.Drawing.Size(321, 1);
             this.panel9.TabIndex = 5;
             // 
-            // errorPassword
+            // errorConfirmPassword
             // 
-            this.errorPassword.AutoSize = true;
-            this.errorPassword.BackColor = System.Drawing.Color.Transparent;
-            this.errorPassword.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.errorPassword.ForeColor = System.Drawing.Color.Red;
-            this.errorPassword.Location = new System.Drawing.Point(3, 3);
-            this.errorPassword.Name = "errorPassword";
-            this.errorPassword.Size = new System.Drawing.Size(241, 17);
-            this.errorPassword.TabIndex = 2;
-            this.errorPassword.Text = "Mật khẩu xác nhận không trùng khớp";
-            this.errorPassword.Visible = false;
+            this.errorConfirmPassword.AutoSize = true;
+            this.errorConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.errorConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorConfirmPassword.ForeColor = System.Drawing.Color.Red;
+            this.errorConfirmPassword.Location = new System.Drawing.Point(3, 3);
+            this.errorConfirmPassword.Name = "errorConfirmPassword";
+            this.errorConfirmPassword.Size = new System.Drawing.Size(241, 17);
+            this.errorConfirmPassword.TabIndex = 2;
+            this.errorConfirmPassword.Text = "Mật khẩu xác nhận không trùng khớp";
+            this.errorConfirmPassword.Visible = false;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.showPassword);
+            this.panel8.Controls.Add(this.btnShowConfPassword);
             this.panel8.Controls.Add(this.txtConfirmPassword);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
@@ -257,21 +246,22 @@
             this.panel8.Size = new System.Drawing.Size(321, 44);
             this.panel8.TabIndex = 4;
             // 
-            // showPassword
+            // btnShowConfPassword
             // 
-            this.showPassword.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.showPassword.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.showPassword.FlatAppearance.BorderSize = 0;
-            this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showPassword.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.showPassword.IconColor = System.Drawing.Color.Black;
-            this.showPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.showPassword.IconSize = 30;
-            this.showPassword.Location = new System.Drawing.Point(279, 0);
-            this.showPassword.Name = "showPassword";
-            this.showPassword.Size = new System.Drawing.Size(42, 44);
-            this.showPassword.TabIndex = 13;
-            this.showPassword.UseVisualStyleBackColor = false;
+            this.btnShowConfPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShowConfPassword.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShowConfPassword.FlatAppearance.BorderSize = 0;
+            this.btnShowConfPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowConfPassword.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnShowConfPassword.IconColor = System.Drawing.Color.Black;
+            this.btnShowConfPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnShowConfPassword.IconSize = 30;
+            this.btnShowConfPassword.Location = new System.Drawing.Point(279, 0);
+            this.btnShowConfPassword.Name = "btnShowConfPassword";
+            this.btnShowConfPassword.Size = new System.Drawing.Size(42, 44);
+            this.btnShowConfPassword.TabIndex = 13;
+            this.btnShowConfPassword.UseVisualStyleBackColor = false;
+            this.btnShowConfPassword.Click += new System.EventHandler(this.btnShowConfPassword_Click);
             // 
             // txtConfirmPassword
             // 
@@ -285,6 +275,9 @@
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(296, 29);
             this.txtConfirmPassword.TabIndex = 3;
+            this.txtConfirmPassword.Click += new System.EventHandler(this.txtConfirmPassword_Click);
+            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
+            this.txtConfirmPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtConfirmPassword_KeyDown);
             // 
             // pictureBox2
             // 
@@ -357,7 +350,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng nhập";
+            this.Text = "Đổi mật khẩu";
+            this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -383,7 +377,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label errorPassword;
+        private System.Windows.Forms.Label errorConfirmPassword;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox txtConfirmPassword;
@@ -391,14 +385,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.LinkLabel linkLogin;
-        private System.Windows.Forms.Label errorMessage;
         private FontAwesome.Sharp.IconButton showPassword;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label errorNewPassword;
         private System.Windows.Forms.Panel panel13;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.TextBox txtNewPassword;
+        private FontAwesome.Sharp.IconButton btnShowNewPassword;
+        private FontAwesome.Sharp.IconButton btnShowConfPassword;
     }
 }

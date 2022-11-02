@@ -12,6 +12,12 @@ namespace QuanLyKhuVuiChoi.Cache
         public static string username { get; set; }
         public static string email { get; set; }
         public static string maNV { get; set; }
-        public static string hoTen { get; set; }    
+        public static string hoTen { get; set; }
+        public static string diaChi { get; set; }
+        public static string soDT { get; set; }
+        public static string gioiTinh { get; set; }
+        public static string chucVu { get; set; }
+        public static string ngaySinh { get; set; }
+
     }
 }

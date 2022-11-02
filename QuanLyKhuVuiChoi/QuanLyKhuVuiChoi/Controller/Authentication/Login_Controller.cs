@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKhuVuiChoi.Model.User;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -24,6 +25,21 @@ namespace QuanLyKhuVuiChoi.Controller.Authentication
         public DataTable CheckAccount(string userName, string email, string cccd, string maNV)
         {
             return loginMethod.CheckAccount(userName, email, cccd, maNV);
+        }
+
+        public bool UpdatePassword(int id, string username, string email, string maNV, string password)
+        {
+            return loginMethod.UpdatePassword(id, username, email, maNV, password);
+        }
+
+        public bool CheckPassword(string password, int id)
+        {
+            return loginMethod.CheckPassword(password, id);
+        }
+
+        public bool UpdateProfile(string maNV, string hoTen, string gioiTinh, string ngaySinh, string soDT, string diaChi)
+        {
+            return loginMethod.UpdateProfile(maNV, hoTen, gioiTinh, ngaySinh, soDT, diaChi);
         }
     }
 }
