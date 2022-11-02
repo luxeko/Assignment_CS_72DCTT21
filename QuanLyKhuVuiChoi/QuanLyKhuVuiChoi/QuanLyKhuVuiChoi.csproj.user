@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
     <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\Customer.cs">
@@ -13,6 +17,9 @@
     <Compile Update="View\ForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\GiamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\khu_vui_choi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,7 +29,10 @@
     <Compile Update="View\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Tickets.cs">
+    <Compile Update="View\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Ticketsss.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\tro_choi.cs">
@@ -31,13 +41,5 @@
     <Compile Update="View\User.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Main.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\Customer.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

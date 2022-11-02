@@ -20,5 +20,10 @@ namespace QuanLyKhuVuiChoi.Controller.Authentication
         {
             return loginMethod.login(userName, passWord);
         }
+
+        public DataTable CheckAccount(string userName, string email, string cccd, string maNV)
+        {
+            return loginMethod.CheckAccount(userName, email, cccd, maNV);
+        }
     }
 }

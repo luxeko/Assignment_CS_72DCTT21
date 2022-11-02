@@ -80,7 +80,7 @@ namespace QuanLyKhuVuiChoi.Controller.User
             }
             catch
             {
-                System.Windows.Forms.MessageBox.Show("Lỗi khi check username", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Windows.Forms.MessageBox.Show("Lỗi khi check Email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {

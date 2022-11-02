@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\ForgetPassword.cs">
+<<<<<<< HEAD
+=======
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\GiamGia.cs">
+>>>>>>> 0f2411dc84bbb4a7aa86e5bc9c0891fb12a8aeb8
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\khu_vui_choi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Update="View\Tickets.cs">
+=======
+    <Compile Update="View\Ticketsss.cs">
+>>>>>>> 0f2411dc84bbb4a7aa86e5bc9c0891fb12a8aeb8
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\tro_choi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Main.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Update="View\Customer.resx">
+=======
+    <EmbeddedResource Update="View\khu_vui_choi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\User.resx">
+>>>>>>> 0f2411dc84bbb4a7aa86e5bc9c0891fb12a8aeb8
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

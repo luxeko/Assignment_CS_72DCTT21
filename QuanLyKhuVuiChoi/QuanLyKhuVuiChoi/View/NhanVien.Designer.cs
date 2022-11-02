@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.DirectoryServices.SortOption sortOption3 = new System.DirectoryServices.SortOption();
+            System.DirectoryServices.SortOption sortOption2 = new System.DirectoryServices.SortOption();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtTimKiem = new System.Windows.Forms.TextBox();
@@ -64,6 +64,12 @@
             this.btThem = new FontAwesome.Sharp.IconButton();
             this.btSua = new FontAwesome.Sharp.IconButton();
             this.btXoa = new FontAwesome.Sharp.IconButton();
+            this.btnLuu = new FontAwesome.Sharp.IconButton();
+            this.btnHuy = new FontAwesome.Sharp.IconButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TxtLuong = new System.Windows.Forms.TextBox();
+            this.iconLuong = new System.Windows.Forms.PictureBox();
+            this.btnXuatExcel = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.NVdataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaNV)).BeginInit();
@@ -72,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconDC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconChucvu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMakhu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +104,7 @@
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.Sort = sortOption3;
+            this.directorySearcher1.Sort = sortOption2;
             // 
             // NVdataGrid
             // 
@@ -109,6 +116,7 @@
             this.NVdataGrid.RowTemplate.Height = 28;
             this.NVdataGrid.Size = new System.Drawing.Size(1420, 260);
             this.NVdataGrid.TabIndex = 2;
+            this.NVdataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.NVdataGrid_CellContentClick);
             this.NVdataGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.NVdataGrid_CellMouseClick);
             // 
             // TxtMaNV
@@ -118,6 +126,7 @@
             this.TxtMaNV.Name = "TxtMaNV";
             this.TxtMaNV.Size = new System.Drawing.Size(273, 31);
             this.TxtMaNV.TabIndex = 4;
+            this.TxtMaNV.TextChanged += new System.EventHandler(this.TxtMaNV_TextChanged);
             // 
             // label2
             // 
@@ -388,7 +397,7 @@
             this.btThem.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btThem.IconSize = 24;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(203, 699);
+            this.btThem.Location = new System.Drawing.Point(33, 723);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(120, 40);
             this.btThem.TabIndex = 41;
@@ -403,7 +412,7 @@
             this.btSua.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btSua.IconSize = 24;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(440, 699);
+            this.btSua.Location = new System.Drawing.Point(219, 723);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(120, 40);
             this.btSua.TabIndex = 42;
@@ -418,7 +427,7 @@
             this.btXoa.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btXoa.IconSize = 24;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(650, 699);
+            this.btXoa.Location = new System.Drawing.Point(409, 723);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(120, 40);
             this.btXoa.TabIndex = 43;
@@ -426,11 +435,91 @@
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
+            // btnLuu
+            // 
+            this.btnLuu.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btnLuu.IconColor = System.Drawing.Color.LimeGreen;
+            this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnLuu.IconSize = 24;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(1138, 723);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(120, 40);
+            this.btnLuu.TabIndex = 44;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnHuy.IconColor = System.Drawing.Color.Red;
+            this.btnHuy.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnHuy.IconSize = 24;
+            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.Location = new System.Drawing.Point(1302, 723);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(120, 40);
+            this.btnHuy.TabIndex = 45;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(291, 652);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(126, 25);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "Lương cơ bản:";
+            // 
+            // TxtLuong
+            // 
+            this.TxtLuong.Location = new System.Drawing.Point(458, 646);
+            this.TxtLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtLuong.Name = "TxtLuong";
+            this.TxtLuong.Size = new System.Drawing.Size(273, 31);
+            this.TxtLuong.TabIndex = 47;
+            // 
+            // iconLuong
+            // 
+            this.iconLuong.Image = ((System.Drawing.Image)(resources.GetObject("iconLuong.Image")));
+            this.iconLuong.Location = new System.Drawing.Point(738, 653);
+            this.iconLuong.Name = "iconLuong";
+            this.iconLuong.Size = new System.Drawing.Size(24, 24);
+            this.iconLuong.TabIndex = 48;
+            this.iconLuong.TabStop = false;
+            this.iconLuong.Visible = false;
+            // 
+            // btnXuatExcel
+            // 
+            this.btnXuatExcel.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btnXuatExcel.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnXuatExcel.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnXuatExcel.IconSize = 24;
+            this.btnXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatExcel.Location = new System.Drawing.Point(1288, 49);
+            this.btnXuatExcel.Name = "btnXuatExcel";
+            this.btnXuatExcel.Size = new System.Drawing.Size(126, 34);
+            this.btnXuatExcel.TabIndex = 49;
+            this.btnXuatExcel.Text = "Xuất Excel";
+            this.btnXuatExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatExcel.UseVisualStyleBackColor = true;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1446, 808);
+            this.Controls.Add(this.btnXuatExcel);
+            this.Controls.Add(this.iconLuong);
+            this.Controls.Add(this.TxtLuong);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btThem);
@@ -476,6 +565,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconDC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconChucvu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMakhu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconLuong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,6 +607,12 @@
         private FontAwesome.Sharp.IconButton btThem;
         private FontAwesome.Sharp.IconButton btSua;
         private FontAwesome.Sharp.IconButton btXoa;
+        private FontAwesome.Sharp.IconButton btnLuu;
+        private FontAwesome.Sharp.IconButton btnHuy;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TxtLuong;
+        private System.Windows.Forms.PictureBox iconLuong;
+        private FontAwesome.Sharp.IconButton btnXuatExcel;
     }
 }
 

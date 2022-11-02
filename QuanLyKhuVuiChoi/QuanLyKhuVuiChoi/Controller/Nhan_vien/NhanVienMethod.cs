@@ -3,18 +3,30 @@ using QuanLyKhuVuiChoi.Model.Nhan_Vien;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Documents;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Windows.Forms;
+using QuanLyKhuVuiChoi.Database;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace QuanLyKhuVuiChoi.Controller.Nhan_vien
 {
     internal class NhanVienMethod
     {
         app_config config = new app_config();
-        
+        DataConnection dc;
+        SqlDataAdapter da;
+        SqlCommand cmd;
+        public NhanVienMethod()
+        {
+            dc = new DataConnection();
+        }
         public DataTable GetNV()
         {
             DataTable table = new DataTable();
@@ -90,6 +102,29 @@ namespace QuanLyKhuVuiChoi.Controller.Nhan_vien
             string sql = "select * from tblNhanVien where hoTen like N'%" + hoten+"%' ";
             tableTK = app_config.GetDataTable(sql);
             return tableTK;
+        }
+
+        public DataTable layThongTinNhanVien(string maNV)
+        {
+            string query = "select hoTen from tblNhanVien where maNV = '" + maNV + "'";
+            SqlConnection con = dc.getConnect();
+            DataTable dt = new DataTable();
+            try
+            {
+                da = new SqlDataAdapter(query, con);
+                con.Open();
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi khi truy vấn sql", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dt;
         }
     }
 }

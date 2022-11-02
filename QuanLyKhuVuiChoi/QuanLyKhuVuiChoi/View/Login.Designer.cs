@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorMessage = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -36,6 +37,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.errorPassword = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.showPassword = new FontAwesome.Sharp.IconButton();
             this.passWord = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,6 +65,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.errorMessage);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel6);
@@ -78,6 +81,18 @@
             this.panel1.Size = new System.Drawing.Size(538, 394);
             this.panel1.TabIndex = 1;
             // 
+            // errorMessage
+            // 
+            this.errorMessage.AutoSize = true;
+            this.errorMessage.BackColor = System.Drawing.Color.Transparent;
+            this.errorMessage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorMessage.ForeColor = System.Drawing.Color.Red;
+            this.errorMessage.Location = new System.Drawing.Point(148, 226);
+            this.errorMessage.Name = "errorMessage";
+            this.errorMessage.Size = new System.Drawing.Size(0, 17);
+            this.errorMessage.TabIndex = 11;
+            this.errorMessage.Visible = false;
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -89,6 +104,7 @@
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quên mật khẩu?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1
             // 
@@ -96,7 +112,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(147, 267);
+            this.button1.Location = new System.Drawing.Point(148, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(264, 53);
             this.button1.TabIndex = 9;
@@ -137,24 +153,42 @@
             // 
             this.errorPassword.AutoSize = true;
             this.errorPassword.BackColor = System.Drawing.Color.Transparent;
-            this.errorPassword.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorPassword.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorPassword.ForeColor = System.Drawing.Color.Red;
             this.errorPassword.Location = new System.Drawing.Point(3, 3);
             this.errorPassword.Name = "errorPassword";
-            this.errorPassword.Size = new System.Drawing.Size(168, 17);
+            this.errorPassword.Size = new System.Drawing.Size(201, 17);
             this.errorPassword.TabIndex = 2;
-            this.errorPassword.Text = "Mật khẩu không hợp lệ!";
+            this.errorPassword.Text = "Mật khẩu không được để trống";
             this.errorPassword.Visible = false;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.showPassword);
             this.panel8.Controls.Add(this.passWord);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(321, 44);
             this.panel8.TabIndex = 4;
+            // 
+            // showPassword
+            // 
+            this.showPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.showPassword.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.showPassword.FlatAppearance.BorderSize = 0;
+            this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showPassword.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.showPassword.IconColor = System.Drawing.Color.Black;
+            this.showPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.showPassword.IconSize = 30;
+            this.showPassword.Location = new System.Drawing.Point(279, 0);
+            this.showPassword.Name = "showPassword";
+            this.showPassword.Size = new System.Drawing.Size(42, 44);
+            this.showPassword.TabIndex = 13;
+            this.showPassword.UseVisualStyleBackColor = false;
+            this.showPassword.Click += new System.EventHandler(this.showPassword_Click);
             // 
             // passWord
             // 
@@ -228,13 +262,13 @@
             // 
             this.errorUsername.AutoSize = true;
             this.errorUsername.BackColor = System.Drawing.Color.Transparent;
-            this.errorUsername.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorUsername.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorUsername.ForeColor = System.Drawing.Color.Red;
             this.errorUsername.Location = new System.Drawing.Point(3, 3);
             this.errorUsername.Name = "errorUsername";
-            this.errorUsername.Size = new System.Drawing.Size(205, 17);
+            this.errorUsername.Size = new System.Drawing.Size(235, 17);
             this.errorUsername.TabIndex = 2;
-            this.errorUsername.Text = "Tên đăng nhập không hợp lệ!";
+            this.errorUsername.Text = "Tên đăng nhập không được để trống";
             this.errorUsername.Visible = false;
             // 
             // panel2
@@ -291,11 +325,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.label1.Location = new System.Drawing.Point(212, 12);
+            this.label1.Location = new System.Drawing.Point(185, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 39);
+            this.label1.Size = new System.Drawing.Size(196, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sign In";
+            this.label1.Text = "Đăng nhập";
             // 
             // Login
             // 
@@ -351,5 +385,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label errorMessage;
+        private FontAwesome.Sharp.IconButton showPassword;
     }
 }

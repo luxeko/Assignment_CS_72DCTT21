@@ -1,4 +1,5 @@
-﻿using QuanLyKhuVuiChoi.Controller.Authentication;
+﻿using QuanLyKhuVuiChoi.Cache;
+using QuanLyKhuVuiChoi.Controller.Authentication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace QuanLyKhuVuiChoi.View
 {
@@ -19,7 +21,7 @@ namespace QuanLyKhuVuiChoi.View
             InitializeComponent();
             loginController = new Login_Controller();
             this.ActiveControl = userName;
-            userName.Focus();
+            this.userName.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -33,6 +35,7 @@ namespace QuanLyKhuVuiChoi.View
             {
                 this.userName.ForeColor = Color.Black;
                 this.errorUsername.Visible = false;
+                this.errorMessage.Visible = false;
             } 
             catch
             {
@@ -44,35 +47,35 @@ namespace QuanLyKhuVuiChoi.View
             try
             {
                 this.passWord.ForeColor = Color.Black;
-                errorPassword.Visible = false;
+                this.errorPassword.Visible = false;
+                this.errorMessage.Visible = false;
             }
             catch
             {
 
             }
         }
+
         private void textBox1_Click(object sender, EventArgs e)
         {
             this.userName.SelectAll();
-
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
             this.passWord.SelectAll();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(this.userName.Text == "")
+            if(this.userName.Text.Trim() == "")
             {
                 this.errorUsername.Visible = true;
                 this.userName.Focus();
                 return;
             }
             
-            if (this.passWord.Text == "")
+            if (this.passWord.Text.Trim() == "")
             {
                 this.errorPassword.Visible = true;
                 this.passWord.Focus();
@@ -86,25 +89,28 @@ namespace QuanLyKhuVuiChoi.View
             {
                 foreach (DataRow row in dt.Rows)
                 {
-                    if (row["trangThai"].ToString() == " Active")
+                    if (row["trangThai"].ToString().Trim() == "Active")
                     {
                         Main main = new Main();
+                        UserLoginCache.Id = Convert.ToInt32(row["id"]);
+                        UserLoginCache.username = row["username"].ToString().Trim();
+                        UserLoginCache.email = row["email"].ToString().Trim();
+                        UserLoginCache.maNV = row["maNV"].ToString().Trim();
                         main.Show();
                         this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Tài khoản chưa được cấp quyền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        this.passWord.Clear();
+                        this.errorMessage.Visible = true;
+                        this.errorMessage.Text = "Tài khoản chưa được cấp quyền truy cập";
                     }
                 }
             } 
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.passWord.Clear();
+                this.errorMessage.Text = "Tài khoản hoặc mật khẩu không chính xác";
+                this.errorMessage.Visible = true;
             }
-
         }
 
         private void passWord_KeyDown(object sender, KeyEventArgs e)
@@ -125,6 +131,27 @@ namespace QuanLyKhuVuiChoi.View
                 e.SuppressKeyPress = true;
                 e.Handled = true;
             }
+        }
+
+        private void showPassword_Click(object sender, EventArgs e)
+        {
+            if (this.passWord.PasswordChar == '*')
+            {
+                this.passWord.PasswordChar = '\0';
+                this.showPassword.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            }
+            else
+            {
+                this.passWord.PasswordChar = '*';
+                this.showPassword.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgetPassword forgetPassword = new ForgetPassword();
+            forgetPassword.Show();
         }
     }
 }

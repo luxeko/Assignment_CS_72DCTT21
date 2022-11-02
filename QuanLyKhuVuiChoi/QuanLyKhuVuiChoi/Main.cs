@@ -1,5 +1,8 @@
 ﻿using btl2;
 using FontAwesome.Sharp;
+using QuanLyKhuVuiChoi.Cache;
+using QuanLyKhuVuiChoi.Controller.Authentication;
+using QuanLyKhuVuiChoi.Controller.Nhan_vien;
 using QuanLyKhuVuiChoi.View;
 using System;
 using System.Collections.Generic;
@@ -11,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Color = System.Drawing.Color;
 
 namespace QuanLyKhuVuiChoi
@@ -19,15 +23,30 @@ namespace QuanLyKhuVuiChoi
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        NhanVienController nhanVienController = new NhanVienController();
+
         public Main()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             panelMenu.Controls.Add(leftBorderBtn);
-
         }
 
+        private void Init(string hoTen)
+        {
+         
+            List<Item> items = new List<Item>();
+            items.Add(new Item() { Text = hoTen, id = 0 });
+            items.Add(new Item() { Text = "Hồ sơ", id = 1 });
+            items.Add(new Item() { Text = "Đăng xuất", id = 2 });
+        }
+        public class Item
+        {
+            public Item() { }
+            public int id { set; get; }
+            public string Text { set; get; }
+        }
         private void navbar(Form form, Panel panel)
         {
             form.TopLevel = false;
@@ -122,7 +141,7 @@ namespace QuanLyKhuVuiChoi
         private void btnVe_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color1);
-            Tickets tickets = new Tickets();
+            Ticketsss tickets = new Ticketsss();
             navbar(tickets, content);
         }
 
@@ -134,6 +153,8 @@ namespace QuanLyKhuVuiChoi
         private void btnGiamGia_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColor.color3);
+            GiamGia markDown = new GiamGia();
+            navbar(markDown, content);
         }
         private void logoBtn_Click(object sender, EventArgs e)
         {
@@ -150,6 +171,35 @@ namespace QuanLyKhuVuiChoi
             ActiveButton(sender, RGBColor.color4);
             Customer customer = new Customer();
             navbar(customer, content);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn có chắc muốn đăng xuất không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            string hoTen = "";
+            DataTable dt = nhanVienController.layThongTinNhanVien(UserLoginCache.maNV);
+            if (dt.Rows.Count > 0)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    hoTen = row["hoTen"].ToString();
+                }
+            }
+            Init(hoTen); 
+        }
+
+        private void profileBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

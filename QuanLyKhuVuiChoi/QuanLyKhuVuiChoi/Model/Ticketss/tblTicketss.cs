@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyKhuVuiChoi.Model.Tickets
+namespace QuanLyKhuVuiChoi.Model.Ticketss
 {
-    class tbTickets
+    internal class tblTicketss
     {
         public int id { get; set; }
         public string maVe { get; set; }
